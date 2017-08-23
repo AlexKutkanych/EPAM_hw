@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Task 2</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/isotope.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+    <script src="js/firebase.js" defer></script>
+    <script src="js/isotope.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <section class="portfolio-block">
+            <h2 class="heading">Portfolio</h2>
+            <div class="button-group filters-button-group">
+                <span class="portfolio__breadcrumbs is-checked" data-filter="*">All</span> /
+                <span class="portfolio__breadcrumbs" data-filter=".coder">Code</span> /
+                <span class="portfolio__breadcrumbs" data-filter=".web-designer">UI</span>
+            </div>
+            <div class="grid">
+                <div class="element-item coder" data-category="coder">
+                    <img class="developer-picture" src="img/coder.jpg">
+                    <span class="developer-name"></span>
+                </div>
+                <div class="element-item coder" data-category="coder">
+                    <img class="developer-picture" src="img/coder.jpg">
+                    <span class="developer-name"></span>
+                </div>
+                <div class="element-item web-designer" data-category="web-designer">
+                    <img class="developer-picture" src="img/web-designer.jpg">
+                    <span class="developer-name"></span>
+                </div>
+                <div class="element-item web-designer" data-category="web-designer">
+                    <img class="developer-picture" src="img/web-designer.jpg">
+                    <span class="developer-name"></span>
+                </div>
+                <div class="element-item coder" data-category="coder">
+                    <img class="developer-picture" src="img/coder.jpg">
+                    <span class="developer-name"></span>
+                </div>
+                <div class="element-item web-designer" data-category="web-designer">
+                    <img class="developer-picture" src="img/web-designer.jpg">
+                    <span class="developer-name"></span>
+                </div>
+                <div class="element-item coder" data-category="coder">
+                    <img class="developer-picture" src="img/coder.jpg">
+                    <span class="developer-name"></span>
+                </div>
+                <div class="element-item web-designer" data-category="web-designer">
+                    <img class="developer-picture" src="img/web-designer.jpg">
+                    <span class="developer-name"></span>
+                </div>
+                <div class="element-item coder" data-category="coder">
+                    <img class="developer-picture" src="img/coder.jpg">
+                     <span class="developer-name"></span>
+                </div>
+                <div class="element-item web-designer" data-category="web-designer">
+                    <img class="developer-picture" src="img/web-designer.jpg">
+                    <span class="developer-name"></span>
+                </div>
+
+
+
+            </div>
+        </section>
+        <section class="contacts-block">
+            <h2 class="heading">Contacts</h2>
+            <div class="contacts__phone contacts__info">
+                <p class="phone">500 35 242</p>
+            </div>
+            <div class="contacts__email contacts__info">
+                <p class="email">someemail@email.com</p>
+            </div>
+        </section>
+
+</body>
+</html>
