@@ -15,9 +15,9 @@ firebase.initializeApp(config);
 //
 //     var hadlebarsTest = $("#test").html();
 //     var compiledTest = Handlebars.compile(hadlebarsTest);
-//
 //     var experienceBl = $(".experience-block");
-//     // experienceBl.innerHTML = compiledTest(usersInfo1);
+//     console.log(compiledTest);
+//
 //
 //     var dbRef = firebase.database().ref();
 //
@@ -36,16 +36,15 @@ firebase.initializeApp(config);
 
 // var test = document.querySelector("#object");
 
-
-
-var experienceBl = document.querySelector(".experience-block");
+//handlebars on JS
 
 var hadlebarsTest = document.querySelector("#test").innerHTML;
 var compiledTest = Handlebars.compile(hadlebarsTest);
+var experienceBl = document.querySelector(".experience-block");
 
-var database = firebase.database().ref();
-database.on('value', function (snap) {
-    experienceBl.innerHTML(compiledTest(snap.val()));
+var dBRef = firebase.database().ref();
+dBRef.on("value", function(snap) {
+    experienceBl.innerHTML = compiledTest(snap.val());
     console.log(snap.val());
 });
     //connecting developers pictures to info in dbs
