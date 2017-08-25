@@ -37,17 +37,33 @@ var developersName = document.querySelectorAll(".developer-name");
 var developersPicture = document.querySelectorAll(".developer-picture");
 // var test = document.querySelector("#object");
 
+function test(from, to, context, options){
+    var item = "";
+    for (var i = from, j = to; i < j; i++) {
+        item = item + options.fn(context[i]);
+    }
+    return item;
+}
+
+Handlebars.registerHelper('listItem', test);
+
 //handlebars on JS
 
-var hadlebarsTest = document.querySelector("#experience-block").innerHTML;
-var compiledTest = Handlebars.compile(hadlebarsTest);
+var hadlebarsExperienceBl = document.querySelector("#experience-block").innerHTML;
+var compiledTestExperienceBl = Handlebars.compile(hadlebarsExperienceBl);
 var experienceBl = document.querySelector(".experience-block");
+
+// var hadlebarsEducationBl = document.querySelector("#education-block").innerHTML;
+// var educationBl = document.querySelector(".education-block");
+// var compiledTestEducationBl = Handlebars.compile(hadlebarsExperienceBl);
 
 var dBRef = firebase.database().ref();
 
 dBRef.on("value", function(snap) {
     var usersInfo = snap.val();
-    experienceBl.innerHTML = compiledTest(usersInfo);
+    experienceBl.innerHTML = compiledTestExperienceBl(usersInfo);
+
+    // educationBl.innerHTML = compiledTestEducationBl(usersInfo);
     console.log(usersInfo.users[0].name);
 
     //connecting developers pictures to info in dbs
@@ -59,36 +75,28 @@ dBRef.on("value", function(snap) {
         developersPicture[i].setAttribute("data-name", usersInfo.users[i].name);
     }
 
-    //test
-
-
-
-
-    function showDevelopersProfile(e){
-        if(e.target != e.currentTarget){
-            var clickedItem = e.target.id;
-            mainPage.classList.add("main-page_hide");
-            profilePage.classList.remove("profile-page_hide");
-
-
-            var test1 = document.querySelector("#education");
-            test1.innerHTML = e.target.getAttribute("data-name");
-        }
-        e.stopPropagation();
-    };
-
-    developersGrid.addEventListener("click", showDevelopersProfile, false);
 
 });
 
+function showDevelopersProfile(e){
 
-Handlebars.registerHelper('listItem', function (from, to, context, options){
-    var item = "";
-    for (var i = from, j = to; i < j; i++) {
-        item = item + options.fn(context[i]);
+    if(e.target != e.currentTarget){
+        var clickedItem = e.target.id;
+        mainPage.classList.add("main-page_hide");
+        profilePage.classList.remove("profile-page_hide");
+
+                // var test1 = document.querySelector("#education");
+        // test1.innerHTML = e.target.getAttribute("data-name");
     }
-    return item;
-});
+    e.stopPropagation();
+};
+
+developersGrid.addEventListener("click", showDevelopersProfile, false);
+
+
+
+
+
 
 
 

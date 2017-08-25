@@ -134,62 +134,28 @@
         </div>
         <div class="education-block">
             <h2 class="heading" id="education">Education</h2>
+            <script id="education-block" type="text/x-handlebars-template">
                 <div id="education-temp-block">
-                    <script type="text/html" id="mypage_education">
+                    {{#each experience}}
                         <div class="education-block__place">
                         <div class="education-block__time">
-                            <p class="education-year"><%= usersInfo[0].name%></p>
-                            <div class="education-line"></div>
+                            <p class="education-year">{{this.year}}</p>
+                            <div class="education-line">{{this.title}}</div>
                         </div>
                         <div class="education-block__description">
                             <p class="education-block__title"></p>
                             <p class="education-block__responsibilities"></p>
                         </div>
                     </div>
-                    </script>
+                    {{/each}}
                 </div>
+            </script>
         </div>
 
-        <!--<div class="experience-block">-->
-
-            <!--<div id="experience-temp-block">-->
-                <!--<div class="experience-block__job">-->
-                        <!--<div class="job-title">-->
-                            <!--<p class="job-title__company"><%= usersInfo.users[0].experience[0].company%></p>-->
-                            <!--<p class="job-title__time"><%= usersInfo.users[0].experience[0].period%></p>-->
-                        <!--</div>-->
-                        <!--<div class="job-description">-->
-                            <!--<p class="job-description__position"><%= usersInfo.users[0].experience[0].title%></p>-->
-                            <!--<p class="job-description__responsibilities"><%= usersInfo.users[0].experience[0].responsibilities%></p>-->
-                        <!--</div>-->
-                     <!--</div>-->
-               <!--</div>-->
-            <!--<div class="experience-block">-->
-                <!--<h2 class="heading" id="experience">Experience</h2>-->
-                <!--<script id="experience-block" type="text/x-handlebars-template">-->
-                    <!--{{#each users}}-->
-                    <!--<p>My name is + {{name}}</p>-->
-                    <!--<div id="experience-temp-block">-->
-                        <!--<div class="experience-block__job">-->
-                            <!--{{#each experience}}-->
-                            <!--<div class="job-title">-->
-                                <!--<p class="job-title__company">{{this.company}}</p>-->
-                                <!--<p class="job-title__time">{{this.period}}</p>-->
-                            <!--</div>-->
-                            <!--<div class="job-description">-->
-                                <!--<p class="job-description__position">{{this.title}}</p>-->
-                                <!--<p class="job-description__responsibilities">{{this.responsibilities}}</p>-->
-                            <!--</div>-->
-                            <!--{{/each}}-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--{{/each}}-->
-                <!--</script>-->
-            <!--</div>-->
         <div class="experience-block">
             <h2 class="heading" id="experience">Experience</h2>
             <script id="experience-block" type="text/x-handlebars-template">
-                {{#listItem 0 1 users}}
+               {{#listItem 0 1 users}}
                 <p>My name is + {{name}}</p>
                 <div id="experience-temp-block">
                     <div class="experience-block__job">
