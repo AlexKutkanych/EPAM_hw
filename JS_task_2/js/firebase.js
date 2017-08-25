@@ -32,7 +32,7 @@ firebase.initializeApp(config);
 // })
 
 
-
+var developersGrid = document.querySelector("#developers-grid");
 
 // var test = document.querySelector("#object");
 
@@ -44,30 +44,34 @@ var experienceBl = document.querySelector(".experience-block");
 
 var dBRef = firebase.database().ref();
 dBRef.on("value", function(snap) {
-    experienceBl.innerHTML = compiledTest(snap.val());
-    console.log(snap.val());
-});
+    var usersInfo = snap.val();
+    experienceBl.innerHTML = compiledTest(usersInfo);
+    console.log(usersInfo);
+
     //connecting developers pictures to info in dbs
 
-    // var developersName = document.querySelectorAll(".developer-name");
-    // var developersPicture = document.querySelectorAll(".developer-picture");
+    var developersName = document.querySelectorAll(".developer-name");
+    var developersPicture = document.querySelectorAll(".developer-picture");
 
-    // for(var i = 0; i < developersName.length; i++){
-    //     developersName[i].innerHTML = usersInfo[i].name;
-    //     developersPicture[i].setAttribute("data-name", usersInfo[i].name);
-    // }
+    for(var i = 0; i < developersName.length; i++){
+        developersName[i].innerHTML = usersInfo.users[i].name;
+        developersPicture[i].setAttribute("data-name", usersInfo.users[i].name);
+    }
+
+});
 
 
-    // function showDevelopersProfile(e){
-    //     if(e.target != e.currentTarget){
-    //         var clickedItem = e.target.id;
-    //         mainPage.classList.add("main-page_hide");
-    //         profilePage.classList.remove("profile-page_hide");
-    //     }
-    //     e.stopPropagation();
-    // };
 
-    // developersGrid.addEventListener("click", showDevelopersProfile, false);
+    function showDevelopersProfile(e){
+        if(e.target != e.currentTarget){
+            var clickedItem = e.target.id;
+            mainPage.classList.add("main-page_hide");
+            profilePage.classList.remove("profile-page_hide");
+        }
+        e.stopPropagation();
+    };
+
+    developersGrid.addEventListener("click", showDevelopersProfile, false);
 
 
 
