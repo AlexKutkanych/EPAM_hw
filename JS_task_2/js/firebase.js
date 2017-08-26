@@ -35,27 +35,26 @@
 var developersGrid = document.querySelector("#developers-grid");
 var developersName = document.querySelectorAll(".developer-name");
 var developersPicture = document.querySelectorAll(".developer-picture");
+var skillsResultBlock = document.querySelector("#skills-result");
 
 
 //handlebars on JS
 
 var hadlebarsExperienceBl = document.querySelector("#experience-block").innerHTML;
 var compiledExperienceBl = Handlebars.compile(hadlebarsExperienceBl);
-var experienceBl = document.querySelector(".experience-block");
+var experienceBl = document.querySelector("#experience-temp");
+
+
+var hadlebarsEducationBl = document.querySelector("#education-block").innerHTML;
+var compiledEducationBl = Handlebars.compile(hadlebarsEducationBl);
+var educationBl = document.querySelector("#education-temp");
+
 
 var perObj = document.querySelector("#object");
 var dBRefObject = firebase.database().ref().child("users");
 
 
 
-function test(from, to, context, options){
-    var item = "";
-    for (var i = from, j = to; i < j; i++) {
-        item = item + options.fn(context[i]);
-    }
-    return item;
-}
-Handlebars.registerHelper('listItem', test);
 
 function showDevelopersProfile(e){
 
@@ -68,29 +67,56 @@ function showDevelopersProfile(e){
   
         dBRefObject.on("value", function(snap) {
             var usersInfo = snap.val();
-            experienceBl.innerHTML = compiledExperienceBl(usersInfo[0]);
+            
 
             var clickedItem = e.target.getAttribute("data-name");
             
 
     //connecting developers pictures to info in dbs
 
-        for(var i = 0; i < developersName.length; i++){
-            developersName[i].innerHTML = usersInfo[i].name;
-            developersPicture[i].setAttribute("data-name", usersInfo[i].name);
-        }
+            for(var i = 0; i < developersName.length; i++){
+                developersName[i].innerHTML = usersInfo[i].name;
+                developersPicture[i].setAttribute("data-name", usersInfo[i].name);
+            }
 
     //showing page of the clicked user
 
-        for(var j = 0; j < usersInfo.length; j++){
+            for(var j = 0; j < usersInfo.length; j++){
 
-            if(clickedItem === usersInfo[j].name){
-                var loadedUser = snap.val()[j];
-                console.log(loadedUser);
+                if(clickedItem === usersInfo[j].name){
+                    var loadedUser = snap.val()[j];
+                    experienceBl.innerHTML = compiledExperienceBl(loadedUser);
+                    console.log(loadedUser);
+
+                    //education block
+
+                    var usersEducation = snap.val()[j];
+                    educationBl.innerHTML = compiledEducationBl(usersEducation);
+                    console.log(usersEducation);
+
+                    //skills block
+
+                    var usersSkills = snap.val()[j].skills[0];
+
+                    console.log(usersSkills);
+
+                    var skillScore = document.createElement("span");
+                    var skillBar = document.createElement("div");
+        
+
+                    for (var key in usersSkills){
+                        skillScore.classList.add("skills-result__skill-name");
+                        skillScore.innerHTML = key;
+                        skillBar.classList.add("skills-result__bar");
+                        skillBar.style.width = usersSkills[key] + "%";
+                        skillBar.appendChild(skillScore);
+                        console.log(skillScore);
+                        skillsResultBlock.appendChild(skillBar);
+                    }
+                }
+
             }
-
-        }
-    });
+        });
 
     }
     e.stopPropagation();
@@ -99,33 +125,20 @@ function showDevelopersProfile(e){
 developersGrid.addEventListener("click", showDevelopersProfile, false);
 
 
-//skills result bar
-
-var skillsResultBlock = document.querySelector("#skills-result");
-var dBRefSkills = dBRefObject;
-
-dBRefSkills.on("child_added", function(snap) {
     
-    var usersSkills = snap.val().skills[0];
-    // console.log(usersSkills);
-
-    var skillScore = document.createElement("span");
-    var skillBar = document.createElement("div");
-    
-    for (var key in usersSkills){
-        skillScore.classList.add("skills-result__skill-name");
-        skillScore.innerHTML = key;
-        skillBar.classList.add("skills-result__bar");
-        skillBar.style.width = usersSkills[key] + "%";
-        skillBar.appendChild(skillScore);
-        skillsResultBlock.appendChild(skillBar);
-    }
-
-});
 
 
 
 
+
+// function test(from, to, context, options){
+//     var item = "";
+//     for (var i = from, j = to; i < j; i++) {
+//         item = item + options.fn(context[i]);
+//     }
+//     return item;
+// }
+// Handlebars.registerHelper('listItem', test);
 
 
 

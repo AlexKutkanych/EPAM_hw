@@ -26,31 +26,6 @@
 
     <!-- MAIN PAGE -->
     <div id="main-page">
-
-        <!--<div class="experience-block">-->
-            <!--<h2 class="heading" id="experience">Experience</h2>-->
-            <!--<script id="test" type="text/x-handlebars-template">-->
-                <!--{{#each users}}-->
-                <!--<div id="experience-temp-block">-->
-                    <!--<div class="experience-block__job">-->
-                        <!--{{#each experience}}-->
-                        <!--<div class="job-title">-->
-                            <!--<p class="job-title__company">{{this.company}}</p>-->
-                            <!--<p class="job-title__time">{{this.period}}</p>-->
-                        <!--</div>-->
-                        <!--<div class="job-description">-->
-                            <!--<p class="job-description__position">{{this.title}}</p>-->
-                            <!--<p class="job-description__responsibilities">{{this.responsibilities}}</p>-->
-                        <!--</div>-->
-                        <!--{{/each}}-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--{{/each}}-->
-            <!--</script>-->
-        <!--</div>-->
-
-
-
         <section class="portfolio-block">
             <h2 class="heading">Portfolio</h2>
             <div class="button-group filters-button-group">
@@ -134,43 +109,46 @@
         </div>
         <div class="education-block">
             <h2 class="heading" id="education">Education</h2>
-            <script id="education-block" type="text/x-handlebars-template">
-                <div id="education-temp-block">
-                    {{#each experience}}
-                        <div class="education-block__place">
-                        <div class="education-block__time">
-                            <p class="education-year">{{this.year}}</p>
-                            <div class="education-line">{{this.title}}</div>
-                        </div>
-                        <div class="education-block__description">
-                            <p class="education-block__title"></p>
-                            <p class="education-block__responsibilities"></p>
+            <section id="education-temp">
+                <script id="education-block" type="text/x-handlebars-template">
+                    {{#each education}}
+                    <div id="education-temp-block">
+                            <div class="education-block__place">
+                            <div class="education-block__time">
+                                <p class="education-year">{{year}}</p>
+                                <div class="education-line"></div>
+                            </div>
+                            <div class="education-block__description">
+                                <p class="education-block__title">{{title}}</p>
+                                <p class="education-block__responsibilities">{{responsibilities}}</p>
+                            </div>
                         </div>
                     </div>
-                    {{/each}}
-                </div>
-            </script>
+                {{/each}}
+                </script>
+            </section>
         </div>
 
         <div class="experience-block">
             <h2 class="heading" id="experience">Experience</h2>
-            <script id="experience-block" type="text/x-handlebars-template">
-                <p>My name is + {{name}}</p>
-                <div id="experience-temp-block">
-                    <div class="experience-block__job">
+            <section id="experience-temp">
+                <script id="experience-block" type="text/x-handlebars-template">
+                    <div id="experience-temp-block">
                         {{#each experience}}
-                        <div class="job-title">
-                            <p class="job-title__company">{{this.company}}</p>
-                            <p class="job-title__time">{{this.period}}</p>
+                        <div class="experience-block__job">
+                            <div class="job-title">
+                                <p class="job-title__company">{{this.company}}</p>
+                                <p class="job-title__time">{{this.period}}</p>
+                            </div>
+                            <div class="job-description">
+                                <p class="job-description__position">{{this.title}}</p>
+                                <p class="job-description__responsibilities">{{this.responsibilities}}</p>
+                            </div>
                         </div>
-                        <div class="job-description">
-                            <p class="job-description__position">{{this.title}}</p>
-                            <p class="job-description__responsibilities">{{this.responsibilities}}</p>
-                        </div>
-                        {{/each}}
+                    {{/each}}
                     </div>
-                </div>
-            </script>
+                </script>
+            </section>
         </div>
 
         <!--</div>-->
