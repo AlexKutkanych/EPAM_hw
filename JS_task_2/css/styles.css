@@ -249,7 +249,7 @@ a {
 /*experience block*/
 .experience-block {
   width: 90%;
-  height: 300px;
+  min-height: 300px;
   margin: 0 auto;
   font-size: 20px; }
   .experience-block__job {

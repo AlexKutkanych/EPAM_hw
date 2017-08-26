@@ -53,6 +53,17 @@ var educationBl = document.querySelector("#education-temp");
 var perObj = document.querySelector("#object");
 var dBRefObject = firebase.database().ref().child("users");
 
+//connecting developers pictures to info in dbs
+
+dBRefObject.on("value", function(snap) {
+            var usersInfo = snap.val();
+
+
+            for(var i = 0; i < developersName.length; i++){
+                developersName[i].innerHTML = usersInfo[i].name;
+                developersPicture[i].setAttribute("data-name", usersInfo[i].name);
+            }
+});
 
 
 
@@ -67,18 +78,8 @@ function showDevelopersProfile(e){
   
         dBRefObject.on("value", function(snap) {
             var usersInfo = snap.val();
-            
-
             var clickedItem = e.target.getAttribute("data-name");
             
-
-    //connecting developers pictures to info in dbs
-
-            for(var i = 0; i < developersName.length; i++){
-                developersName[i].innerHTML = usersInfo[i].name;
-                developersPicture[i].setAttribute("data-name", usersInfo[i].name);
-            }
-
     //showing page of the clicked user
 
             for(var j = 0; j < usersInfo.length; j++){
