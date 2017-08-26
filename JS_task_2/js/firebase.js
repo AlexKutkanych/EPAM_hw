@@ -46,18 +46,7 @@ var experienceBl = document.querySelector(".experience-block");
 var perObj = document.querySelector("#object");
 var dBRefObject = firebase.database().ref().child("users");
 
-dBRefObject.on("value", function(snap) {
-    var usersInfo = snap.val();
-    experienceBl.innerHTML = compiledExperienceBl(usersInfo[0]);
-    console.log(usersInfo[0]);
 
-    //connecting developers pictures to info in dbs
-
-    for(var i = 0; i < developersName.length; i++){
-        developersName[i].innerHTML = usersInfo[i].name;
-        developersPicture[i].setAttribute("data-name", usersInfo[i].name);
-    }
-});
 
 function test(from, to, context, options){
     var item = "";
@@ -71,12 +60,39 @@ Handlebars.registerHelper('listItem', test);
 function showDevelopersProfile(e){
 
     if(e.target != e.currentTarget){
-        var clickedItem = e.target.id;
+       
         mainPage.classList.add("main-page_hide");
         profilePage.classList.remove("profile-page_hide");
-        
-    }
 
+
+  
+        dBRefObject.on("value", function(snap) {
+            var usersInfo = snap.val();
+            experienceBl.innerHTML = compiledExperienceBl(usersInfo[0]);
+
+            var clickedItem = e.target.getAttribute("data-name");
+            
+
+    //connecting developers pictures to info in dbs
+
+        for(var i = 0; i < developersName.length; i++){
+            developersName[i].innerHTML = usersInfo[i].name;
+            developersPicture[i].setAttribute("data-name", usersInfo[i].name);
+        }
+
+    //showing page of the clicked user
+
+        for(var j = 0; j < usersInfo.length; j++){
+
+            if(clickedItem === usersInfo[j].name){
+                var loadedUser = snap.val()[j];
+                console.log(loadedUser);
+            }
+
+        }
+    });
+
+    }
     e.stopPropagation();
 };
 
