@@ -151,11 +151,11 @@
                 </div>
             </script>
         </div>
-
+        <pre id="object"></pre>
         <div class="experience-block">
             <h2 class="heading" id="experience">Experience</h2>
             <script id="experience-block" type="text/x-handlebars-template">
-               {{#listItem 0 1 users}}
+               <!-- {{#listItem 0 1 usersInfo}} -->
                 <p>My name is + {{name}}</p>
                 <div id="experience-temp-block">
                     <div class="experience-block__job">
@@ -171,7 +171,7 @@
                         {{/each}}
                     </div>
                 </div>
-                {{/listItem}}
+                <!-- {{/listItem}} -->
             </script>
         </div>
 
@@ -192,7 +192,7 @@
                 <button class="button" id="add-skill-btn">Add your skill</button>
             </div>
         </div>
-        <div class="skills-result">
+        <div class="skills-result" id="skills-result">
 
         </div>
 

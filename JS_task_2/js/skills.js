@@ -39,7 +39,7 @@ function addNewSkillBar() {
         var skillBar = document.createElement("div");
         skillBar.classList.add("skills-result__bar");
         skillBar.style.width = skillRangeInput.value + "%";
-        var skillName = document.createElement("p");
+        var skillName = document.createElement("span");
         skillName.classList.add("skills-result__skill-name");
         skillName.innerHTML = skillNameInput.value;
         skillBar.appendChild(skillName);

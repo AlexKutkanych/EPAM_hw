@@ -1,11 +1,11 @@
 //to top btn
 
 var burgerMenuIcon = document.querySelector("#burger-icon");
-var test = document.querySelector(".top-menu");
+var topMenu = document.querySelector(".top-menu");
 
 burgerMenuIcon.addEventListener("click", function(){
-    this.classList.toggle("open");
-    test.classList.toggle("top-menu_open");
+    burgerMenuIcon.classList.toggle("open");
+    topMenu.classList.toggle("top-menu_open");
 })
 
 
