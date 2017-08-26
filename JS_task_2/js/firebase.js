@@ -40,17 +40,16 @@ var developersPicture = document.querySelectorAll(".developer-picture");
 //handlebars on JS
 
 var hadlebarsExperienceBl = document.querySelector("#experience-block").innerHTML;
-var compiledTestExperienceBl = Handlebars.compile(hadlebarsExperienceBl);
+var compiledExperienceBl = Handlebars.compile(hadlebarsExperienceBl);
 var experienceBl = document.querySelector(".experience-block");
-
 
 var perObj = document.querySelector("#object");
 var dBRefObject = firebase.database().ref().child("users");
 
 dBRefObject.on("value", function(snap) {
     var usersInfo = snap.val();
-    // experienceBl.innerHTML = compiledTestExperienceBl(usersInfo);
-    // console.log(usersInfo);
+    experienceBl.innerHTML = compiledExperienceBl(usersInfo[0]);
+    console.log(usersInfo[0]);
 
     //connecting developers pictures to info in dbs
 
@@ -59,6 +58,15 @@ dBRefObject.on("value", function(snap) {
         developersPicture[i].setAttribute("data-name", usersInfo[i].name);
     }
 });
+
+function test(from, to, context, options){
+    var item = "";
+    for (var i = from, j = to; i < j; i++) {
+        item = item + options.fn(context[i]);
+    }
+    return item;
+}
+Handlebars.registerHelper('listItem', test);
 
 function showDevelopersProfile(e){
 
@@ -72,15 +80,6 @@ function showDevelopersProfile(e){
     e.stopPropagation();
 };
 
-// function test(from, to, context, options){
-//     var item = "";
-//     for (var i = from, j = to; i < j; i++) {
-//         item = item + options.fn(context[i]);
-//     }
-//     return item;
-// }
-// Handlebars.registerHelper('listItem', test);
-
 developersGrid.addEventListener("click", showDevelopersProfile, false);
 
 
@@ -92,18 +91,18 @@ var dBRefSkills = dBRefObject;
 dBRefSkills.on("child_added", function(snap) {
     
     var usersSkills = snap.val().skills[0];
-    console.log(usersSkills);
-
-    for (var key in usersSkills){
+    // console.log(usersSkills);
 
     var skillScore = document.createElement("span");
-    skillScore.classList.add("skills-result__skill-name");
-    skillScore.innerHTML = key;
     var skillBar = document.createElement("div");
-    skillBar.classList.add("skills-result__bar");
-    skillBar.style.width = usersSkills[key] + "%";
-    skillBar.appendChild(skillScore);
-    skillsResultBlock.appendChild(skillBar);
+    
+    for (var key in usersSkills){
+        skillScore.classList.add("skills-result__skill-name");
+        skillScore.innerHTML = key;
+        skillBar.classList.add("skills-result__bar");
+        skillBar.style.width = usersSkills[key] + "%";
+        skillBar.appendChild(skillScore);
+        skillsResultBlock.appendChild(skillBar);
     }
 
 });
