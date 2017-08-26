@@ -49,6 +49,10 @@ var hadlebarsEducationBl = document.querySelector("#education-block").innerHTML;
 var compiledEducationBl = Handlebars.compile(hadlebarsEducationBl);
 var educationBl = document.querySelector("#education-temp");
 
+var hadlebarsSkillsBl = document.querySelector("#skills-block").innerHTML;
+var compiledSkillsBl = Handlebars.compile(hadlebarsSkillsBl);
+var skillsBl = document.querySelector("#skills-result");
+
 
 var perObj = document.querySelector("#object");
 var dBRefObject = firebase.database().ref().child("users");
@@ -56,13 +60,12 @@ var dBRefObject = firebase.database().ref().child("users");
 //connecting developers pictures to info in dbs
 
 dBRefObject.on("value", function(snap) {
-            var usersInfo = snap.val();
+    var usersInfo = snap.val();
 
-
-            for(var i = 0; i < developersName.length; i++){
-                developersName[i].innerHTML = usersInfo[i].name;
-                developersPicture[i].setAttribute("data-name", usersInfo[i].name);
-            }
+    for(var i = 0; i < developersName.length; i++){
+        developersName[i].innerHTML = usersInfo[i].name;
+        developersPicture[i].setAttribute("data-name", usersInfo[i].name);
+    }
 });
 
 
@@ -91,29 +94,30 @@ function showDevelopersProfile(e){
 
                     //education block
 
-                    var usersEducation = snap.val()[j];
-                    educationBl.innerHTML = compiledEducationBl(usersEducation);
-                    console.log(usersEducation);
+                    educationBl.innerHTML = compiledEducationBl(loadedUser);
 
                     //skills block
 
-                    var usersSkills = snap.val()[j].skills[0];
-
+                    var usersSkills = loadedUser.skills[0];
+                    skillsBl.innerHTML = compiledSkillsBl(usersSkills);
                     console.log(usersSkills);
+                    
 
                     var skillScore = document.createElement("span");
                     var skillBar = document.createElement("div");
+
         
 
-                    for (var key in usersSkills){
+                    function testcr(par1, par2){
                         skillScore.classList.add("skills-result__skill-name");
-                        skillScore.innerHTML = key;
+                        skillScore.innerHTML = par1;
                         skillBar.classList.add("skills-result__bar");
-                        skillBar.style.width = usersSkills[key] + "%";
+                        skillBar.style.width = par2 + "%";
                         skillBar.appendChild(skillScore);
-                        console.log(skillScore);
+                      
                         skillsResultBlock.appendChild(skillBar);
                     }
+
                 }
 
             }

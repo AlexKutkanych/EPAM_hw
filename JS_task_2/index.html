@@ -169,7 +169,13 @@
             </div>
         </div>
         <div class="skills-result" id="skills-result">
-
+            <script id="skills-block" type="text/x-handlebars-template">
+                {{#each skills}}
+                <div class="skills-result__skill-name">
+                    <span class="skills-result__bar">{{key}}</span>
+                </div>
+                {{/each}}
+            </script>
         </div>
 
     <!-- </div> -->
