@@ -49,11 +49,6 @@ var hadlebarsEducationBl = document.querySelector("#education-block").innerHTML;
 var compiledEducationBl = Handlebars.compile(hadlebarsEducationBl);
 var educationBl = document.querySelector("#education-temp");
 
-var hadlebarsSkillsBl = document.querySelector("#skills-block").innerHTML;
-var compiledSkillsBl = Handlebars.compile(hadlebarsSkillsBl);
-var skillsBl = document.querySelector("#skills-result");
-
-
 var perObj = document.querySelector("#object");
 var dBRefObject = firebase.database().ref().child("users");
 
@@ -99,23 +94,17 @@ function showDevelopersProfile(e){
                     //skills block
 
                     var usersSkills = loadedUser.skills[0];
-                    skillsBl.innerHTML = compiledSkillsBl(usersSkills);
-                    console.log(usersSkills);
-                    
+                    var skillsResult = document.querySelector("#skills-result");
 
-                    var skillScore = document.createElement("span");
-                    var skillBar = document.createElement("div");
+                    for (var key in usersSkills){
 
-        
 
-                    function testcr(par1, par2){
-                        skillScore.classList.add("skills-result__skill-name");
-                        skillScore.innerHTML = par1;
-                        skillBar.classList.add("skills-result__bar");
-                        skillBar.style.width = par2 + "%";
-                        skillBar.appendChild(skillScore);
-                      
-                        skillsResultBlock.appendChild(skillBar);
+                        skillsResult.innerHTML += "<div class='skills-result__bar' style='width:" + usersSkills[key] + "%'>" +
+                            "<span class='skills-result__skill-name'>" + key + "<span>" + "</div>";
+
+                        // skillBar.style.width = key + "%";
+                        // skillBar.appendChild(skillScore);
+                        // skillsResultBlock.appendChild(skillBar);
                     }
 
                 }
@@ -125,25 +114,11 @@ function showDevelopersProfile(e){
 
     }
     e.stopPropagation();
+
 };
 
 developersGrid.addEventListener("click", showDevelopersProfile, false);
 
-
-    
-
-
-
-
-
-// function test(from, to, context, options){
-//     var item = "";
-//     for (var i = from, j = to; i < j; i++) {
-//         item = item + options.fn(context[i]);
-//     }
-//     return item;
-// }
-// Handlebars.registerHelper('listItem', test);
 
 
 

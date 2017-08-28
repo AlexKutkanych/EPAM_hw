@@ -21,7 +21,6 @@ function checkSkillNameLen(){
 function checkSkillRangeLen(){
     if(skillRangeInput.value > 100 || isNaN(+skillRangeInput.value)){
         skillRangeErrorMsg.style.display = "block";
-        // console.log("nan");
     } else {
         skillRangeErrorMsg.style.display = "none";
     }
@@ -34,7 +33,7 @@ function checkSkillRangeLen(){
 function addNewSkillBar() {
     checkSkillNameLen();
     checkSkillRangeLen();
-    if (skillNameInput.value.length <= 100 && skillRangeInput.value.length <= 100 && skillNameInput.value.length !== 0
+    if (skillNameInput.value.length <= 100 && Number(skillRangeInput.value) <= 100 && skillNameInput.value.length !== 0
         && skillRangeInput.value.length !== 0) {
         var skillBar = document.createElement("div");
         skillBar.classList.add("skills-result__bar");
@@ -45,10 +44,8 @@ function addNewSkillBar() {
         skillBar.appendChild(skillName);
         skillsResult.appendChild(skillBar);
     } else if (skillNameInput.value.length === 0  || skillRangeInput.value.length === 0) {
-        // alert("Fill all fields");
-
-    } else {
-        return false;
+        alert("Fill all fields");
+        
     }
 
 

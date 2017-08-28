@@ -5,7 +5,7 @@
 
 .wrapper {
   width: 1200px;
-  height: 1400px;
+  height: 1700px;
   margin: 0 auto;
   background-color: #d4f2f9; }
 
@@ -329,8 +329,8 @@ a {
   box-sizing: border-box; }
   .skills-result__bar {
     height: 30px;
-    background-color: #f2a20e;
-    margin: 15px 0; }
+    margin: 15px 15px;
+    background-color: #f2a20e; }
   .skills-result__skill-name {
     color: #fff;
     font-size: 20px;
