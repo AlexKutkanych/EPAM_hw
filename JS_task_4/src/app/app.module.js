@@ -16,4 +16,4 @@ export const appModule = new AppModule({
     bootstrap: appComponent,
     routes: appRoutes
 
-})
+});
