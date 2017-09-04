@@ -1,0 +1,12 @@
+.hot-themes {
+  background: #d7d8d9; }
+  .hot-themes__title {
+    float: left;
+    padding: 6px 16px;
+    background: #333;
+    font-size: 1.28rem;
+    color: #fff; }
+  .hot-themes__item {
+    padding: 6px 16px; }
+  .hot-themes__link {
+    color: #333; }

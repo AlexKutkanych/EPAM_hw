@@ -1,0 +1,22 @@
+.l-wrapper {
+  width: 940px;
+  margin: auto; }
+
+.content {
+  margin: 50px 0; }
+
+.main {
+  float: left;
+  width: 620px; }
+
+.main-left {
+  float: left;
+  width: 380px; }
+
+.main-right {
+  width: 220px;
+  float: right; }
+
+.sidebar {
+  float: right;
+  width: 300px; }
