@@ -1,0 +1,11 @@
+.main-news {
+  height: 200px; }
+  .main-news__title {
+    height: 9px;
+    margin-bottom: 20px; }
+  .main-news__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+  .main-news__item {
+    width: 142px; }

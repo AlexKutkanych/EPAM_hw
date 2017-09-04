@@ -1,0 +1,20 @@
+.feedback {
+  margin-top: 20px; }
+  .feedback__item {
+    clear: both; }
+    .feedback__item:first-child {
+      list-style: none; }
+      .feedback__item:first-child .feedback__link {
+        display: block;
+        float: right;
+        vertical-align: top;
+        width: 70%; }
+      .feedback__item:first-child:before {
+        content: '';
+        background-image: url("../../i/ibrahimovic.png");
+        width: 100px;
+        height: 50px;
+        display: block;
+        float: left; }
+      .feedback__item:first-child ::after {
+        content: 'SDFSDF'; }
