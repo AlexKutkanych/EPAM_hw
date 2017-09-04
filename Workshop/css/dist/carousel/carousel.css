@@ -1,0 +1,39 @@
+.carousel {
+  border-bottom: 5px solid #c70000; }
+  .carousel__image-wrapper {
+    float: left; }
+  .carousel__article {
+    position: relative;
+    padding: 15px 20px 50px; }
+  .carousel__title {
+    color: #c70000; }
+  .carousel__text {
+    margin-top: 20px; }
+  .carousel__control {
+    position: absolute; }
+  .carousel__button {
+    position: relative;
+    width: 12px;
+    height: 24px;
+    border: 0;
+    padding: 0;
+    background: transparent; }
+    .carousel__button::before, .carousel__button::after {
+      content: '';
+      position: absolute;
+      border-bottom: 3px solid #c70000;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      height: 0;
+      width: 10px; }
+    .carousel__button::-moz-focus-inner {
+      margin: 0;
+      padding: 0; }
+    .carousel__button_prev::before {
+      transform: rotate(-45deg); }
+    .carousel__button_prev::after {
+      transform: rotate(45deg); }
+    .carousel__button_next::before {
+      transform: rotate(45deg); }
+    .carousel__button_next::after {
+      transform: rotate(-45deg); }
