@@ -5,7 +5,7 @@ var concatCss = require('gulp-concat-css'),
 
  
 gulp.task('concat-css', function () {
-  return gulp.src('css/dist/*/*.css')
+  return gulp.src('css/dist/**/*.css')
     .pipe(concatCss("bundle.css"))
     .pipe(gulp.dest('css/'));
 });
@@ -16,11 +16,8 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./css/dist'));
 });
 
-gulp.task('watch', ['concat-css'], function() {
-  // watch for CSS changes
-  gulp.watch('css/dist/blocks/**/*.css', function() {
-    // run styles upon changes
-    gulp.run('concat-css');
-  });
+gulp.task('watch', function() {
+  gulp.watch('css/src/*/*.scss', ['sass']);
+  gulp.watch('css/dist/*/*.css', ['concat-css']);
 });
 
