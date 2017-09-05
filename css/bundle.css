@@ -27,7 +27,7 @@
   height: 250px;
   position: relative;
   margin-top: 21px;
-  border-bottom: 5px solid #c70000;
+  border-bottom: 5px solid #c80000;
 }
 
 .carousel__image-wrapper {
@@ -44,7 +44,7 @@
 .carousel__title {
   font-family: "PT Serif", serif;
   font-size: 30px;
-  color: #c70000;
+  color: #c80000;
   line-height: 37px;
 }
 
@@ -56,9 +56,26 @@
 }
 
 .carousel__control {
-  position: absolute;
-  right: 10px;
-  bottom: 20px;
+  height: 25px;
+  width: 95px;
+  position: relative;
+  float: right;
+  margin: 6px 22px 0 0;
+}
+
+.carousel-counter {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.carousel-counter:hover {
+  cursor: pointer;
 }
 
 .carousel__button {
@@ -70,15 +87,48 @@
   background: transparent;
 }
 
-.carousel__button::before,
-.carousel__button::after {
-  content: '';
+.carousel__button_prev {
   position: absolute;
-  border-bottom: 3px solid #c70000;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  height: 0;
-  width: 10px;
+  left: 0;
+  top: 0;
+}
+
+.carousel__button_prev::before {
+  content: '';
+  height: 12px;
+  width: 12px;
+  display: block;
+  border-top: 3px solid #c80000;
+  border-left: 3px solid #c80000;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.carousel__button_next {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.carousel__button_next::after {
+  content: '';
+  height: 12px;
+  width: 12px;
+  display: block;
+  border-top: 3px solid #c80000;
+  border-right: 3px solid #c80000;
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .carousel__button::-moz-focus-inner {
@@ -86,20 +136,8 @@
   padding: 0;
 }
 
-.carousel__button_prev::before {
-  transform: rotate(-45deg);
-}
-
-.carousel__button_prev::after {
-  transform: rotate(45deg);
-}
-
-.carousel__button_next::before {
-  transform: rotate(45deg);
-}
-
-.carousel__button_next::after {
-  transform: rotate(-45deg);
+.carousel__button-container {
+  position: relative;
 }
 html {
   overflow-y: scroll;
@@ -129,6 +167,11 @@ a:hover {
 
 .g-clearfix::after {
   clear: both;
+}
+
+.photo-icon,
+.video-icon {
+  vertical-align: middle;
 }
 
 .l-container {
@@ -204,6 +247,7 @@ a:hover {
 }
 
 .news__item {
+  position: relative;
   font-size: 14px;
   line-height: 20px;
   color: #333;
@@ -308,6 +352,11 @@ a:hover {
   font-family: "PT Sans", sans-serif;
   color: #333;
 }
+
+.website-name {
+  font-size: 10px;
+  color: #bfbfc0;
+}
 .media__item {
   position: relative;
   margin-bottom: 20px;
@@ -318,7 +367,7 @@ a:hover {
 }
 
 .media__title {
-  width: 212px;
+  width: 100%;
   max-height: 40px;
   overflow: hidden;
   font-family: "PT Sans", sans-serif;
