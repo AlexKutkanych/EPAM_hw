@@ -224,9 +224,12 @@ a:hover {
   color: #fff;
 }
 
+.hot-themes__list {
+  list-style: none;
+}
+
 .hot-themes__item {
-  display: inline-block;
-  padding: 6px 12px;
+  float: left;
   font-size: 18px;
   line-height: 19px;
   font-family: "PT Sans", sans-serif;
@@ -237,6 +240,8 @@ a:hover {
 }
 
 .hot-themes__link {
+  display: block;
+  padding: 6px 12px;
   color: #333;
 }
 .news {
@@ -284,7 +289,6 @@ a:hover {
   max-height: 170px;
   overflow-y: hidden;
   padding-left: 15px;
-  text-indent: -5px;
 }
 
 .newsfeed__link:hover {
@@ -299,13 +303,12 @@ a:hover {
 .newsfeed__item:first-child {
   list-style: none;
   padding-left: 0;
+  margin-left: -15px;
 }
 
-.newsfeed__item:first-child .feedback__link {
-  display: block;
-  float: right;
+.newsfeed__item:first-child .newsfeed__link {
   vertical-align: top;
-  width: 70%;
+  font-weight: bold;
 }
 
 .newsfeed__item:first-child:before {
@@ -313,14 +316,16 @@ a:hover {
   background-image: url("../i/ibrahimovic.png");
   width: 100px;
   height: 50px;
-  display: block;
-  left: 0;
-  top: 50px;
   float: left;
+  margin-right: 5px;
 }
 
 .newsfeed__item:first-child ::after {
-  content: 'SDFSDF';
+  content: '';
+}
+
+.newsfeed__link {
+  text-align: left;
 }
 .main-news {
   height: 200px;
