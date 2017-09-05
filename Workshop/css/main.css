@@ -1,8 +1,6 @@
-@import 'inc/const';
-@import 'inc/mixins';
+@import 'dist/const';
 
-@import 'source/common';
+@import 'dist/common';
 
-@import 'source/layout';
+@import 'dist/layout';
 
-@import 'source/blocks/hot-themes/hot-themes';
