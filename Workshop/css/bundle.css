@@ -9,6 +9,8 @@
 
 .block-title {
   border-bottom: 2px solid black;
+  height: 20px;
+  margin-bottom: 13px;
 }
 
 .block-title__heading {
@@ -17,8 +19,93 @@
   background-color: #fff;
   font-size: 24px;
   line-height: 30px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: #333;
+}
+.hot-themes {
+  width: 620px;
+  height: 30px;
+  background: #d7d8d9;
+}
+
+.hot-themes__title {
+  float: left;
+  padding: 6px 16px;
+  background: #333;
+  font-size: 16px;
+  color: #fff;
+}
+
+.hot-themes__item {
+  display: inline-block;
+  padding: 6px 16px;
+}
+
+.hot-themes__link {
+  color: #333;
+}
+html {
+  overflow-y: scroll;
+  min-height: 100%;
+}
+
+body {
+  font-size: 87.5%;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #3d76cc;
+}
+
+.g-clearfix::before,
+.g-clearfix::after {
+  content: "";
+  display: table;
+}
+
+.g-clearfix::after {
+  clear: both;
+}
+
+.l-container {
+  width: 940px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+.l-wrapper {
+  width: 940px;
+  margin: auto;
+}
+
+.l-main {
+  width: 620px;
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+.l-left-column {
+  width: 380px;
+  height: 320px;
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+.l-right-column {
+  width: 220px;
+  float: right;
+}
+
+.l-sidebar {
+  width: 300px;
+  float: right;
 }
 .carousel {
   width: 620px;
@@ -38,7 +125,7 @@
 }
 
 .carousel__title {
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 30px;
   color: #c70000;
 }
@@ -93,26 +180,46 @@
 .carousel__button_next::after {
   transform: rotate(-45deg);
 }
-.feedback {
-  margin-top: 20px;
+.news {
+  width: 100%;
+  max-height: 320px;
 }
 
-.feedback__item {
+.news-title_special {
+  border-bottom-color: #c80000;
+}
+
+.news-heading_special {
+  color: #3d76cc;
+}
+
+.newsfeed {
+  width: 100%;
+  max-height: 210px;
+}
+
+.newsfeed__list {
+  max-height: 170px;
+  overflow: hidden;
+  padding-left: 22px;
+}
+
+.newsfeed__item {
   clear: both;
 }
 
-.feedback__item:first-child {
+.newsfeed__item:first-child {
   list-style: none;
 }
 
-.feedback__item:first-child .feedback__link {
+.newsfeed__item:first-child .feedback__link {
   display: block;
   float: right;
   vertical-align: top;
   width: 70%;
 }
 
-.feedback__item:first-child:before {
+.newsfeed__item:first-child:before {
   content: '';
   background-image: url("../i/ibrahimovic.png");
   width: 100px;
@@ -121,104 +228,14 @@
   float: left;
 }
 
-.feedback__item:first-child ::after {
+.newsfeed__item:first-child ::after {
   content: 'SDFSDF';
 }
-html {
-  overflow-y: scroll;
-  min-height: 100%;
-}
-
-body {
-  font-size: 87.5%;
-  color: #333;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-.g-clearfix::before,
-.g-clearfix::after {
-  content: "";
-  display: table;
-}
-
-.g-clearfix::after {
-  clear: both;
-}
-
-.l-container {
-  width: 940px;
-  margin: 0 20px;
-}
-
-.l-wrapper {
-  width: 940px;
-  margin: auto;
-}
-
-.l-main {
-  width: 620px;
-  float: left;
-  margin: 0 20px 0 0;
-}
-
-.l-left-column {
-  width: 380px;
-  height: 320px;
-  float: left;
-  margin: 0 20px 10px 0;
-}
-
-.l-right-column {
-  width: 220px;
-  float: right;
-}
-
-.l-sidebar {
-  width: 300px;
-  float: right;
-}
-
-.hot-themes {
-  width: 620px;
-  height: 30px;
-  background: #d7d8d9;
-}
-
-.hot-themes__title {
-  float: left;
-  padding: 6px 16px;
-  background: #333;
-  font-size: 16px;
-  color: #fff;
-}
-
-.hot-themes__list {
-  list-style: none;
-}
-
-.hot-themes__item {
-  display: inline-block;
-  padding: 6px 16px;
-}
-
-.hot-themes__link {
-  color: #333;
-}
-
 .main-news {
   height: 200px;
 }
 
 .main-news__title {
-  height: 20px;
   margin-bottom: 10px;
 }
 
@@ -238,6 +255,43 @@ a:hover {
   overflow: hidden;
   font-size: 14px;
   line-height: 18px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: #333;
+}
+
+.news__list {
+  padding-left: 22px;
+}
+
+.news__link:hover {
+  text-decoration: underline;
+}
+
+.newsfeed__link:hover {
+  text-decoration: underline;
+}
+
+.media__item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.media__list {
+  list-style: none;
+}
+
+.media__title {
+  width: 212px;
+  max-height: 40px;
+  overflow: hidden;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.media__icon {
+  position: absolute;
+  bottom: 52px;
+  left: 10px;
 }
