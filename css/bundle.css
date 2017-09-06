@@ -28,6 +28,7 @@
   position: relative;
   margin-top: 21px;
   border-bottom: 5px solid #c80000;
+  /*carousel spinner*/
 }
 
 .carousel__image-wrapper {
@@ -68,6 +69,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 21px;
+  top: -2px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -138,6 +142,50 @@
 
 .carousel__button-container {
   position: relative;
+}
+
+.carousel__spinner {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  right: 13px;
+  top: 2px;
+}
+
+.spinner-sector {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%;
+}
+
+.spinner-sector:first-child {
+  transform: rotate(0deg) skewY(-40deg);
+}
+
+.spinner-sector__contents {
+  position: absolute;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  background: white;
+  text-align: center;
+  transition: background-color .5s;
+}
+
+.spinner-sector:first-child .spinner-sector__contents {
+  transform: skewY(40deg) rotate(25deg);
+}
+
+.spinner-sector__contents:hover {
+  background: violet;
 }
 html {
   overflow-y: scroll;
@@ -254,12 +302,16 @@ a:hover {
 .news__item {
   position: relative;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 25px;
   color: #333;
 }
 
 .news__list {
   padding-left: 14px;
+}
+
+.news__link {
+  margin-left: -4px;
 }
 
 .news__link:hover {
@@ -298,12 +350,16 @@ a:hover {
 .newsfeed__item {
   clear: both;
   padding-left: 10px;
+  line-height: 19px;
+  margin-bottom: 4px;
 }
 
 .newsfeed__item:first-child {
+  height: 54px;
   list-style: none;
   padding-left: 0;
   margin-left: -15px;
+  line-height: 25px;
 }
 
 .newsfeed__item:first-child .newsfeed__link {
@@ -315,7 +371,7 @@ a:hover {
   content: '';
   background-image: url("../i/ibrahimovic.png");
   width: 100px;
-  height: 50px;
+  height: 54px;
   float: left;
   margin-right: 5px;
 }
@@ -387,8 +443,8 @@ a:hover {
 
 .media__icon {
   position: absolute;
-  bottom: 52px;
-  left: 10px;
+  bottom: 47px;
+  left: 8px;
 }
 .video {
   margin-bottom: 21px;
@@ -423,19 +479,11 @@ a:hover {
 }
 
 .video__item {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   margin-bottom: 10px;
 }
 
-.video__item:hover {
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
-  transform: scale(1.03);
-  border: 1px solid grey;
+.video__item:hover .video__title {
+  color: deepskyblue;
 }
 
 .video__list {
