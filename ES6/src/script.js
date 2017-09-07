@@ -1,33 +1,18 @@
 
-var buttons = document.querySelectorAll("button");
-
-for (let i = 0; i < buttons.length; i++){
-    var button = buttons[i];
-    button.innerText = i;
-    button.onclick = function (e) {
-        console.log(i);
+class Task {
+    constructor(title = 'st title'){
+        this.title = title;
+        this.done = false;
     }
 
+    complete(){
+        this.done = true;
+        console.log(`task"${this.title}"done`);
+    }
 }
 
-//const
+let task = new Task();
 
-const PI = 3.14159;
+console.log(task);
 
-console.log(PI);
-
-//spread operators
-
-let cars = ["BMW", "Mercedes", "Audi"];
-let trucks = ["MAN", "Scania", "Iveco"];
-
-let allTransport = [...cars, "Boeing", "AN", ...trucks];
-console.log(allTransport);
-
-let numbers = [2, 5, 6];
-
-function multiply(a, b, c){
-    console.log(a * b * c);
-}
-
-multiply(...numbers);
+task.complete();
