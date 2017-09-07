@@ -6,10 +6,15 @@ body {
   font-size: 87.5%;
   color: #333; }
 
+li {
+  list-style: none; }
+
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
   a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #3d76cc; }
 
 .g-clearfix::before, .g-clearfix::after {
   content: "";
@@ -17,3 +22,6 @@ a {
 
 .g-clearfix::after {
   clear: both; }
+
+.photo-icon, .video-icon {
+  vertical-align: middle; }

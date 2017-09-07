@@ -260,6 +260,37 @@
     text-align: center;
   }
 }
+.feedback {
+  margin-top: 20px;
+}
+
+.feedback__item {
+  clear: both;
+}
+
+.feedback__item:first-child {
+  list-style: none;
+}
+
+.feedback__item:first-child .feedback__link {
+  display: block;
+  float: right;
+  vertical-align: top;
+  width: 70%;
+}
+
+.feedback__item:first-child:before {
+  content: '';
+  background-image: url("../i/ibrahimovic.png");
+  width: 100px;
+  height: 50px;
+  display: block;
+  float: left;
+}
+
+.feedback__item:first-child ::after {
+  content: 'SDFSDF';
+}
 html {
   overflow-y: scroll;
   min-height: 100%;
@@ -268,6 +299,10 @@ html {
 body {
   font-size: 87.5%;
   color: #333;
+}
+
+li {
+  list-style: none;
 }
 
 a {
@@ -544,14 +579,27 @@ a:hover {
   color: #333;
 }
 
+.news__item::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: #000;
+}
+
 .news__list {
   max-height: 90%;
-  padding-left: 14px;
   overflow-y: scroll;
 }
 
 .news__link {
-  margin-left: -4px;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .news__link:hover {
@@ -559,7 +607,7 @@ a:hover {
 }
 
 .news-title_special {
-  margin-bottom: 9px;
+  margin-bottom: 6px;
   border-bottom-color: #c80000;
 }
 
@@ -574,13 +622,12 @@ a:hover {
 }
 
 .newsfeed__title {
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 }
 
 .newsfeed__list {
   max-height: 90%;
   overflow-y: scroll;
-  padding-left: 15px;
 }
 
 .newsfeed__link:hover {
@@ -589,16 +636,32 @@ a:hover {
 
 .newsfeed__item {
   clear: both;
-  padding-left: 10px;
   line-height: 19px;
   margin-bottom: 4px;
+  position: relative;
+}
+
+.newsfeed__item:not(:first-child) .newsfeed__link {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.newsfeed__item:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: #000;
 }
 
 .newsfeed__item:first-child {
   height: 54px;
   list-style: none;
-  padding-left: 0;
-  margin-left: -15px;
   line-height: 25px;
 }
 
@@ -614,6 +677,9 @@ a:hover {
   height: 54px;
   float: left;
   margin-right: 5px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 
 .newsfeed__item:first-child ::after {

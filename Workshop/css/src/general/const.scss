@@ -5,9 +5,9 @@ $image-path: '../i/';
 // Colors
 
 $white: #fff;
-$black: #000;
+$black: #333;
 
-$red: #c70000;
+$red: #c80000;
 
 $gray-light: #f7f9fa;
 $gray-medium: #d7d8d9;
@@ -20,9 +20,15 @@ $default-link: #3d76cc;
 // Dimensions
 
 $wrapper-width: 940px;
+$main-block-width: 620px;
 
 // Blocks
 
 // Hot Themes
 
 $hot-themes-title-background: #333;
+
+// Fonts
+
+$main-font: 'PT Sans', sans-serif;
+$secondary-font: 'PT Serif', serif;

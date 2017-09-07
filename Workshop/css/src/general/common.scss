@@ -10,11 +10,17 @@ body {
   color: $default-text;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
+  color: #000;
 
   &:hover {
     text-decoration: none;
+    color: $default-link;
   }
 }
 
@@ -31,3 +37,10 @@ a {
   }
 }
 
+
+
+//icons styles
+
+.photo-icon, .video-icon {
+  vertical-align: middle;
+}

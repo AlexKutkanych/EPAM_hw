@@ -1,0 +1,74 @@
+@import '../general/const';
+
+.media {
+
+  &__item {
+    width: 221px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__title {
+    width: 100%;
+    max-height: 40px;
+    overflow: hidden;
+    font-family: $main-font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  &__image {
+    margin-bottom: -4px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 107px;
+    left: 8px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+  .media {
+
+    &__list {
+      width: 100%;
+    }
+
+    &__item {
+      width: 100%;
+    }
+
+    &__figure {
+      display: flex;
+    }
+
+    &__icon {
+      bottom: 8px;
+    }
+
+    &__title {
+      margin: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+
+  .media {
+
+    &__item {
+      text-align: center;
+    }
+  }
+}
