@@ -42,3 +42,7 @@
   color: red;
 }
 
+.Players-block {
+  display: flex;
+}
+
