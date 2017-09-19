@@ -1,0 +1,95 @@
+@import '../general/const';
+
+.header-wrapper {
+  padding-top: 20px;
+}
+
+.logo-block {
+  width: 300px;
+  float: left;
+  
+  &__circle {
+    display: inline-block;
+    width: 58px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $orange;
+    font-family: 'Sacramento', cursive;
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    line-height: 68px;
+  }
+
+  &__title {
+    display: inline-block;
+    width: 152px;
+    position: relative;
+    
+    &-main {
+      font-size: 33px;
+      color: #414042;
+
+      &_special {
+        color: $orange;
+      }
+
+      &_additional {
+        position: absolute;
+        bottom: -5px;
+        right: 8px;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-family: 'Raleway', sans-serif;
+        color: #787878;
+      }
+    }
+  }
+}
+
+.contacts-block {
+  width: 300px;
+  float: right;
+  color: $blue;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.search-block {
+
+  float: right;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+
+  &__input {
+    width: 240px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #d4d4d4;
+    color: #cecece;
+    text-indent: 10px;
+
+    &::-webkit-input-placeholder {
+      color: #d4d4d4;
+    }
+
+  }
+}
+
+.header-navigation {
+  clear: both;
+  height: 50px;
+  &__link {
+    display: inline-block;
+    height: 100%;
+    line-height: 50px;
+    font-family: 'Raleway', sans-serif;
+    color: $grey;
+
+    
+    &:hover {
+      border-bottom: 4px solid $orange;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.feedback__btn-all {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  height: 40px;
+  background-color: #00a7d9;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: none; }

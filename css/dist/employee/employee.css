@@ -1,0 +1,28 @@
+.employee-img {
+  float: left; }
+
+.employee-info {
+  float: left; }
+
+/*employee honors*/
+.employee-honors {
+  width: 50%;
+  clear: both;
+  float: left; }
+
+/*employee-skills*/
+.employee-skills {
+  width: 50%;
+  float: right; }
+
+.skill-bar {
+  width: 70%;
+  height: 40px;
+  background-color: #fe5000;
+  color: #fff;
+  font-weight: bold; }
+  .skill-bar_color2 {
+    width: 100%;
+    background-color: #00a7d9; }
+  .skill-bar_color3 {
+    width: 65%; }
