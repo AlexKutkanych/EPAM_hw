@@ -1,17 +1,19 @@
-@import '../general/const';
+@import '../!general/const';
 
 .header-wrapper {
   padding-top: 20px;
+  padding-bottom: 3px;
 }
 
 .logo-block {
   width: 300px;
   float: left;
+  margin-bottom: 29px;
   
   &__circle {
     display: inline-block;
     width: 58px;
-    height: 60px;
+    height: 58px;
     border-radius: 50%;
     background-color: $orange;
     font-family: 'Sacramento', cursive;
@@ -28,48 +30,96 @@
     font-weight: bold;
     
     &-main {
-      font-size: 33px;
+      font-size: 32px;
       color: #414042;
+      font-weight: 100;
+      letter-spacing: 1.2px;
 
       &_special {
+        margin-right: 2px;
         color: $orange;
+        letter-spacing: -.8px;
+        font-weight: 900;
       }
 
       &_additional {
         position: absolute;
-        bottom: -5px;
-        right: 8px;
+        bottom: -4px;
+        right: -5px;
         text-transform: uppercase;
         font-size: 10px;
         font-family: 'Raleway', sans-serif;
         color: #787878;
+
       }
     }
   }
 }
 
 .contacts-block {
-  width: 300px;
+  width: 260px;
   float: right;
+  margin-top: 22px;
   color: $blue;
   font-weight: bold;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+
+  &__phone {
+
+    &:before {
+      content: '';
+      display: inline-block;
+      background-image: url(../../img/sprite.png);
+      background-position: -126px -107px;
+      width: 13px;
+      height: 14px;
+    }
+  }
+
+  &__email {
+
+    &:before {
+      content: '';
+      display: inline-block;
+      background-image: url(../../img/sprite.png);
+      background-position: -126px -47px;
+      width: 17px;
+      height: 13px;
+    }
+  }
 }
 
 .search-block {
-
   float: right;
+  margin-top: 11px;
   font-size: 16px;
   font-family: 'Lato', sans-serif;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: inline-block;
+    background-image: url(../../img/sprite.png);
+    background-position: -103px -90px;
+    width: 18px;
+    height: 18px;
+  }
 
   &__input {
-    width: 240px;
-    height: 40px;
+    width: 235px;
+    height: 36px;
     border-radius: 20px;
     border: 1px solid #d4d4d4;
     color: #cecece;
     text-indent: 10px;
+
+
 
     &::-webkit-input-placeholder {
       color: #d4d4d4;
@@ -80,13 +130,17 @@
 
 .header-navigation {
   clear: both;
-  height: 50px;
+  height: 47px;
   &__link {
     display: inline-block;
     height: 100%;
+    margin-right: 35px;
     line-height: 50px;
     font-family: 'Raleway', sans-serif;
     color: $grey;
+    font-size: 16px;
+    letter-spacing: .1px;
+    font-weight: bold;
 
     
     &:hover {

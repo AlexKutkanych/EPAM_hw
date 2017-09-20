@@ -1,9 +1,9 @@
-@import '../general/const';
+@import '../!general/const';
 
 .breadcrumbs-wrapper {
   width: $wrapper-width;
-
-
+  padding: 0;
+  height: 100%;
 }
 
 .breadcrumbs__title {
@@ -12,8 +12,31 @@
   color: #fff;
 }
 
-.breadcrumbs__item {
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  color: #fff;
+
+
+.breadcrumbs {
+  float: right;
+
+  &__item {
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+
+    :first-child {
+
+      &:after {
+        content: '';
+        display: inline-block;
+        background-image: url(../../img/sprite.png);
+        background-position: -111px -63px;
+        width: 11px;
+        height: 7px;
+      }
+    }
+  }
+  
+  &__link {
+    color: #a9dbef;
+  }
 }

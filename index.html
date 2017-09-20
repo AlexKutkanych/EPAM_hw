@@ -49,14 +49,17 @@
     <div class="l-breadcrumbs">
         <div class="l-wrapper breadcrumbs-wrapper">
             <span class="breadcrumbs__title">Team</span>
-            <a href="#" class="breadcrumbs__item">Home</a>
-            <span href="#" class="breadcrumbs__item breadcrumbs__item_active">Team</span>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Home</a></li>
+                <li class="breadcrumbs__item breadcrumbs__item_active">Team</li>
+            </ul>
+
         </div>
     </div>
     <div class="l-employee">
         <div class="l-wrapper employee-wrapper">
             <section class="employee-block">
-                <img src="" alt="" class="employee-img">
+                <img src="img/src/employee-photo.jpg" alt="employee photo" class="employee-img">
                 <div class="employee-info">
                     <h4 class="employee-info__name">Janice Marshall</h4>
                     <article class="employee-info__contacts">
@@ -65,12 +68,23 @@
                         <p class="employee-contacts__skype">Skype: janicemarshall</p>
                     </article>
                     <p class="employee-info__description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at consequatur, cumque dolor eligendi id, incidunt, ipsam iste itaque laudantium maiores molestias porro quae quod repudiandae rerum sit. Ab, dolore.
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
                     </p>
                     <div class="employee-info__socials">
-                        <a href="#" class="socials__icon socials__twitter"></a>
-                        <a href="#" class="socials__icon socials__facebook"></a>
-                        <a href="#" class="socials__icon socials__linkedin"></a>
+                        <a href="#" class="socials__icon">
+                            <span class="socials__icon_twitter"></span>
+                        </a>
+                        <a href="#" class="socials__icon">
+                            <span class="socials__icon_facebook"></span>
+                        </a>
+                        <a href="#" class="socials__icon">
+                            <span class="socials__icon_linkedin"></span>
+                        </a>
                     </div>
                 </div>
                 <div class="employee-honors">
@@ -115,7 +129,7 @@
             <h2 class="feedback__heading heading">Testimonials</h2>
             <section class="feedback-block">
                 <article class="feedback-article">
-                    <img src="" class="feedback-article__avatar" alt="">
+                    <span class="feedback-article__avatar feedback-article__avatar_person1"></span>
                     <div class="feedback-decription">
                         <p class="feedback-decription__text">Ut wisi enim ad minim veniam, quis nostrud exerci tation
                             ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
@@ -124,7 +138,7 @@
                     </div>
                 </article>
                 <article class="feedback-article">
-                    <img src="" class="feedback-article__avatar" alt="">
+                    <span class="feedback-article__avatar feedback-article__avatar_person2"></span>
                     <div class="feedback-decription">
                         <p class="feedback-decription__text">Ut wisi enim ad minim veniam, quis nostrud exerci tation
                             ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
@@ -133,7 +147,7 @@
                     </div>
                 </article>
                 <article class="feedback-article">
-                    <img src="" class="feedback-article__avatar" alt="">
+                    <span class="feedback-article__avatar feedback-article__avatar_person3"></span>
                     <div class="feedback-decription">
                         <p class="feedback-decription__text">Ut wisi enim ad minim veniam, quis nostrud exerci tation
                             ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
@@ -142,7 +156,6 @@
                     </div>
                 </article>
             </section>
-            footer.
             <button class="feedback__btn-all">view all testimonials</button>
         </div>
     </div>

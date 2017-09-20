@@ -1,0 +1,28 @@
+html {
+  overflow-y: scroll;
+  min-height: 100%; }
+
+body {
+  font-size: 87.5%; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+  a:hover {
+    text-decoration: none; }
+
+.block {
+  width: 1170px; }
+
+.heading {
+  font-size: 36px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  color: #3f3e40; }
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../../fonts/MyriadPro-Regular.eot") format("eot"), url("../../fonts/MyriadPro-Regular.otf") format("otf"), url("../../fonts/MyriadPro-Regular.svg") format("svg"), url("../../fonts/MyriadPro-Regular.ttf") format("ttf"), url("../../fonts/MyriadPro-Regular.woff") format("woff"); }

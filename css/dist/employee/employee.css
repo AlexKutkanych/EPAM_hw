@@ -2,6 +2,7 @@
   float: left; }
 
 .employee-info {
+  width: 50%;
   float: left;
   font-family: 'Lato', sans-serif;
   font-size: 16px; }
@@ -10,19 +11,38 @@
     font-size: 18px;
     font-weight: bold;
     color: #00a7d9; }
+  .employee-info__description {
+    float: left;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 14px; }
 
 .socials__icon {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 1px solid #00a7d9; }
-  .socials__icon:after {
-    content: '';
-    background: center center url("../../img/like.png") no-repeat;
+  .socials__icon_twitter {
     display: block;
-    width: 30px;
-    height: 30px; }
+    background-image: url(../../img/sprite.png);
+    background-position: -126px -60px;
+    width: 17px;
+    height: 13px; }
+  .socials__icon_facebook {
+    display: block;
+    background-image: url(../../img/sprite.png);
+    background-position: -136px -87px;
+    width: 8px;
+    height: 18px; }
+  .socials__icon_linkedin {
+    display: block;
+    background-image: url(../../img/sprite.png);
+    background-position: -126px -32px;
+    width: 16px;
+    height: 15px; }
 
 /*employee honors*/
 .employee-honors {
@@ -65,4 +85,5 @@
     width: 100%;
     background-color: #00a7d9; }
   .skill-bar_color3 {
-    width: 65%; }
+    width: 65%;
+    background-color: #36ba2f; }

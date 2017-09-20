@@ -1,12 +1,26 @@
 .breadcrumbs-wrapper {
-  width: 1170px; }
+  width: 1170px;
+  padding: 0;
+  height: 100%; }
 
 .breadcrumbs__title {
   font-size: 20px;
   font-family: 'Raleway', sans-serif;
   color: #fff; }
 
-.breadcrumbs__item {
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  color: #fff; }
+.breadcrumbs {
+  float: right; }
+  .breadcrumbs__item {
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: #fff; }
+    .breadcrumbs__item :first-child:after {
+      content: '';
+      display: inline-block;
+      background-image: url(../../img/sprite.png);
+      background-position: -111px -63px;
+      width: 11px;
+      height: 7px; }
+  .breadcrumbs__link {
+    color: #a9dbef; }

@@ -1,4 +1,4 @@
-@import '../general/const';
+@import '../!general/const';
 
 .employee {
 
@@ -11,6 +11,7 @@
   }
 
   &-info {
+    width: 50%;
     float: left;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -24,23 +25,49 @@
       font-weight: bold;
       color: $blue;
     }
+
+    &__description {
+      float: left;
+      font-family: 'Myriad Pro', sans-serif;
+      font-size: 14px;
+    }
   }
 }
 
 .socials__icon {
-  display: inline-block;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 1px solid $blue;
-  &:after {
-    content: '';
-    background: center center url('../../img/like.png') no-repeat;
+
+  &_twitter {
     display: block;
-    width: 30px;
-    height: 30px;
+    background-image: url(../../img/sprite.png);
+    background-position: -126px -60px;
+    width: 17px;
+    height: 13px;
   }
+
+  &_facebook {
+    display: block;
+    background-image: url(../../img/sprite.png);
+    background-position: -136px -87px;
+    width: 8px;
+    height: 18px;
+  }
+
+  &_linkedin {
+    display: block;
+    background-image: url(../../img/sprite.png);
+    background-position: -126px -32px;
+    width: 16px;
+    height: 15px;
+  }
+
 
 }
 
@@ -104,6 +131,6 @@
 
   &_color3 {
     width: 65%;
-
+    background-color: #36ba2f;
   }
 }
