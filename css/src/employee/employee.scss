@@ -12,22 +12,80 @@
 
   &-info {
     float: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+
+    &__contacts {
+    }
+
+    &__name {
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: $blue;
+    }
   }
+}
+
+.socials__icon {
+  display: inline-block;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid $blue;
+  &:after {
+    content: '';
+    background: center center url('../../img/like.png') no-repeat;
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+
 }
 
 /*employee honors*/
 
 .employee-honors {
-  width: 50%;
+  width: 60%;
   clear: both;
   float: left;
+}
+
+.honors-article {
+
+  width: 50%;
+  float: left;
+  &__date {
+    color: #555557;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+  }
+
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: $blue;
+  }
+
+  &__more {
+    color: $blue;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  &__description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+  }
 }
 
 
 /*employee-skills*/
 
 .employee-skills {
-  width: 50%;
+  width: 40%;
   float: right;
 
 }

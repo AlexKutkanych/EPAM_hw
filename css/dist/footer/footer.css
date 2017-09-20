@@ -1,0 +1,17 @@
+.footer-menu-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.menu-block {
+  width: 30%; }
+  .menu-block__title {
+    border-bottom: 1px solid white; }
+
+.footer-menu {
+  column-count: 2; }
+  .footer-menu__link {
+    display: block; }
+
+.social-menu__link:before {
+  content: ''; }

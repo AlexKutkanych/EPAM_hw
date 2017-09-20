@@ -1,2 +1,12 @@
 .breadcrumbs-wrapper {
   width: 1170px; }
+
+.breadcrumbs__title {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #fff; }
+
+.breadcrumbs__item {
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  color: #fff; }

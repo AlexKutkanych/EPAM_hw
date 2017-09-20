@@ -1,7 +1,23 @@
 @import "../general/const";
 
 .feedback {
-  
+
+  &-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-article {
+    width: 30%;
+    background-color: #fff;
+  }
+
+  &__heading {
+    display: block;
+    text-align: center;
+  }
+
   &__btn-all {
     display: block;
     margin: 20px auto;
@@ -14,5 +30,9 @@
     border-radius: 20px;
     border: none;
 
+  }
+
+  &-decription__info {
+    color: $blue;
   }
 }

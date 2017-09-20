@@ -18,7 +18,8 @@
   .logo-block__title {
     display: inline-block;
     width: 152px;
-    position: relative; }
+    position: relative;
+    font-weight: bold; }
     .logo-block__title-main {
       font-size: 33px;
       color: #414042; }

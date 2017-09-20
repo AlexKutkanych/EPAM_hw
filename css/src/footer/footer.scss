@@ -1,0 +1,33 @@
+@import "../general/const";
+
+.footer-menu-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-block {
+  width: 30%;
+
+  &__title {
+    border-bottom: 1px solid white;
+  }
+}
+
+.footer-menu {
+  column-count: 2;
+  
+  &__link {
+    display: block;
+  }
+}
+
+.social-menu {
+
+  &__link {
+
+    &:before {
+      content: '';
+    }
+  }
+}

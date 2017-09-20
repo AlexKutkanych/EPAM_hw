@@ -1,26 +1,92 @@
 .breadcrumbs-wrapper {
   width: 1170px;
 }
+
+.breadcrumbs__title {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+
+.breadcrumbs__item {
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
 .employee-img {
   float: left;
 }
 
 .employee-info {
   float: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.employee-info__name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #00a7d9;
+}
+
+.socials__icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #00a7d9;
+}
+
+.socials__icon:after {
+  content: '';
+  background: center center url("../img/like.png") no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
 }
 
 /*employee honors*/
 
 .employee-honors {
-  width: 50%;
+  width: 60%;
   clear: both;
   float: left;
+}
+
+.honors-article {
+  width: 50%;
+  float: left;
+}
+
+.honors-article__date {
+  color: #555557;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
+.honors-article__title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #00a7d9;
+}
+
+.honors-article__more {
+  color: #00a7d9;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.honors-article__description {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
 }
 
 /*employee-skills*/
 
 .employee-skills {
-  width: 50%;
+  width: 40%;
   float: right;
 }
 
@@ -40,6 +106,22 @@
 .skill-bar_color3 {
   width: 65%;
 }
+.feedback-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback-article {
+  width: 30%;
+  background-color: #fff;
+}
+
+.feedback__heading {
+  display: block;
+  text-align: center;
+}
+
 .feedback__btn-all {
   display: block;
   margin: 20px auto;
@@ -52,96 +134,34 @@
   border-radius: 20px;
   border: none;
 }
-.header-wrapper {
-  padding-top: 20px;
-}
 
-.logo-block {
-  width: 300px;
-  float: left;
-}
-
-.logo-block__circle {
-  display: inline-block;
-  width: 58px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #fe5000;
-  font-family: 'Sacramento', cursive;
-  font-size: 35px;
-  color: #fff;
-  text-align: center;
-  line-height: 68px;
-}
-
-.logo-block__title {
-  display: inline-block;
-  width: 152px;
-  position: relative;
-}
-
-.logo-block__title-main {
-  font-size: 33px;
-  color: #414042;
-}
-
-.logo-block__title-main_special {
-  color: #fe5000;
-}
-
-.logo-block__title-main_additional {
-  position: absolute;
-  bottom: -5px;
-  right: 8px;
-  text-transform: uppercase;
-  font-size: 10px;
-  font-family: 'Raleway', sans-serif;
-  color: #787878;
-}
-
-.contacts-block {
-  width: 300px;
-  float: right;
+.feedback-decription__info {
   color: #00a7d9;
-  font-weight: bold;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
+}
+.footer-menu-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.search-block {
-  float: right;
-  font-size: 16px;
-  font-family: 'Lato', sans-serif;
+.menu-block {
+  width: 30%;
 }
 
-.search-block__input {
-  width: 240px;
-  height: 40px;
-  border-radius: 20px;
-  border: 1px solid #d4d4d4;
-  color: #cecece;
-  text-indent: 10px;
+.menu-block__title {
+  border-bottom: 1px solid white;
 }
 
-.search-block__input::-webkit-input-placeholder {
-  color: #d4d4d4;
+.footer-menu {
+  column-count: 2;
 }
 
-.header-navigation {
-  clear: both;
-  height: 50px;
+.footer-menu__link {
+  display: block;
 }
 
-.header-navigation__link {
-  display: inline-block;
-  height: 100%;
-  line-height: 50px;
-  font-family: 'Raleway', sans-serif;
-  color: #353537;
-}
-
-.header-navigation__link:hover {
-  border-bottom: 4px solid #fe5000;
+.social-menu__link:before {
+  content: '';
 }
 html {
   overflow-y: scroll;
@@ -169,6 +189,13 @@ a:hover {
   width: 1170px;
 }
 
+.heading {
+  font-size: 36px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  color: #3f3e40;
+}
+
 .l-container {
   width: 1170px;
   height: 1000px;
@@ -191,9 +218,14 @@ a:hover {
 
 .l-employee {
   width: 100%;
-  height: 600px;
+  height: 800px;
   background-color: #f6f7f7;
   border-bottom: 2px solid #fe5000;
+}
+
+.l-footer {
+  width: 100%;
+  background-color: grey;
 }
 
 @media screen and (min-width: 768px) and (max-width: 939px) {
@@ -331,4 +363,96 @@ a:hover {
   display: block;
   height: 0;
   clear: both;
+}
+.header-wrapper {
+  padding-top: 20px;
+}
+
+.logo-block {
+  width: 300px;
+  float: left;
+}
+
+.logo-block__circle {
+  display: inline-block;
+  width: 58px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fe5000;
+  font-family: 'Sacramento', cursive;
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  line-height: 68px;
+}
+
+.logo-block__title {
+  display: inline-block;
+  width: 152px;
+  position: relative;
+  font-weight: bold;
+}
+
+.logo-block__title-main {
+  font-size: 33px;
+  color: #414042;
+}
+
+.logo-block__title-main_special {
+  color: #fe5000;
+}
+
+.logo-block__title-main_additional {
+  position: absolute;
+  bottom: -5px;
+  right: 8px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: 'Raleway', sans-serif;
+  color: #787878;
+}
+
+.contacts-block {
+  width: 300px;
+  float: right;
+  color: #00a7d9;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.search-block {
+  float: right;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+.search-block__input {
+  width: 240px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #d4d4d4;
+  color: #cecece;
+  text-indent: 10px;
+}
+
+.search-block__input::-webkit-input-placeholder {
+  color: #d4d4d4;
+}
+
+.header-navigation {
+  clear: both;
+  height: 50px;
+}
+
+.header-navigation__link {
+  display: inline-block;
+  height: 100%;
+  line-height: 50px;
+  font-family: 'Raleway', sans-serif;
+  color: #353537;
+}
+
+.header-navigation__link:hover {
+  border-bottom: 4px solid #fe5000;
 }

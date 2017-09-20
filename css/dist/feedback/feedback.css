@@ -1,3 +1,16 @@
+.feedback-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.feedback-article {
+  width: 30%;
+  background-color: #fff; }
+
+.feedback__heading {
+  display: block;
+  text-align: center; }
+
 .feedback__btn-all {
   display: block;
   margin: 20px auto;
@@ -9,3 +22,6 @@
   text-transform: uppercase;
   border-radius: 20px;
   border: none; }
+
+.feedback-decription__info {
+  color: #00a7d9; }

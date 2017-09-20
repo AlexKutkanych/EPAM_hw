@@ -2,17 +2,57 @@
   float: left; }
 
 .employee-info {
-  float: left; }
+  float: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; }
+  .employee-info__name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00a7d9; }
+
+.socials__icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #00a7d9; }
+  .socials__icon:after {
+    content: '';
+    background: center center url("../../img/like.png") no-repeat;
+    display: block;
+    width: 30px;
+    height: 30px; }
 
 /*employee honors*/
 .employee-honors {
-  width: 50%;
+  width: 60%;
   clear: both;
   float: left; }
 
+.honors-article {
+  width: 50%;
+  float: left; }
+  .honors-article__date {
+    color: #555557;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px; }
+  .honors-article__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #00a7d9; }
+  .honors-article__more {
+    color: #00a7d9;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif; }
+  .honors-article__description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px; }
+
 /*employee-skills*/
 .employee-skills {
-  width: 50%;
+  width: 40%;
   float: right; }
 
 .skill-bar {
