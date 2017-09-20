@@ -118,17 +118,33 @@
   width: 31.5%;
   float: right; }
 
+.skills-section {
+  margin-top: 46px; }
+
 .skill-bar {
   width: 70%;
-  height: 40px;
+  height: 50px;
+  position: relative;
   background-color: #fe5000;
   color: #fff;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
   font-size: 18px; }
+  .skill-bar:not(:last-child) {
+    margin-bottom: 20px; }
+  .skill-bar_color1 {
+    width: 91%; }
   .skill-bar_color2 {
     width: 100%;
     background-color: #00a7d9; }
   .skill-bar_color3 {
-    width: 65%;
+    width: 86.5%;
     background-color: #36ba2f; }
+  .skill-bar__name {
+    margin-left: 25px;
+    line-height: 50px;
+    word-spacing: 3.1px; }
+  .skill-bar__value {
+    position: absolute;
+    right: 10px;
+    line-height: 50px; }

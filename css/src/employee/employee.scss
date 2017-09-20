@@ -167,14 +167,27 @@
 
 }
 
+.skills-section {
+  margin-top: 46px;
+}
+
 .skill-bar {
   width: 70%;
-  height: 40px;
+  height: 50px;
+  position: relative;
   background-color: $orange;
   color: #fff;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &_color1 {
+    width: 91%;
+  }
 
   &_color2 {
     width: 100%;
@@ -182,7 +195,19 @@
   }
 
   &_color3 {
-    width: 65%;
+    width: 86.5%;
     background-color: #36ba2f;
+  }
+
+  &__name {
+    margin-left: 25px;
+    line-height: 50px;
+    word-spacing: 3.1px;
+  }
+
+  &__value {
+    position: absolute;
+    right: 10px;
+    line-height: 50px;
   }
 }
