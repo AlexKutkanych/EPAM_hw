@@ -1,14 +1,18 @@
 .feedback-block {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 60px; }
 
 .feedback-article {
-  width: 30%;
+  width: 370px;
+  height: 220px;
+  position: relative;
   background-color: #fff; }
   .feedback-article__avatar {
     display: block;
-    float: left; }
+    float: left;
+    margin: 30px 30px 0 26px; }
     .feedback-article__avatar_user1 {
       background-image: url(../../img/sprite.png);
       background-position: 0px -63px;
@@ -27,22 +31,49 @@
 
 .feedback__heading {
   display: block;
-  text-align: center; }
+  text-align: center;
+  margin: 0;
+  padding: 106px 0 41px;
+  font-family: 'RalewayBold', sans-serif;
+  font-weight: bold;
+  letter-spacing: .5px; }
 
 .feedback__btn-all {
   display: block;
   margin: 20px auto;
-  width: 200px;
-  height: 40px;
+  width: 276px;
+  height: 60px;
   background-color: #00a7d9;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
-  border-radius: 20px;
-  border: none; }
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-family: 'RalewayBold', sans-serif;
+  font-weight: bold; }
 
 .feedback-decription {
   float: left;
   width: 60%; }
   .feedback-decription__info {
-    color: #00a7d9; }
+    float: right;
+    margin-right: 15px;
+    text-align: right;
+    color: #00a7d9;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 15px; }
+  .feedback-decription__text {
+    margin: 38px 0 13px;
+    line-height: 17px; }
+    .feedback-decription__text:before {
+      content: '';
+      display: block;
+      position: absolute;
+      background-image: url(../../img/sprite.png);
+      background-position: -126px -73px;
+      width: 15px;
+      height: 14px;
+      top: 36px;
+      left: 99px; }

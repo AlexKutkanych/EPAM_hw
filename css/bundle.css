@@ -33,10 +33,19 @@ a:hover {
 }
 
 @font-face {
-  font-family: "Myriad Pro";
-  src: url("../fonts/MyriadPro-Regular.eot") format("eot"), url("../fonts/MyriadPro-Regular.otf") format("otf"), url("../fonts/MyriadPro-Regular.svg") format("svg"), url("../fonts/MyriadPro-Regular.ttf") format("ttf"), url("../fonts/MyriadPro-Regular.woff") format("woff");
+  font-family: 'RalewayBold';
+  src: url("../fonts/raleway-extrabold-webfont.eot");
+  src: url("../fonts/raleway-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-extrabold-webfont.woff2") format("woff2"), url("../fonts/raleway-extrabold-webfont.woff") format("woff"), url("../fonts/raleway-extrabold-webfont.ttf") format("truetype"), url("../fonts/raleway-extrabold-webfont.svg#ralewayextrabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/MyriadPro-Regular.eot") format("eot"), url("../fonts/MyriadPro-Regular.otf") format("otf"), url("../fonts/MyriadPro-Regular.svg") format("svg"), url("../fonts/MyriadPro-Regular.ttf") format("ttf"), url("../fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 .l-container {
   width: 1170px;
   height: 1000px;
@@ -65,9 +74,9 @@ a:hover {
 .l-employee {
   width: 100%;
   height: 800px;
-  padding-top: 114px;
+  padding: 114px 0 37px;
   background-color: #f6f7f7;
-  border-bottom: 2px solid #fe5000;
+  border-bottom: 6px solid #fe5000;
 }
 
 .l-feedback {
@@ -180,6 +189,7 @@ a:hover {
 .employee-block {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 120px;
 }
 
 .employee-img {
@@ -383,16 +393,20 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .feedback-article {
-  width: 30%;
+  width: 370px;
+  height: 220px;
+  position: relative;
   background-color: #fff;
 }
 
 .feedback-article__avatar {
   display: block;
   float: left;
+  margin: 30px 30px 0 26px;
 }
 
 .feedback-article__avatar_user1 {
@@ -419,19 +433,27 @@ a:hover {
 .feedback__heading {
   display: block;
   text-align: center;
+  margin: 0;
+  padding: 106px 0 41px;
+  font-family: 'RalewayBold', sans-serif;
+  font-weight: bold;
+  letter-spacing: .5px;
 }
 
 .feedback__btn-all {
   display: block;
   margin: 20px auto;
-  width: 200px;
-  height: 40px;
+  width: 276px;
+  height: 60px;
   background-color: #00a7d9;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
-  border-radius: 20px;
+  border-radius: 30px;
   border: none;
+  font-size: 16px;
+  font-family: 'RalewayBold', sans-serif;
+  font-weight: bold;
 }
 
 .feedback-decription {
@@ -440,7 +462,30 @@ a:hover {
 }
 
 .feedback-decription__info {
+  float: right;
+  margin-right: 15px;
+  text-align: right;
   color: #00a7d9;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.feedback-decription__text {
+  margin: 38px 0 13px;
+  line-height: 17px;
+}
+
+.feedback-decription__text:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url("../img/sprite.png");
+  background-position: -126px -73px;
+  width: 15px;
+  height: 14px;
+  top: 36px;
+  left: 99px;
 }
 .footer-menu-section {
   display: flex;
@@ -592,7 +637,10 @@ a:hover {
   text-indent: 19px;
 }
 
-.search-block__input::-webkit-input-placeholder {
+.search-block__input::-webkit-input-placeholder,
+.search-block__input ::-moz-placeholder,
+.search-block__input :-ms-input-placeholder,
+.search-block__input :-moz-placeholder {
   color: #d4d4d4;
 }
 

@@ -23,7 +23,3 @@ a {
   font-weight: 900;
   letter-spacing: 2.8px;
   color: #3f3e40; }
-
-@font-face {
-  font-family: "Myriad Pro";
-  src: url("../../fonts/MyriadPro-Regular.eot") format("eot"), url("../../fonts/MyriadPro-Regular.otf") format("otf"), url("../../fonts/MyriadPro-Regular.svg") format("svg"), url("../../fonts/MyriadPro-Regular.ttf") format("ttf"), url("../../fonts/MyriadPro-Regular.woff") format("woff"); }

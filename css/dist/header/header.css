@@ -97,7 +97,10 @@
     border: 1px solid #d4d4d4;
     color: #cecece;
     text-indent: 19px; }
-    .search-block__input::-webkit-input-placeholder {
+    .search-block__input::-webkit-input-placeholder,
+    .search-block__input ::-moz-placeholder,
+    .search-block__input :-ms-input-placeholder,
+    .search-block__input :-moz-placeholder {
       color: #d4d4d4; }
 
 .header-navigation {

@@ -1,6 +1,7 @@
 .employee-block {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 120px; }
 
 .employee-img {
   margin: 0 29px 37px 0; }

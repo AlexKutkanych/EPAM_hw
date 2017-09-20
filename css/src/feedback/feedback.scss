@@ -6,15 +6,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 60px;
   }
 
   &-article {
-    width: 30%;
+    width: 370px;
+    height: 220px;
+    position: relative;
     background-color: #fff;
+
 
     &__avatar {
       display: block;
       float: left;
+      margin:  30px 30px 0 26px;
 
       &_user1 {
         background-image: url(../../img/sprite.png);
@@ -42,28 +47,59 @@
   &__heading {
     display: block;
     text-align: center;
+    margin: 0;
+    padding: 106px 0 41px;
+    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
+    letter-spacing: .5px;
   }
 
   &__btn-all {
     display: block;
     margin: 20px auto;
-    width: 200px;
-    height: 40px;
+    width: 276px;
+    height: 60px;
     background-color: $blue;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
-    border-radius: 20px;
+    border-radius: 30px;
     border: none;
-
+    font-size: 16px;
+    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
   }
 
   &-decription {
     float: left;
     width: 60%;
 
+
     &__info {
+      float: right;
+      margin-right: 15px;
+      text-align: right;
       color: $blue;
+      font-family: 'Lato', sans-serif;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    &__text {
+      margin: 38px 0 13px;
+      line-height: 17px;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-image: url(../../img/sprite.png);
+        background-position: -126px -73px;
+        width: 15px;
+        height: 14px;
+        top: 36px;
+        left: 99px;
+      }
     }
   }
 }
