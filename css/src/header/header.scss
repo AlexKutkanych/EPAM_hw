@@ -1,10 +1,5 @@
 @import '../!general/const';
 
-.header-wrapper {
-  padding-top: 20px;
-  padding-bottom: 3px;
-}
-
 .logo-block {
   width: 300px;
   float: left;
@@ -59,7 +54,8 @@
 .contacts-block {
   width: 260px;
   float: right;
-  margin-top: 22px;
+  position: relative;
+  margin: 22px 21px 0 0;
   color: $blue;
   font-weight: bold;
   font-family: 'Lato', sans-serif;
@@ -68,22 +64,31 @@
   justify-content: space-between;
 
   &__phone {
+    margin-left: 16px;
 
     &:before {
       content: '';
       display: inline-block;
+      position: absolute;
+      top: 4px;
+      left: 0;
       background-image: url(../../img/sprite.png);
       background-position: -126px -107px;
       width: 13px;
       height: 14px;
+      margin-right: 8px;
     }
   }
 
   &__email {
+    margin-right: 5px;
 
     &:before {
       content: '';
       display: inline-block;
+      position: absolute;
+      top: 3px;
+      right: 89px;
       background-image: url(../../img/sprite.png);
       background-position: -126px -47px;
       width: 17px;
@@ -102,8 +107,8 @@
   &:after {
     content: '';
     position: absolute;
-    right: 0;
-    top: 10px;
+    right: 18px;
+    top: 11px;
     display: inline-block;
     background-image: url(../../img/sprite.png);
     background-position: -103px -90px;
@@ -112,14 +117,12 @@
   }
 
   &__input {
-    width: 235px;
+    width: 238px;
     height: 36px;
     border-radius: 20px;
     border: 1px solid #d4d4d4;
     color: #cecece;
-    text-indent: 10px;
-
-
+    text-indent: 19px;
 
     &::-webkit-input-placeholder {
       color: #d4d4d4;

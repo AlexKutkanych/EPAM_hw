@@ -8,7 +8,11 @@
 .l-wrapper {
   width: 1170px;
   margin: auto;
-  padding: 20px; }
+  padding: 0 20px; }
+
+.header-wrapper {
+  padding-top: 20px;
+  padding-bottom: 3px; }
 
 .l-breadcrumbs {
   width: 100%;

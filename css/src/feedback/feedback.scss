@@ -16,21 +16,21 @@
       display: block;
       float: left;
 
-      &_person1 {
+      &_user1 {
         background-image: url(../../img/sprite.png);
         background-position: 0px -63px;
         width: 63px;
         height: 63px;
       }
 
-      &_person2 {
+      &_user2 {
         background-image: url(../../img/sprite.png);
         background-position: -63px 0px;
         width: 63px;
         height: 63px;
       }
 
-      &_person3 {
+      &_user3 {
         background-image: url(../../img/sprite.png);
         background-position: 0px 0px;
         width: 63px;
