@@ -4,20 +4,25 @@
   height: 100%; }
 
 .breadcrumbs__title {
+  line-height: 69px;
   font-size: 20px;
   font-family: 'Raleway', sans-serif;
   color: #fff; }
 
 .breadcrumbs {
-  float: right; }
+  float: right;
+  margin: 0;
+  line-height: 69px; }
   .breadcrumbs__item {
     display: inline-block;
+    margin-left: 11px;
     font-size: 15px;
     font-family: 'Lato', sans-serif;
     color: #fff; }
     .breadcrumbs__item :first-child:after {
       content: '';
       display: inline-block;
+      margin-left: 16px;
       background-image: url(../../img/sprite.png);
       background-position: -111px -63px;
       width: 11px;
