@@ -27,21 +27,31 @@
     font-family: 'Lato', sans-serif;
     color: #fff;
 
-    :first-child {
+    &:after {
+      content: '';
+      display: inline-block;
+      margin: 0 0 3px 16px;
+      background-image: url(../../img/sprite.png);
+      background-position: -111px -63px;
+      width: 11px;
+      height: 7px;
+    }
+
+    &:last-child {
 
       &:after {
         content: '';
-        display: inline-block;
-        margin-left: 16px;
-        background-image: url(../../img/sprite.png);
-        background-position: -111px -63px;
-        width: 11px;
-        height: 7px;
+        display: none;
       }
     }
   }
   
   &__link {
     color: #a9dbef;
+    
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+    }
   }
 }

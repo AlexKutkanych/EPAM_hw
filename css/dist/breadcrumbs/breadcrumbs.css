@@ -19,13 +19,19 @@
     font-size: 15px;
     font-family: 'Lato', sans-serif;
     color: #fff; }
-    .breadcrumbs__item :first-child:after {
+    .breadcrumbs__item:after {
       content: '';
       display: inline-block;
-      margin-left: 16px;
+      margin: 0 0 3px 16px;
       background-image: url(../../img/sprite.png);
       background-position: -111px -63px;
       width: 11px;
       height: 7px; }
+    .breadcrumbs__item:last-child:after {
+      content: '';
+      display: none; }
   .breadcrumbs__link {
     color: #a9dbef; }
+    .breadcrumbs__link:hover {
+      color: #fff;
+      cursor: pointer; }

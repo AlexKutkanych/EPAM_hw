@@ -1,28 +1,44 @@
+.employee-block {
+  display: flex;
+  flex-wrap: wrap; }
+
 .employee-img {
-  float: left; }
+  margin: 0 29px 37px 0; }
 
 .employee-info {
-  width: 50%;
-  float: left;
+  width: 54%;
+  margin-top: 36px;
   font-family: 'Lato', sans-serif;
   font-size: 16px; }
   .employee-info__name {
+    margin: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: bold;
-    color: #00a7d9; }
+    color: #00a7d9;
+    word-spacing: 2.8px;
+    letter-spacing: .3px; }
   .employee-info__description {
     float: left;
+    margin: 20px 0 30px;
     font-family: 'Myriad Pro', sans-serif;
-    font-size: 14px; }
+    font-size: 16px;
+    letter-spacing: .15px; }
+
+.employee-contacts__phone {
+  margin: 7px 0 2px; }
+
+.employee-contacts__email, .employee-contacts__skype {
+  margin: 0; }
 
 .socials__icon {
   display: flex;
   justify-content: center;
   align-items: center;
   float: left;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
   border-radius: 50%;
   border: 1px solid #00a7d9; }
   .socials__icon_twitter {
@@ -46,33 +62,59 @@
 
 /*employee honors*/
 .employee-honors {
-  width: 60%;
-  clear: both;
-  float: left; }
+  width: 68%; }
+
+.honors-section {
+  display: flex;
+  align-items: center; }
 
 .honors-article {
   width: 50%;
-  float: left; }
+  display: flex;
+  flex-wrap: wrap; }
+  .honors-article__icon {
+    display: block;
+    background-image: url(../../img/sprite.png);
+    margin: 46px 14px 0 0; }
+    .honors-article__icon_voice {
+      background-position: -63px -63px;
+      width: 30px;
+      height: 27px; }
+    .honors-article__icon_idea {
+      background-position: -63px -90px;
+      width: 23px;
+      height: 35px;
+      margin: 46px 22px 0 2px; }
   .honors-article__date {
+    margin-bottom: 11px;
     color: #555557;
     font-family: 'Lato', sans-serif;
     font-size: 14px; }
   .honors-article__title {
+    max-width: 78%;
+    margin: 0 0 0 0;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 18px;
-    color: #00a7d9; }
+    color: #00a7d9;
+    word-spacing: 1.9px; }
   .honors-article__more {
     color: #00a7d9;
     font-size: 16px;
     font-family: 'Raleway', sans-serif; }
   .honors-article__description {
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px; }
+    min-width: 85%;
+    margin: 11px 0 20px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 14px;
+    word-spacing: 1.1px; }
+
+.article-wrapper {
+  max-width: 86%; }
 
 /*employee-skills*/
 .employee-skills {
-  width: 40%;
+  width: 32%;
   float: right; }
 
 .skill-bar {
