@@ -177,6 +177,69 @@ a:hover {
   color: #fff;
   cursor: pointer;
 }
+.feedback-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback-article {
+  width: 30%;
+  background-color: #fff;
+}
+
+.feedback-article__avatar {
+  display: block;
+  float: left;
+}
+
+.feedback-article__avatar_user1 {
+  background-image: url("../img/sprite.png");
+  background-position: 0px -63px;
+  width: 63px;
+  height: 63px;
+}
+
+.feedback-article__avatar_user2 {
+  background-image: url("../img/sprite.png");
+  background-position: -63px 0px;
+  width: 63px;
+  height: 63px;
+}
+
+.feedback-article__avatar_user3 {
+  background-image: url("../img/sprite.png");
+  background-position: 0px 0px;
+  width: 63px;
+  height: 63px;
+}
+
+.feedback__heading {
+  display: block;
+  text-align: center;
+}
+
+.feedback__btn-all {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  height: 40px;
+  background-color: #00a7d9;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: none;
+}
+
+.feedback-decription {
+  float: left;
+  width: 60%;
+}
+
+.feedback-decription__info {
+  color: #00a7d9;
+}
 .employee-block {
   display: flex;
   flex-wrap: wrap;
@@ -260,6 +323,7 @@ a:hover {
 
 .employee-honors {
   width: 68%;
+  margin-right: 5px;
 }
 
 .honors-section {
@@ -301,7 +365,7 @@ a:hover {
 
 .honors-article__title {
   max-width: 78%;
-  margin: 0 0 0 0;
+  margin: 0;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -316,7 +380,7 @@ a:hover {
 }
 
 .honors-article__description {
-  min-width: 85%;
+  max-width: 85%;
   margin: 11px 0 20px;
   font-family: 'Myriad Pro', sans-serif;
   font-size: 14px;
@@ -330,7 +394,7 @@ a:hover {
 /*employee-skills*/
 
 .employee-skills {
-  width: 32%;
+  width: 31.5%;
   float: right;
 }
 
@@ -340,6 +404,8 @@ a:hover {
   background-color: #fe5000;
   color: #fff;
   font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
 }
 
 .skill-bar_color2 {
@@ -350,69 +416,6 @@ a:hover {
 .skill-bar_color3 {
   width: 65%;
   background-color: #36ba2f;
-}
-.feedback-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.feedback-article {
-  width: 30%;
-  background-color: #fff;
-}
-
-.feedback-article__avatar {
-  display: block;
-  float: left;
-}
-
-.feedback-article__avatar_user1 {
-  background-image: url("../img/sprite.png");
-  background-position: 0px -63px;
-  width: 63px;
-  height: 63px;
-}
-
-.feedback-article__avatar_user2 {
-  background-image: url("../img/sprite.png");
-  background-position: -63px 0px;
-  width: 63px;
-  height: 63px;
-}
-
-.feedback-article__avatar_user3 {
-  background-image: url("../img/sprite.png");
-  background-position: 0px 0px;
-  width: 63px;
-  height: 63px;
-}
-
-.feedback__heading {
-  display: block;
-  text-align: center;
-}
-
-.feedback__btn-all {
-  display: block;
-  margin: 20px auto;
-  width: 200px;
-  height: 40px;
-  background-color: #00a7d9;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 20px;
-  border: none;
-}
-
-.feedback-decription {
-  float: left;
-  width: 60%;
-}
-
-.feedback-decription__info {
-  color: #00a7d9;
 }
 .footer-menu-section {
   display: flex;

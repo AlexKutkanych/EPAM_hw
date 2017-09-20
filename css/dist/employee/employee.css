@@ -62,7 +62,8 @@
 
 /*employee honors*/
 .employee-honors {
-  width: 68%; }
+  width: 68%;
+  margin-right: 5px; }
 
 .honors-section {
   display: flex;
@@ -92,7 +93,7 @@
     font-size: 14px; }
   .honors-article__title {
     max-width: 78%;
-    margin: 0 0 0 0;
+    margin: 0;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -103,7 +104,7 @@
     font-size: 16px;
     font-family: 'Raleway', sans-serif; }
   .honors-article__description {
-    min-width: 85%;
+    max-width: 85%;
     margin: 11px 0 20px;
     font-family: 'Myriad Pro', sans-serif;
     font-size: 14px;
@@ -114,7 +115,7 @@
 
 /*employee-skills*/
 .employee-skills {
-  width: 32%;
+  width: 31.5%;
   float: right; }
 
 .skill-bar {
@@ -122,7 +123,9 @@
   height: 40px;
   background-color: #fe5000;
   color: #fff;
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px; }
   .skill-bar_color2 {
     width: 100%;
     background-color: #00a7d9; }

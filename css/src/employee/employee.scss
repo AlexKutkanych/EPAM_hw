@@ -90,7 +90,7 @@
 
 .employee-honors {
   width: 68%;
-
+  margin-right: 5px;
 }
 
 .honors-section {
@@ -131,7 +131,7 @@
 
   &__title {
     max-width: 78%;
-    margin: 0 0 0 0;
+    margin: 0;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -146,7 +146,7 @@
   }
 
   &__description {
-    min-width: 85%;
+    max-width: 85%;
     margin: 11px 0 20px;
     font-family: 'Myriad Pro', sans-serif;
     font-size: 14px;
@@ -162,7 +162,7 @@
 /*employee-skills*/
 
 .employee-skills {
-  width: 32%;
+  width: 31.5%;
   float: right;
 
 }
@@ -173,6 +173,8 @@
   background-color: $orange;
   color: #fff;
   font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
 
   &_color2 {
     width: 100%;
