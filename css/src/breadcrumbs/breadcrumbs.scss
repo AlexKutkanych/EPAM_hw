@@ -70,21 +70,24 @@
 
 @media screen and (min-width: 480px) and (max-width: 639px) {
 
-
-
-}
-
-@media screen and (min-width: 320px) and (max-width: 479px) {
-
   .breadcrumbs-wrapper {
     width: 95%;
-
   }
 
   .breadcrumbs {
     padding: 0;
     margin-right: 10px;
   }
+}
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
 
+  .breadcrumbs-wrapper {
+    width: 95%;
+  }
+
+  .breadcrumbs {
+    padding: 0;
+    margin-right: 10px;
+  }
 }

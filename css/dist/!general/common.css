@@ -34,7 +34,11 @@ a {
 
 @media screen and (min-width: 480px) and (max-width: 639px) {
   .block {
-    width: 100%; } }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .block {
@@ -42,4 +46,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .heading {
+    font-size: 34px; } }
