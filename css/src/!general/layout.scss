@@ -32,13 +32,11 @@
 }
 
 .l-feedback {
-  height: 650px;
   background: center center url('../../img/src/feedback-bg.jpg') no-repeat;
 }
 
 .l-footer {
   width: 100%;
-  height: 600px;
   background-color: #3f3d40;
 }
 
@@ -100,12 +98,8 @@
     padding-top: 50px;
   }
 
-  .l-feedback {
-    display: none;
-  }
-
   .l-footer {
-    display: none;
+    padding-bottom: 20px;
   }
 
 }

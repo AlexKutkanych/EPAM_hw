@@ -126,6 +126,27 @@
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
 
+  .feedback {
+
+    &-wrapper {
+      width: 100%;
+      padding: 0;
+    }
+
+    &__heading {
+      padding-top: 30px;
+    }
+
+    &-block {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    &-article {
+      width: 100%;
+
+    }
+  }
 
 
 }

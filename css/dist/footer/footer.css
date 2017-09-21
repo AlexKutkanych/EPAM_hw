@@ -139,7 +139,6 @@
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .logo-block {
-    display: none;
     width: 220px; }
   .search-block {
     display: none;
@@ -342,3 +341,23 @@
     color: #fff; }
     .company-rights__policy:hover, .company-rights__terms:hover {
       color: #fe5000; }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .footer-wrapper {
+    width: 100%;
+    padding: 0; }
+  .footer-menu-section {
+    padding-top: 20px;
+    flex-direction: column;
+    margin-bottom: 20px; }
+  .footer-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .menu-block {
+    width: 95%;
+    margin: 0 auto; }
+  .logo-block_footer {
+    margin: 0; }
+  .company-rights {
+    max-width: 95%; } }
