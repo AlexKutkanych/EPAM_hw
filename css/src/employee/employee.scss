@@ -236,6 +236,80 @@
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
 
+  .employee-wrapper {
+    padding: 0;
+
+  }
+
+  .employee {
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+
+    &-img {
+      width: 300px;
+      height: 300px;
+      margin: 0;
+    }
+
+    &-info {
+      width: 95%;
+      margin: 10px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-honors {
+      width: 95%;
+      margin: 10px auto;
+
+      &__heading {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .honors {
+
+    &-section {
+      flex-direction: column;
+    }
+
+    &-article {
+      width: 100%;
+      padding-bottom: 10px;
+      border-bottom: 2px solid $blue;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &__icon {
+        margin-right: 10px;
+      }
+    }
+  }
+
+.employee-skills {
+  width: 95%;
+  margin: 0 auto;
+}
+
+  .skill-bar {
+    font-size: 15px;
+
+    &__name {
+      margin-left: 10px;
+      max-width: 235px;
+      overflow: hidden;
+    }
+  }
 
 
 }
