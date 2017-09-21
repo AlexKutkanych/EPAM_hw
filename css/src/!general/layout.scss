@@ -33,13 +33,14 @@
 
 .l-feedback {
   background: center center url('../../img/src/feedback-bg.jpg') no-repeat;
+  background-size: cover;
+  overflow: auto;
 }
 
 .l-footer {
   width: 100%;
   overflow: auto;
   background-color: #3f3d40;
-  margin-top: -20px;
 }
 
 
@@ -81,7 +82,7 @@
 
   .l-wrapper {
     width: 100%;
-    margin-bottom: 10px;
+    padding: 0;
   }
 
   .l-employee {
@@ -90,6 +91,7 @@
 
   .l-footer {
     padding-bottom: 20px;
+    margin-top: 0;
   }
 }
 
@@ -114,6 +116,7 @@
 
   .l-footer {
     padding-bottom: 20px;
+    margin-top: 0;
   }
 }
 

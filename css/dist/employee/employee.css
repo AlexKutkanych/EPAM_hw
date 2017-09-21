@@ -191,7 +191,8 @@
       margin-right: 10px; }
   .employee-skills {
     width: 95%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-bottom: 20px; }
   .skill-bar__name {
     margin-left: 10px;
     max-width: 235px;
@@ -236,9 +237,10 @@
       margin-right: 10px; }
   .employee-skills {
     width: 95%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-bottom: 20px; }
   .skill-bar {
-    font-size: 15px; }
+    font-size: 14px; }
     .skill-bar__name {
       margin-left: 10px;
       max-width: 235px;

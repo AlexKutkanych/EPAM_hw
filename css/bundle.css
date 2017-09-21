@@ -115,13 +115,14 @@ a:hover {
 
 .l-feedback {
   background: center center url("../img/src/feedback-bg.jpg") no-repeat;
+  background-size: cover;
+  overflow: auto;
 }
 
 .l-footer {
   width: 100%;
   overflow: auto;
   background-color: #3f3d40;
-  margin-top: -20px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 939px) {
@@ -157,7 +158,7 @@ a:hover {
 
   .l-wrapper {
     width: 100%;
-    margin-bottom: 10px;
+    padding: 0;
   }
 
   .l-employee {
@@ -166,6 +167,7 @@ a:hover {
 
   .l-footer {
     padding-bottom: 20px;
+    margin-top: 0;
   }
 }
 
@@ -189,6 +191,7 @@ a:hover {
 
   .l-footer {
     padding-bottom: 20px;
+    margin-top: 0;
   }
 }
 .breadcrumbs-wrapper {
@@ -245,6 +248,7 @@ a:hover {
 @media screen and (min-width: 480px) and (max-width: 639px) {
   .breadcrumbs-wrapper {
     width: 95%;
+    padding: 0;
   }
 
   .breadcrumbs {
@@ -256,6 +260,7 @@ a:hover {
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .breadcrumbs-wrapper {
     width: 95%;
+    padding: 0;
   }
 
   .breadcrumbs {
@@ -533,6 +538,7 @@ a:hover {
   .employee-skills {
     width: 95%;
     margin: 0 auto;
+    padding-bottom: 20px;
   }
 
   .skill-bar__name {
@@ -604,10 +610,11 @@ a:hover {
   .employee-skills {
     width: 95%;
     margin: 0 auto;
+    padding-bottom: 20px;
   }
 
   .skill-bar {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .skill-bar__name {
@@ -618,6 +625,7 @@ a:hover {
 }
 .feedback-wrapper {
   min-height: 649px;
+  padding-bottom: 1px;
 }
 
 .feedback-block {
