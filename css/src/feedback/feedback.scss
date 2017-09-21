@@ -67,7 +67,10 @@
     border: none;
     font-size: 16px;
     font-family: 'RalewayBold', sans-serif;
-    font-weight: bold;
+    
+    &:hover {
+      color: $orange;
+    }
   }
 
   &-decription {

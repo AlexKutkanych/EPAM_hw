@@ -60,6 +60,8 @@
     background-position: -126px -32px;
     width: 16px;
     height: 15px; }
+  .socials__icon:hover {
+    background-color: #a9dbef; }
 
 /*employee honors*/
 .employee-honors {

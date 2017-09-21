@@ -50,8 +50,9 @@
   border-radius: 30px;
   border: none;
   font-size: 16px;
-  font-family: 'RalewayBold', sans-serif;
-  font-weight: bold; }
+  font-family: 'RalewayBold', sans-serif; }
+  .feedback__btn-all:hover {
+    color: #fe5000; }
 
 .feedback-decription {
   float: left;

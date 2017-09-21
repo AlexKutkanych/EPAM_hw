@@ -43,14 +43,14 @@
   float: right;
   position: relative;
   margin: 22px 21px 0 0;
-  color: #00a7d9;
   font-weight: bold;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   display: flex;
   justify-content: space-between; }
   .contacts-block__phone {
-    margin-left: 16px; }
+    margin-left: 16px;
+    color: #00a7d9; }
     .contacts-block__phone:before {
       content: '';
       display: inline-block;
@@ -63,7 +63,8 @@
       height: 14px;
       margin-right: 8px; }
   .contacts-block__email {
-    margin-right: 5px; }
+    margin-right: 5px;
+    color: #00a7d9; }
     .contacts-block__email:before {
       content: '';
       display: inline-block;

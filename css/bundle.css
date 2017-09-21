@@ -137,6 +137,56 @@ a:hover {
   height: 0;
   clear: both;
 }
+.breadcrumbs-wrapper {
+  width: 1170px;
+  padding: 0;
+  height: 100%;
+}
+
+.breadcrumbs__title {
+  line-height: 69px;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+
+.breadcrumbs {
+  float: right;
+  margin: 0;
+  line-height: 69px;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+  margin-left: 11px;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+}
+
+.breadcrumbs__item:after {
+  content: '';
+  display: inline-block;
+  margin: 0 0 3px 16px;
+  background-image: url("../img/sprite.png");
+  background-position: -111px -63px;
+  width: 11px;
+  height: 7px;
+}
+
+.breadcrumbs__item:last-child:after {
+  content: '';
+  display: none;
+}
+
+.breadcrumbs__link {
+  color: #a9dbef;
+}
+
+.breadcrumbs__link:hover {
+  color: #fff;
+  cursor: pointer;
+}
 .employee-block {
   display: flex;
   flex-wrap: wrap;
@@ -215,6 +265,10 @@ a:hover {
   background-position: -126px -32px;
   width: 16px;
   height: 15px;
+}
+
+.socials__icon:hover {
+  background-color: #a9dbef;
 }
 
 /*employee honors*/
@@ -340,56 +394,6 @@ a:hover {
   right: 10px;
   line-height: 50px;
 }
-.breadcrumbs-wrapper {
-  width: 1170px;
-  padding: 0;
-  height: 100%;
-}
-
-.breadcrumbs__title {
-  line-height: 69px;
-  font-size: 20px;
-  font-family: 'Raleway', sans-serif;
-  color: #fff;
-}
-
-.breadcrumbs {
-  float: right;
-  margin: 0;
-  line-height: 69px;
-}
-
-.breadcrumbs__item {
-  display: inline-block;
-  margin-left: 11px;
-  font-size: 15px;
-  font-family: 'Lato', sans-serif;
-  color: #fff;
-}
-
-.breadcrumbs__item:after {
-  content: '';
-  display: inline-block;
-  margin: 0 0 3px 16px;
-  background-image: url("../img/sprite.png");
-  background-position: -111px -63px;
-  width: 11px;
-  height: 7px;
-}
-
-.breadcrumbs__item:last-child:after {
-  content: '';
-  display: none;
-}
-
-.breadcrumbs__link {
-  color: #a9dbef;
-}
-
-.breadcrumbs__link:hover {
-  color: #fff;
-  cursor: pointer;
-}
 .feedback-block {
   display: flex;
   justify-content: space-between;
@@ -454,7 +458,10 @@ a:hover {
   border: none;
   font-size: 16px;
   font-family: 'RalewayBold', sans-serif;
-  font-weight: bold;
+}
+
+.feedback__btn-all:hover {
+  color: #fe5000;
 }
 
 .feedback-decription {
@@ -545,7 +552,6 @@ a:hover {
   float: right;
   position: relative;
   margin: 22px 21px 0 0;
-  color: #00a7d9;
   font-weight: bold;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
@@ -555,6 +561,7 @@ a:hover {
 
 .contacts-block__phone {
   margin-left: 16px;
+  color: #00a7d9;
 }
 
 .contacts-block__phone:before {
@@ -572,6 +579,7 @@ a:hover {
 
 .contacts-block__email {
   margin-right: 5px;
+  color: #00a7d9;
 }
 
 .contacts-block__email:before {
@@ -666,6 +674,11 @@ a:hover {
   letter-spacing: 1.8px;
 }
 
+.menu-block__title:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
 .footer-menu {
   column-count: 2;
   -webkit-column-gap: 32px;
@@ -757,6 +770,11 @@ a:hover {
 .company-rights__terms {
   color: #fff;
 }
+
+.company-rights__policy:hover,
+.company-rights__terms:hover {
+  color: #fe5000;
+}
 .logo-block {
   width: 300px;
   float: left;
@@ -812,7 +830,6 @@ a:hover {
   float: right;
   position: relative;
   margin: 22px 21px 0 0;
-  color: #00a7d9;
   font-weight: bold;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
@@ -822,6 +839,7 @@ a:hover {
 
 .contacts-block__phone {
   margin-left: 16px;
+  color: #00a7d9;
 }
 
 .contacts-block__phone:before {
@@ -839,6 +857,7 @@ a:hover {
 
 .contacts-block__email {
   margin-right: 5px;
+  color: #00a7d9;
 }
 
 .contacts-block__email:before {
