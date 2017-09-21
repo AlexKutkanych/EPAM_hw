@@ -63,9 +63,22 @@
     width: 100%;
   }
 
+  .l-main {
+    position: relative;
+  }
+
   .l-wrapper {
     width: 100%;
     padding: 0;
+  }
+
+  .l-employee {
+    padding-top: 50px;
+  }
+
+  .l-footer {
+    padding-bottom: 20px;
+    margin-top: 0;
   }
 
 }
@@ -108,6 +121,7 @@
   .l-wrapper {
     width: 100%;
     margin-bottom: 10px;
+    padding: 0;
   }
 
   .l-employee {

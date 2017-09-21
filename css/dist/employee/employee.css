@@ -154,6 +154,54 @@
     right: 10px;
     line-height: 50px; }
 
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .employee-wrapper {
+    width: 95%;
+    padding: 0; }
+  .employee-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0; }
+  .employee-img {
+    margin: 0; }
+  .employee-info {
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .employee-info__contacts {
+      text-align: center; }
+  .employee-honors {
+    width: 95%;
+    margin: 10px auto; }
+    .employee-honors__heading {
+      margin-bottom: 20px; }
+  .honors-section {
+    flex-direction: column; }
+  .honors-article {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00a7d9; }
+    .honors-article:not(:last-child) {
+      margin-bottom: 20px; }
+    .honors-article__icon {
+      margin-right: 10px; }
+    .honors-article__title {
+      max-width: 100%; }
+    .honors-article__description {
+      max-width: 100%; }
+  .employee-skills {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 20px; }
+  .skill-bar__name {
+    margin-left: 10px;
+    max-width: 235px;
+    overflow: hidden; } }
+
 @media screen and (min-width: 480px) and (max-width: 639px) {
   .employee-wrapper {
     width: 95%;
@@ -189,6 +237,10 @@
       margin-bottom: 20px; }
     .honors-article__icon {
       margin-right: 10px; }
+    .honors-article__title {
+      max-width: 100%; }
+    .honors-article__description {
+      max-width: 100%; }
   .employee-skills {
     width: 95%;
     margin: 0 auto;
@@ -235,6 +287,10 @@
       margin-bottom: 20px; }
     .honors-article__icon {
       margin-right: 10px; }
+    .honors-article__title {
+      max-width: 100%; }
+    .honors-article__description {
+      max-width: 100%; }
   .employee-skills {
     width: 95%;
     margin: 0 auto;
