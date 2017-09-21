@@ -114,6 +114,31 @@
 
 @media screen and (min-width: 768px) and (max-width: 939px) {
 
+  .feedback {
+
+    &-wrapper {
+      width: 100%;
+      padding: 0;
+    }
+
+    &__heading {
+      padding-top: 30px;
+    }
+
+    &-block {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+
+    &-article {
+      margin: 10px auto;
+    }
+
+    &__btn-all {
+      margin-bottom: 30px;
+    }
+  }
 
 
 }
@@ -169,8 +194,6 @@
       width: 90%;
       margin: 10px auto;
     }
-
-
 
     &__btn-all {
       margin-bottom: 30px;

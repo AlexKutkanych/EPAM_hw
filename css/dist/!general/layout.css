@@ -37,9 +37,16 @@
 @media screen and (min-width: 768px) and (max-width: 939px) {
   .l-container {
     width: 100%; }
+  .l-main {
+    position: relative; }
   .l-wrapper {
     width: 100%;
-    overflow: hidden; } }
+    padding: 0; }
+  .l-employee {
+    padding-top: 50px; }
+  .l-footer {
+    padding-bottom: 20px;
+    margin-top: 0; } }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .l-container {
