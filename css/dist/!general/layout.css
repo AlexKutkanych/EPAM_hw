@@ -39,13 +39,15 @@
   .l-container {
     width: 100%; }
   .l-wrapper {
-    width: 100%; } }
+    width: 100%;
+    overflow: hidden; } }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .l-container {
     width: 100%; }
   .l-wrapper {
-    width: 100%; } }
+    width: 100%;
+    padding: 0; } }
 
 @media screen and (min-width: 480px) and (max-width: 639px) {
   .l-container {
@@ -57,7 +59,10 @@
   .l-container {
     width: 100%; }
   .l-wrapper {
-    width: 100%; } }
+    width: 100%;
+    margin-bottom: 30px; }
+  .header-wrapper {
+    padding: 0; } }
 
 .clearfix:after {
   content: ".";
