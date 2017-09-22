@@ -43,22 +43,10 @@
   border-radius: 50%;
   border: 1px solid #00a7d9; }
   .socials__icon_twitter {
-    display: block;
-    background-image: url(../../img/sprite.png);
-    background-position: -126px -60px;
-    width: 17px;
-    height: 13px; }
+    height: 15px; }
   .socials__icon_facebook {
-    display: block;
-    background-image: url(../../img/sprite.png);
-    background-position: -136px -87px;
-    width: 8px;
-    height: 18px; }
+    height: 15px; }
   .socials__icon_linkedin {
-    display: block;
-    background-image: url(../../img/sprite.png);
-    background-position: -126px -32px;
-    width: 16px;
     height: 15px; }
   .socials__icon:hover {
     background-color: #a9dbef; }

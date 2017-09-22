@@ -2,7 +2,11 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     concatCss = require('gulp-concat-css'),
     spritesmith = require('gulp.spritesmith'),
-    watch = require('gulp-watch');
+    watch = require('gulp-watch'),
+    webserver = require('gulp-webserver');
+var svgstore = require('gulp-svgstore');
+var svgmin = require('gulp-svgmin');
+var path = require('path');
 
 
 gulp.task('concat-css', function () {
@@ -26,12 +30,42 @@ gulp.task('sprite', function () {
     return spriteData.pipe(gulp.dest('img/'));
 });
 
+gulp.task('webserver', function() {
+    gulp.src('')
+        .pipe(webserver({
+            livereload: true,
+            directoryListing: false,
+            open: true,
+            port: 8000
+        }));
+});
+
+gulp.task('svgstore', function () {
+    return gulp
+        .src('img/src/employee/*.svg')
+        .pipe(svgmin(function (file) {
+            var prefix = path.basename(file.relative, path.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: false
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest('img'));
+});
+
 
 gulp.task('watch', function() {
-  gulp.watch('css/src/*/*.scss', ['sass']);
-  gulp.watch('css/dist/*/*.css', ['concat-css']);
-  gulp.watch('img/src/*.png', ['sprite']);
+    gulp.watch('css/src/*/*.scss', ['sass']);
+    gulp.watch('css/dist/*/*.css', ['concat-css']);
+    gulp.watch('img/src/*.png', ['sprite']);
 });
+
+gulp.task('default', ['watch', 'webserver']);
 
 
 

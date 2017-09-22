@@ -61,26 +61,14 @@
   border: 1px solid $blue;
 
   &_twitter {
-    display: block;
-    background-image: url(../../img/sprite.png);
-    background-position: -126px -60px;
-    width: 17px;
-    height: 13px;
+    height: 15px;
   }
 
   &_facebook {
-    display: block;
-    background-image: url(../../img/sprite.png);
-    background-position: -136px -87px;
-    width: 8px;
-    height: 18px;
+    height: 15px;
   }
 
   &_linkedin {
-    display: block;
-    background-image: url(../../img/sprite.png);
-    background-position: -126px -32px;
-    width: 16px;
     height: 15px;
   }
 
