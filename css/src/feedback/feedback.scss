@@ -16,7 +16,7 @@
 
   &-article {
     width: 370px;
-    height: 220px;
+    padding-bottom: 30px;
     position: relative;
     background-color: #fff;
 
@@ -119,6 +119,10 @@
       width: 95%;
       margin: 0 auto;
     }
+
+    &-article {
+      height: auto;
+    }
   }
 }
 
@@ -155,6 +159,7 @@
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
 
+
   .feedback {
 
     &-wrapper {
@@ -173,7 +178,12 @@
     }
 
     &-article {
+      width: 90%;
       margin: 10px auto;
+    }
+
+    &-decription {
+      width: 76%;
     }
 
     &__btn-all {
@@ -184,8 +194,14 @@
 
 @media screen and (min-width: 480px) and (max-width: 639px) {
 
+
+  
   .feedback {
 
+    &-description {
+      width: 70%;
+    }
+    
     &-wrapper {
       width: 100%;
       padding: 0;
@@ -203,6 +219,10 @@
     &-article {
       width: 90%;
       margin: 10px auto;
+    }
+
+    &-decription {
+      width: 70%;
     }
 
     &__btn-all {

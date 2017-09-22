@@ -4,6 +4,8 @@
   margin-bottom: 120px; }
 
 .employee-img {
+  width: 371px;
+  height: 371px;
   margin: 0 29px 37px 0; }
 
 .employee-info {
@@ -132,7 +134,8 @@
     width: 86.5%;
     background-color: #36ba2f; }
   .skill-bar__name {
-    max-width: 277px;
+    display: inline-block;
+    max-width: 76%;
     overflow: hidden;
     margin-left: 25px;
     line-height: 50px;
