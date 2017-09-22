@@ -18,57 +18,39 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-breadcrumbs-icon {
   background-image: url(sprite.png);
-  background-position: -111px -63px;
+  background-position: -93px -81px;
   width: 11px;
   height: 7px;
 }
 .icon-email-icon {
   background-image: url(sprite.png);
-  background-position: -126px -47px;
+  background-position: -86px -90px;
   width: 17px;
   height: 13px;
 }
-.icon-facebook-icon {
-  background-image: url(sprite.png);
-  background-position: -136px -87px;
-  width: 8px;
-  height: 18px;
-}
-.icon-facebook-white {
-  background-image: url(sprite.png);
-  background-position: -126px -87px;
-  width: 10px;
-  height: 20px;
-}
 .icon-feedback-quotes {
   background-image: url(sprite.png);
-  background-position: -126px -73px;
+  background-position: -111px -63px;
   width: 15px;
   height: 14px;
 }
 .icon-feedback1 {
   background-image: url(sprite.png);
-  background-position: -63px 0px;
+  background-position: 0px 0px;
   width: 63px;
   height: 63px;
 }
 .icon-feedback2 {
   background-image: url(sprite.png);
-  background-position: 0px -63px;
+  background-position: -63px 0px;
   width: 63px;
   height: 63px;
 }
 .icon-feedback3 {
   background-image: url(sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -63px;
   width: 63px;
   height: 63px;
-}
-.icon-google-white {
-  background-image: url(sprite.png);
-  background-position: -93px -63px;
-  width: 18px;
-  height: 20px;
 }
 .icon-idea {
   background-image: url(sprite.png);
@@ -76,51 +58,21 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 23px;
   height: 35px;
 }
-.icon-linkedin-icon {
-  background-image: url(sprite.png);
-  background-position: -126px -32px;
-  width: 16px;
-  height: 15px;
-}
-.icon-linkedin-white {
-  background-image: url(sprite.png);
-  background-position: -126px 0px;
-  width: 18px;
-  height: 17px;
-}
 .icon-phone-icon {
   background-image: url(sprite.png);
-  background-position: -126px -107px;
+  background-position: -86px -103px;
   width: 13px;
   height: 14px;
 }
 .icon-search-icon {
   background-image: url(sprite.png);
-  background-position: -103px -90px;
+  background-position: -93px -63px;
   width: 18px;
   height: 18px;
-}
-.icon-twitter-icon {
-  background-image: url(sprite.png);
-  background-position: -126px -60px;
-  width: 17px;
-  height: 13px;
-}
-.icon-twitter-white {
-  background-image: url(sprite.png);
-  background-position: -126px -17px;
-  width: 18px;
-  height: 15px;
 }
 .icon-voice {
   background-image: url(sprite.png);
   background-position: -63px -63px;
   width: 30px;
   height: 27px;
-}
-.icon-youtube-white {
-  background-image: url(sprite.png);
-  background-position: -86px -90px;
-  width: 17px;
-  height: 21px;
 }
