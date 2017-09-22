@@ -396,6 +396,10 @@
   padding-top: 84px;
   margin-bottom: 85px; }
 
+.footer-company {
+  overflow: auto;
+  padding-bottom: 166px; }
+
 .menu-block {
   width: 31.5%; }
   .menu-block__title {
@@ -494,7 +498,8 @@
   .footer-company {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 60px; }
   .menu-block {
     width: 49%;
     margin: 0 auto; }
@@ -515,7 +520,8 @@
   .footer-company {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 60px; }
   .menu-block {
     width: 49%;
     margin: 0 auto; }
@@ -536,7 +542,8 @@
   .footer-company {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 60px; }
   .menu-block {
     width: 95%;
     margin: 0 auto; }

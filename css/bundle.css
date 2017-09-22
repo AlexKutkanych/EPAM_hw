@@ -1609,6 +1609,11 @@ a:hover {
   margin-bottom: 85px;
 }
 
+.footer-company {
+  overflow: auto;
+  padding-bottom: 166px;
+}
+
 .menu-block {
   width: 31.5%;
 }
@@ -1742,6 +1747,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 60px;
   }
 
   .menu-block {
@@ -1775,6 +1781,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 60px;
   }
 
   .menu-block {
@@ -1808,6 +1815,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 60px;
   }
 
   .menu-block {

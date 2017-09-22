@@ -1,12 +1,20 @@
 @import "../!general/const";
 @import "../header/header";
 
-.footer-menu-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-top: 84px;
-  margin-bottom: 85px;
+.footer {
+
+  &-menu-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 84px;
+    margin-bottom: 85px;
+  }
+
+  &-company {
+    overflow: auto;
+    padding-bottom: 166px;
+  }
 }
 
 .menu-block {
@@ -33,9 +41,6 @@
   }
 
   &__link {
-
-
-
   }
 }
 
@@ -177,6 +182,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-bottom: 60px;
     }
   }
 
@@ -215,6 +221,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-bottom: 60px;
     }
   }
 
@@ -253,6 +260,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-bottom: 60px;
     }
   }
 
