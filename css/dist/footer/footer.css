@@ -58,7 +58,7 @@
       top: 4px;
       left: 0;
       background-image: url(../../img/sprite.png);
-      background-position: -126px -107px;
+      background-position: -86px -103px;
       width: 13px;
       height: 14px;
       margin-right: 8px; }
@@ -72,7 +72,7 @@
       top: 3px;
       right: 89px;
       background-image: url(../../img/sprite.png);
-      background-position: -126px -47px;
+      background-position: -86px -90px;
       width: 17px;
       height: 13px; }
 
@@ -89,7 +89,7 @@
     top: 11px;
     display: inline-block;
     background-image: url(../../img/sprite.png);
-    background-position: -103px -90px;
+    background-position: -93px -63px;
     width: 18px;
     height: 18px; }
   .search-block__input {
