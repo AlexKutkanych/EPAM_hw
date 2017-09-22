@@ -34,6 +34,12 @@
   overflow: auto;
   background-color: #3f3d40; }
 
+@media screen and (min-width: 940px) and (max-width: 1210px) {
+  .l-wrapper {
+    width: 95%;
+    padding-right: 0;
+    padding-left: 0; } }
+
 @media screen and (min-width: 768px) and (max-width: 939px) {
   .l-container {
     width: 100%; }

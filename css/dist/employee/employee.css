@@ -154,6 +154,15 @@
     right: 10px;
     line-height: 50px; }
 
+@media screen and (min-width: 940px) and (max-width: 1210px) {
+  .employee-wrapper {
+    width: 95%;
+    margin: 0 auto; }
+  .employee-honors {
+    width: 100%; }
+  .employee-skills {
+    width: 100%; } }
+
 @media screen and (min-width: 768px) and (max-width: 939px) {
   .employee-wrapper {
     width: 95%;

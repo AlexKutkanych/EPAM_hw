@@ -211,7 +211,9 @@
     .header-navigation__link:hover {
       border-bottom: 4px solid #fe5000; }
 
-@media screen and (min-width: 940px) and (max-width: 1169px) {
+@media screen and (min-width: 940px) and (max-width: 1210px) {
+  .header-wrapper {
+    width: 100%; }
   #burger-icon {
     display: none; } }
 
@@ -486,6 +488,14 @@
     color: #fff; }
     .company-rights__policy:hover, .company-rights__terms:hover {
       color: #fe5000; }
+
+@media screen and (min-width: 940px) and (max-width: 1210px) {
+  .footer-wrapper {
+    width: 95%;
+    margin: 0 auto; }
+  .footer-company {
+    display: flex;
+    justify-content: space-between; } }
 
 @media screen and (min-width: 768px) and (max-width: 939px) {
   .footer-wrapper {

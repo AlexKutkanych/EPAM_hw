@@ -24,6 +24,11 @@ a {
   letter-spacing: 2.8px;
   color: #3f3e40; }
 
+@media screen and (min-width: 940px) and (max-width: 1210px) {
+  .block {
+    width: 95%;
+    margin: 0 auto; } }
+
 @media screen and (min-width: 768px) and (max-width: 939px) {
   .block {
     width: 100%;

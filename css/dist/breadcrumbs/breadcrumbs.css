@@ -36,6 +36,10 @@
       color: #fff;
       cursor: pointer; }
 
+@media screen and (min-width: 940px) and (max-width: 1210px) {
+  .breadcrumbs-wrapper {
+    width: 95%; } }
+
 @media screen and (min-width: 768px) and (max-width: 939px) {
   .breadcrumbs-wrapper {
     width: 95%;

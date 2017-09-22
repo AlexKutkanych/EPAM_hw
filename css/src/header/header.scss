@@ -268,7 +268,11 @@
   }
 }
 
-@media screen and (min-width: 940px) and (max-width: 1169px) {
+@media screen and (min-width: 940px) and (max-width: 1210px) {
+
+  .header-wrapper {
+    width: 100%;
+  }
 
   #burger-icon {
     display: none;
