@@ -3,10 +3,11 @@ var gulp = require('gulp'),
     concatCss = require('gulp-concat-css'),
     spritesmith = require('gulp.spritesmith'),
     watch = require('gulp-watch'),
-    webserver = require('gulp-webserver');
-var svgstore = require('gulp-svgstore');
-var svgmin = require('gulp-svgmin');
-var path = require('path');
+    webserver = require('gulp-webserver'),
+    svgstore = require('gulp-svgstore'),
+    svgmin = require('gulp-svgmin'),
+    path = require('path'),
+    autoprefixer = require('gulp-autoprefixer');
 
 
 gulp.task('concat-css', function () {
@@ -58,6 +59,13 @@ gulp.task('svgstore', function () {
         .pipe(gulp.dest('img'));
 });
 
+gulp.task('autoprefixer', function () {
+    return gulp.src('css/bundle.css').pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+    })).pipe(gulp.dest('css/'));
+});
+
 
 gulp.task('watch', function() {
     gulp.watch('css/src/*/*.scss', ['sass']);
@@ -65,7 +73,7 @@ gulp.task('watch', function() {
     gulp.watch('img/src/*.png', ['sprite']);
 });
 
-gulp.task('default', ['watch', 'webserver']);
+gulp.task('default', ['autoprefixer', 'watch', 'webserver']);
 
 
 

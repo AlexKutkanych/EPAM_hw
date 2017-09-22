@@ -368,6 +368,768 @@ a:hover {
     margin-right: 10px;
   }
 }
+.employee-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+}
+
+.employee-img {
+  width: 371px;
+  height: 371px;
+  margin: 0 29px 37px 0;
+}
+
+.employee-info {
+  width: 54%;
+  margin-top: 36px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.employee-info__name {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #00a7d9;
+  word-spacing: 2.8px;
+  letter-spacing: .3px;
+}
+
+.employee-info__description {
+  float: left;
+  margin: 20px 0 30px;
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 16px;
+  letter-spacing: .15px;
+}
+
+.employee-contacts__phone {
+  margin: 7px 0 2px;
+}
+
+.employee-contacts__email,
+.employee-contacts__skype {
+  margin: 0;
+}
+
+.socials__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  border-radius: 50%;
+  border: 1px solid #00a7d9;
+}
+
+.socials__icon_twitter {
+  height: 15px;
+}
+
+.socials__icon_facebook {
+  height: 15px;
+}
+
+.socials__icon_linkedin {
+  height: 15px;
+}
+
+.socials__icon:hover {
+  background-color: #a9dbef;
+}
+
+/*employee honors*/
+
+.employee-honors {
+  width: 68%;
+  margin-right: 5px;
+}
+
+.honors-section {
+  display: flex;
+  align-items: center;
+}
+
+.honors-article {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.honors-article__icon {
+  display: block;
+  background-image: url("../img/sprite.png");
+  margin: 46px 14px 0 0;
+}
+
+.honors-article__icon_voice {
+  background-position: -63px -63px;
+  width: 30px;
+  height: 27px;
+}
+
+.honors-article__icon_idea {
+  background-position: -63px -90px;
+  width: 23px;
+  height: 35px;
+  margin: 46px 22px 0 2px;
+}
+
+.honors-article__date {
+  margin-bottom: 11px;
+  color: #555557;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
+.honors-article__title {
+  max-width: 78%;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #00a7d9;
+  word-spacing: 1.9px;
+}
+
+.honors-article__more {
+  color: #00a7d9;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.honors-article__description {
+  max-width: 85%;
+  margin: 11px 0 20px;
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 14px;
+  word-spacing: 1.1px;
+}
+
+.article-wrapper {
+  max-width: 86%;
+}
+
+/*employee-skills*/
+
+.employee-skills {
+  width: 31.5%;
+  float: right;
+}
+
+.skills-section {
+  margin-top: 46px;
+}
+
+.skill-bar {
+  width: 70%;
+  height: 50px;
+  position: relative;
+  background-color: #fe5000;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+.skill-bar:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.skill-bar_color1 {
+  width: 91%;
+}
+
+.skill-bar_color2 {
+  width: 100%;
+  background-color: #00a7d9;
+}
+
+.skill-bar_color3 {
+  width: 86.5%;
+  background-color: #36ba2f;
+}
+
+.skill-bar__name {
+  display: inline-block;
+  max-width: 76%;
+  overflow: hidden;
+  margin-left: 25px;
+  line-height: 50px;
+  word-spacing: 3.1px;
+}
+
+.skill-bar__value {
+  position: absolute;
+  right: 10px;
+  line-height: 50px;
+}
+
+@media screen and (min-width: 940px) and (max-width: 1210px) {
+  .employee-wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .employee-honors {
+    width: 100%;
+  }
+
+  .employee-skills {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 939px) {
+  .employee-wrapper {
+    width: 95%;
+    padding: 0;
+  }
+
+  .employee-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .employee-img {
+    margin: 0;
+  }
+
+  .employee-info {
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .employee-info__contacts {
+    text-align: center;
+  }
+
+  .employee-honors {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .employee-honors__heading {
+    margin-bottom: 20px;
+  }
+
+  .honors-section {
+    justify-content: space-between;
+  }
+
+  .honors-article {
+    width: 49%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00a7d9;
+    margin-bottom: 10px;
+  }
+
+  .honors-article__icon {
+    margin-right: 10px;
+  }
+
+  .honors-article__title {
+    max-width: 100%;
+  }
+
+  .honors-article__description {
+    max-width: 100%;
+  }
+
+  .employee-skills {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .skill-bar__name {
+    margin-left: 10px;
+    max-width: 235px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .employee-wrapper {
+    width: 95%;
+    padding: 0;
+  }
+
+  .employee-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .employee-img {
+    margin: 0;
+  }
+
+  .employee-info {
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .employee-info__contacts {
+    text-align: center;
+  }
+
+  .employee-honors {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .employee-honors__heading {
+    margin-bottom: 20px;
+  }
+
+  .honors-section {
+    flex-direction: column;
+  }
+
+  .honors-article {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00a7d9;
+  }
+
+  .honors-article:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .honors-article__icon {
+    margin-right: 10px;
+  }
+
+  .honors-article__title {
+    max-width: 100%;
+  }
+
+  .honors-article__description {
+    max-width: 100%;
+  }
+
+  .employee-skills {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .skill-bar__name {
+    margin-left: 10px;
+    max-width: 235px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  .employee-wrapper {
+    width: 95%;
+    padding: 0;
+  }
+
+  .employee-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .employee-img {
+    margin: 0;
+  }
+
+  .employee-info {
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .employee-info__contacts {
+    text-align: center;
+  }
+
+  .employee-honors {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .employee-honors__heading {
+    margin-bottom: 20px;
+  }
+
+  .honors-section {
+    flex-direction: column;
+  }
+
+  .honors-article {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00a7d9;
+  }
+
+  .honors-article:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .honors-article__icon {
+    margin-right: 10px;
+  }
+
+  .honors-article__title {
+    max-width: 100%;
+  }
+
+  .honors-article__description {
+    max-width: 100%;
+  }
+
+  .employee-skills {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .skill-bar__name {
+    margin-left: 10px;
+    max-width: 235px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .employee-wrapper {
+    width: 95%;
+    padding: 0;
+  }
+
+  .employee-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .employee-img {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+  }
+
+  .employee-info {
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .employee-info__contacts {
+    text-align: center;
+  }
+
+  .employee-honors {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .employee-honors__heading {
+    margin-bottom: 20px;
+  }
+
+  .honors-section {
+    flex-direction: column;
+  }
+
+  .honors-article {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00a7d9;
+  }
+
+  .honors-article:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .honors-article__icon {
+    margin-right: 10px;
+  }
+
+  .honors-article__title {
+    max-width: 100%;
+  }
+
+  .honors-article__description {
+    max-width: 100%;
+  }
+
+  .employee-skills {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .skill-bar {
+    font-size: 14px;
+  }
+
+  .skill-bar__name {
+    margin-left: 10px;
+    max-width: 235px;
+    overflow: hidden;
+  }
+}
+.feedback-wrapper {
+  min-height: 649px;
+  padding-bottom: 1px;
+}
+
+.feedback-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.feedback-article {
+  width: 370px;
+  padding-bottom: 30px;
+  position: relative;
+  background-color: #fff;
+}
+
+.feedback-article__avatar {
+  display: block;
+  float: left;
+  margin: 30px 30px 0 26px;
+  background-image: url("../img/sprite.png");
+}
+
+.feedback-article__avatar:hover {
+  cursor: pointer;
+}
+
+.feedback-article__avatar_user1 {
+  background-position: 0px 0px;
+  width: 63px;
+  height: 63px;
+}
+
+.feedback-article__avatar_user2 {
+  background-position: -63px 0px;
+  width: 63px;
+  height: 63px;
+}
+
+.feedback-article__avatar_user3 {
+  background-position: 0px -63px;
+  width: 63px;
+  height: 63px;
+}
+
+.feedback__heading {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 106px 0 41px;
+  font-family: 'RalewayBold', sans-serif;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+
+.feedback__btn-all {
+  display: block;
+  margin: 20px auto;
+  width: 276px;
+  height: 60px;
+  background-color: #00a7d9;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-family: 'RalewayBold', sans-serif;
+}
+
+.feedback__btn-all:hover {
+  color: #fe5000;
+}
+
+.feedback-decription {
+  float: left;
+  width: 60%;
+}
+
+.feedback-decription__info {
+  float: right;
+  margin-right: 15px;
+  text-align: right;
+  color: #00a7d9;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.feedback-decription__text {
+  margin: 38px 0 13px;
+  line-height: 17px;
+}
+
+.feedback-decription__text:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url("../img/sprite.png");
+  background-position: -111px -63px;
+  width: 15px;
+  height: 14px;
+  top: 36px;
+  left: 99px;
+}
+
+@media screen and (min-width: 940px) and (max-width: 1210px) {
+  .feedback-wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .feedback-article {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 939px) {
+  .feedback-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .feedback__heading {
+    padding-top: 30px;
+  }
+
+  .feedback-block {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .feedback-article {
+    margin: 10px auto;
+  }
+
+  .feedback__btn-all {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .feedback-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .feedback__heading {
+    padding-top: 30px;
+  }
+
+  .feedback-block {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .feedback-article {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .feedback-decription {
+    width: 76%;
+  }
+
+  .feedback__btn-all {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  .feedback-description {
+    width: 70%;
+  }
+
+  .feedback-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .feedback__heading {
+    padding-top: 30px;
+  }
+
+  .feedback-block {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .feedback-article {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .feedback-decription {
+    width: 70%;
+  }
+
+  .feedback__btn-all {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .feedback-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .feedback__heading {
+    padding-top: 30px;
+  }
+
+  .feedback-block {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .feedback-article {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .feedback__btn-all {
+    margin-bottom: 30px;
+  }
+}
 .logo-block {
   width: 300px;
   float: left;
@@ -1730,767 +2492,5 @@ a:hover {
     display: block;
     order: -1;
     align-self: flex-start;
-  }
-}
-.employee-block {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 120px;
-}
-
-.employee-img {
-  width: 371px;
-  height: 371px;
-  margin: 0 29px 37px 0;
-}
-
-.employee-info {
-  width: 54%;
-  margin-top: 36px;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-}
-
-.employee-info__name {
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #00a7d9;
-  word-spacing: 2.8px;
-  letter-spacing: .3px;
-}
-
-.employee-info__description {
-  float: left;
-  margin: 20px 0 30px;
-  font-family: 'Myriad Pro', sans-serif;
-  font-size: 16px;
-  letter-spacing: .15px;
-}
-
-.employee-contacts__phone {
-  margin: 7px 0 2px;
-}
-
-.employee-contacts__email,
-.employee-contacts__skype {
-  margin: 0;
-}
-
-.socials__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  float: left;
-  width: 32px;
-  height: 32px;
-  margin-right: 12px;
-  border-radius: 50%;
-  border: 1px solid #00a7d9;
-}
-
-.socials__icon_twitter {
-  height: 15px;
-}
-
-.socials__icon_facebook {
-  height: 15px;
-}
-
-.socials__icon_linkedin {
-  height: 15px;
-}
-
-.socials__icon:hover {
-  background-color: #a9dbef;
-}
-
-/*employee honors*/
-
-.employee-honors {
-  width: 68%;
-  margin-right: 5px;
-}
-
-.honors-section {
-  display: flex;
-  align-items: center;
-}
-
-.honors-article {
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.honors-article__icon {
-  display: block;
-  background-image: url("../img/sprite.png");
-  margin: 46px 14px 0 0;
-}
-
-.honors-article__icon_voice {
-  background-position: -63px -63px;
-  width: 30px;
-  height: 27px;
-}
-
-.honors-article__icon_idea {
-  background-position: -63px -90px;
-  width: 23px;
-  height: 35px;
-  margin: 46px 22px 0 2px;
-}
-
-.honors-article__date {
-  margin-bottom: 11px;
-  color: #555557;
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-}
-
-.honors-article__title {
-  max-width: 78%;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  color: #00a7d9;
-  word-spacing: 1.9px;
-}
-
-.honors-article__more {
-  color: #00a7d9;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
-}
-
-.honors-article__description {
-  max-width: 85%;
-  margin: 11px 0 20px;
-  font-family: 'Myriad Pro', sans-serif;
-  font-size: 14px;
-  word-spacing: 1.1px;
-}
-
-.article-wrapper {
-  max-width: 86%;
-}
-
-/*employee-skills*/
-
-.employee-skills {
-  width: 31.5%;
-  float: right;
-}
-
-.skills-section {
-  margin-top: 46px;
-}
-
-.skill-bar {
-  width: 70%;
-  height: 50px;
-  position: relative;
-  background-color: #fe5000;
-  color: #fff;
-  font-weight: bold;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-}
-
-.skill-bar:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.skill-bar_color1 {
-  width: 91%;
-}
-
-.skill-bar_color2 {
-  width: 100%;
-  background-color: #00a7d9;
-}
-
-.skill-bar_color3 {
-  width: 86.5%;
-  background-color: #36ba2f;
-}
-
-.skill-bar__name {
-  display: inline-block;
-  max-width: 76%;
-  overflow: hidden;
-  margin-left: 25px;
-  line-height: 50px;
-  word-spacing: 3.1px;
-}
-
-.skill-bar__value {
-  position: absolute;
-  right: 10px;
-  line-height: 50px;
-}
-
-@media screen and (min-width: 940px) and (max-width: 1210px) {
-  .employee-wrapper {
-    width: 95%;
-    margin: 0 auto;
-  }
-
-  .employee-honors {
-    width: 100%;
-  }
-
-  .employee-skills {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 939px) {
-  .employee-wrapper {
-    width: 95%;
-    padding: 0;
-  }
-
-  .employee-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0;
-  }
-
-  .employee-img {
-    margin: 0;
-  }
-
-  .employee-info {
-    width: 95%;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .employee-info__contacts {
-    text-align: center;
-  }
-
-  .employee-honors {
-    width: 95%;
-    margin: 10px auto;
-  }
-
-  .employee-honors__heading {
-    margin-bottom: 20px;
-  }
-
-  .honors-section {
-    justify-content: space-between;
-  }
-
-  .honors-article {
-    width: 49%;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #00a7d9;
-    margin-bottom: 10px;
-  }
-
-  .honors-article__icon {
-    margin-right: 10px;
-  }
-
-  .honors-article__title {
-    max-width: 100%;
-  }
-
-  .honors-article__description {
-    max-width: 100%;
-  }
-
-  .employee-skills {
-    width: 95%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
-
-  .skill-bar__name {
-    margin-left: 10px;
-    max-width: 235px;
-    overflow: hidden;
-  }
-}
-
-@media screen and (min-width: 640px) and (max-width: 767px) {
-  .employee-wrapper {
-    width: 95%;
-    padding: 0;
-  }
-
-  .employee-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0;
-  }
-
-  .employee-img {
-    margin: 0;
-  }
-
-  .employee-info {
-    width: 95%;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .employee-info__contacts {
-    text-align: center;
-  }
-
-  .employee-honors {
-    width: 95%;
-    margin: 10px auto;
-  }
-
-  .employee-honors__heading {
-    margin-bottom: 20px;
-  }
-
-  .honors-section {
-    flex-direction: column;
-  }
-
-  .honors-article {
-    width: 100%;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #00a7d9;
-  }
-
-  .honors-article:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  .honors-article__icon {
-    margin-right: 10px;
-  }
-
-  .honors-article__title {
-    max-width: 100%;
-  }
-
-  .honors-article__description {
-    max-width: 100%;
-  }
-
-  .employee-skills {
-    width: 95%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
-
-  .skill-bar__name {
-    margin-left: 10px;
-    max-width: 235px;
-    overflow: hidden;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 639px) {
-  .employee-wrapper {
-    width: 95%;
-    padding: 0;
-  }
-
-  .employee-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0;
-  }
-
-  .employee-img {
-    margin: 0;
-  }
-
-  .employee-info {
-    width: 95%;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .employee-info__contacts {
-    text-align: center;
-  }
-
-  .employee-honors {
-    width: 95%;
-    margin: 10px auto;
-  }
-
-  .employee-honors__heading {
-    margin-bottom: 20px;
-  }
-
-  .honors-section {
-    flex-direction: column;
-  }
-
-  .honors-article {
-    width: 100%;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #00a7d9;
-  }
-
-  .honors-article:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  .honors-article__icon {
-    margin-right: 10px;
-  }
-
-  .honors-article__title {
-    max-width: 100%;
-  }
-
-  .honors-article__description {
-    max-width: 100%;
-  }
-
-  .employee-skills {
-    width: 95%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
-
-  .skill-bar__name {
-    margin-left: 10px;
-    max-width: 235px;
-    overflow: hidden;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 479px) {
-  .employee-wrapper {
-    width: 95%;
-    padding: 0;
-  }
-
-  .employee-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0;
-  }
-
-  .employee-img {
-    width: 300px;
-    height: 300px;
-    margin: 0;
-  }
-
-  .employee-info {
-    width: 95%;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .employee-info__contacts {
-    text-align: center;
-  }
-
-  .employee-honors {
-    width: 95%;
-    margin: 10px auto;
-  }
-
-  .employee-honors__heading {
-    margin-bottom: 20px;
-  }
-
-  .honors-section {
-    flex-direction: column;
-  }
-
-  .honors-article {
-    width: 100%;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #00a7d9;
-  }
-
-  .honors-article:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  .honors-article__icon {
-    margin-right: 10px;
-  }
-
-  .honors-article__title {
-    max-width: 100%;
-  }
-
-  .honors-article__description {
-    max-width: 100%;
-  }
-
-  .employee-skills {
-    width: 95%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
-
-  .skill-bar {
-    font-size: 14px;
-  }
-
-  .skill-bar__name {
-    margin-left: 10px;
-    max-width: 235px;
-    overflow: hidden;
-  }
-}
-.feedback-wrapper {
-  min-height: 649px;
-  padding-bottom: 1px;
-}
-
-.feedback-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 60px;
-}
-
-.feedback-article {
-  width: 370px;
-  padding-bottom: 30px;
-  position: relative;
-  background-color: #fff;
-}
-
-.feedback-article__avatar {
-  display: block;
-  float: left;
-  margin: 30px 30px 0 26px;
-  background-image: url("../img/sprite.png");
-}
-
-.feedback-article__avatar:hover {
-  cursor: pointer;
-}
-
-.feedback-article__avatar_user1 {
-  background-position: 0px 0px;
-  width: 63px;
-  height: 63px;
-}
-
-.feedback-article__avatar_user2 {
-  background-position: -63px 0px;
-  width: 63px;
-  height: 63px;
-}
-
-.feedback-article__avatar_user3 {
-  background-position: 0px -63px;
-  width: 63px;
-  height: 63px;
-}
-
-.feedback__heading {
-  display: block;
-  text-align: center;
-  margin: 0;
-  padding: 106px 0 41px;
-  font-family: 'RalewayBold', sans-serif;
-  font-weight: bold;
-  letter-spacing: .5px;
-}
-
-.feedback__btn-all {
-  display: block;
-  margin: 20px auto;
-  width: 276px;
-  height: 60px;
-  background-color: #00a7d9;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 30px;
-  border: none;
-  font-size: 16px;
-  font-family: 'RalewayBold', sans-serif;
-}
-
-.feedback__btn-all:hover {
-  color: #fe5000;
-}
-
-.feedback-decription {
-  float: left;
-  width: 60%;
-}
-
-.feedback-decription__info {
-  float: right;
-  margin-right: 15px;
-  text-align: right;
-  color: #00a7d9;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.feedback-decription__text {
-  margin: 38px 0 13px;
-  line-height: 17px;
-}
-
-.feedback-decription__text:before {
-  content: '';
-  display: block;
-  position: absolute;
-  background-image: url("../img/sprite.png");
-  background-position: -111px -63px;
-  width: 15px;
-  height: 14px;
-  top: 36px;
-  left: 99px;
-}
-
-@media screen and (min-width: 940px) and (max-width: 1210px) {
-  .feedback-wrapper {
-    width: 95%;
-    margin: 0 auto;
-  }
-
-  .feedback-article {
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 939px) {
-  .feedback-wrapper {
-    width: 100%;
-    padding: 0;
-  }
-
-  .feedback__heading {
-    padding-top: 30px;
-  }
-
-  .feedback-block {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 0;
-  }
-
-  .feedback-article {
-    margin: 10px auto;
-  }
-
-  .feedback__btn-all {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 640px) and (max-width: 767px) {
-  .feedback-wrapper {
-    width: 100%;
-    padding: 0;
-  }
-
-  .feedback__heading {
-    padding-top: 30px;
-  }
-
-  .feedback-block {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 0;
-  }
-
-  .feedback-article {
-    width: 90%;
-    margin: 10px auto;
-  }
-
-  .feedback-decription {
-    width: 76%;
-  }
-
-  .feedback__btn-all {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 639px) {
-  .feedback-description {
-    width: 70%;
-  }
-
-  .feedback-wrapper {
-    width: 100%;
-    padding: 0;
-  }
-
-  .feedback__heading {
-    padding-top: 30px;
-  }
-
-  .feedback-block {
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-
-  .feedback-article {
-    width: 90%;
-    margin: 10px auto;
-  }
-
-  .feedback-decription {
-    width: 70%;
-  }
-
-  .feedback__btn-all {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 479px) {
-  .feedback-wrapper {
-    width: 100%;
-    padding: 0;
-  }
-
-  .feedback__heading {
-    padding-top: 30px;
-  }
-
-  .feedback-block {
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-
-  .feedback-article {
-    width: 100%;
-    margin: 10px auto;
-  }
-
-  .feedback__btn-all {
-    margin-bottom: 30px;
   }
 }
