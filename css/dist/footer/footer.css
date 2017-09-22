@@ -431,35 +431,45 @@
     .footer-menu__link:hover {
       color: #fe5000; }
 
-.social-menu__link:before {
-  content: '';
-  display: inline-block;
-  background-image: url(../../img/sprite.png); }
-
-.social-menu__link_facebook:before {
-  background-position: -126px -87px;
-  width: 10px;
-  height: 20px; }
-
-.social-menu__link_twitter:before {
-  background-position: -126px -17px;
-  width: 18px;
-  height: 15px; }
-
-.social-menu__link_linkedin:before {
-  background-position: -126px 0px;
-  width: 18px;
-  height: 17px; }
-
-.social-menu__link_google:before {
-  background-position: -93px -63px;
-  width: 18px;
-  height: 20px; }
-
-.social-menu__link_youtube:before {
-  background-position: -86px -90px;
-  width: 17px;
-  height: 21px; }
+.social-menu__link {
+  position: relative; }
+  .social-menu__link:first-child, .social-menu__link:nth-child(2), .social-menu__link:nth-child(3) {
+    margin-left: 29px; }
+  .social-menu__link:nth-child(4), .social-menu__link:last-child {
+    margin-left: 21px; }
+  .social-menu__link:before {
+    content: '';
+    display: inline-block;
+    background-image: url(../../img/sprite.png);
+    position: absolute;
+    top: 5px; }
+  .social-menu__link_facebook:before {
+    background: center url(../../img/src/footer/facebook-logo-white.svg) no-repeat;
+    width: 10px;
+    height: 20px;
+    left: -28px; }
+  .social-menu__link_twitter:before {
+    background: center url(../../img/src/footer/twitter-logo-white.svg) no-repeat;
+    width: 18px;
+    height: 15px;
+    top: 7px;
+    left: -28px; }
+  .social-menu__link_linkedin:before {
+    background: center url(../../img/src/footer/linkedin-logo-white.svg) no-repeat;
+    width: 18px;
+    height: 17px;
+    left: -28px; }
+  .social-menu__link_google:before {
+    background: center url(../../img/src/footer/google-logo-white.svg) no-repeat;
+    width: 18px;
+    height: 20px;
+    left: -28px; }
+  .social-menu__link_youtube:before {
+    background: center url(../../img/src/footer/youtube-logo-white.svg) no-repeat;
+    width: 17px;
+    height: 21px;
+    left: -28px;
+    top: 3px; }
 
 .title-main_footer {
   color: #fff; }
