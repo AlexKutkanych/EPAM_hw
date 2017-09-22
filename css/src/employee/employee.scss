@@ -210,7 +210,7 @@
   .employee {
 
     &-wrapper {
-      width: 95%;
+      width: $wrapper-width-small-screen;
       margin: 0 auto;
     }
 
@@ -229,7 +229,7 @@
   .employee {
 
     &-wrapper {
-      width: 95%;
+      width: $wrapper-width-small-screen;
       padding: 0;
     }
 
@@ -279,7 +279,6 @@
       border-bottom: 2px solid $c-main;
       margin-bottom: 10px;
 
-
       &__icon {
         margin-right: 10px;
       }
@@ -315,7 +314,7 @@
   .employee {
 
     &-wrapper {
-      width: 95%;
+      width: $wrapper-width-small-screen;
       padding: 0;
     }
 
@@ -403,7 +402,7 @@
   .employee {
 
     &-wrapper {
-      width: 95%;
+      width: $wrapper-width-small-screen;
       padding: 0;
     }
 
@@ -491,7 +490,7 @@
   .employee {
 
     &-wrapper {
-      width: 95%;
+      width: $wrapper-width-small-screen;
       padding: 0;
     }
 

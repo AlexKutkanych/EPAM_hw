@@ -583,7 +583,8 @@
   .footer-company {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 60px; }
   .menu-block {
     width: 95%;
     margin: 0 auto; }
