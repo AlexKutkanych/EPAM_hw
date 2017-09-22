@@ -63,7 +63,7 @@
     margin: 20px auto;
     width: 276px;
     height: 60px;
-    background-color: $blue;
+    background-color: $c-main;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
@@ -73,7 +73,7 @@
     font-family: 'RalewayBold', sans-serif;
     
     &:hover {
-      color: $orange;
+      color: $c-logo;
     }
   }
 
@@ -86,7 +86,7 @@
       float: right;
       margin-right: 15px;
       text-align: right;
-      color: $blue;
+      color: $c-main;
       font-family: 'Lato', sans-serif;
       font-weight: bold;
       font-size: 15px;

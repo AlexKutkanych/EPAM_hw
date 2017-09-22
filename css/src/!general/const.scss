@@ -1,13 +1,10 @@
-// Path
-
-$image-path: '../img/';
 
 // Colors
 
-$orange: #fe5000;
-$blue: #00a7d9;
-$blue-breadcrumbs: #29a5d5;
-$grey: #353537;
+$c-logo: #fe5000;
+$c-main: #00a7d9;
+$c-panel: #29a5d5;
+$c-nav-link: #353537;
 
 
 // Dimensions
@@ -15,13 +12,6 @@ $grey: #353537;
 $wrapper-width: 1170px;
 $main-block-width: 620px;
 
-// Blocks
-
 // Hot Themes
 
 $hot-themes-title-background: #333;
-
-// Fonts
-
-$main-font: 'PT Sans', sans-serif;
-$secondary-font: 'PT Serif', serif;
