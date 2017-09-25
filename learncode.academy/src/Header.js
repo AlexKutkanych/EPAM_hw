@@ -11,6 +11,7 @@ import Teams from './Teams';
 import MainPage from './MainPage';
 import Scores from './Scores';
 import Players from './Players';
+import News from './News';
 import SignInForm from './SignInForm';
 import NotFound from './NotFound';
 
@@ -21,7 +22,8 @@ export default class Header extends Component{
         super(props);
 
         this.state = {
-            isShown: false
+            isShown: false,
+            name: "Will"
         }
 
         this.showModal = this.showModal.bind(this);
@@ -42,7 +44,7 @@ export default class Header extends Component{
 
     render(){
 
-        const navBar = ["Scores", "Teams", "Players"];
+        const navBar = ["Scores", "Teams", "Players", "News"];
 
         const test = {
             backgroundColor: "green"
@@ -65,6 +67,7 @@ export default class Header extends Component{
                 <Route activeClassName="test" exact path='/Teams' component={Teams}/>
                 <Route activeClassName="test" path='/Scores' component={Scores}/>
                 <Route activeClassName="test" path='/Players' component={Players}/>
+                <Route activeClassName="test" path='/News' component={News}/>
                 <Route component={NotFound}/>
             </Switch>
 
