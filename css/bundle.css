@@ -42,9 +42,22 @@ a:hover {
 @media screen and (min-width: 768px) and (max-width: 939px) {
   .block {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
   }
 }
@@ -52,9 +65,22 @@ a:hover {
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .block {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
   }
 }
@@ -62,9 +88,22 @@ a:hover {
 @media screen and (min-width: 480px) and (max-width: 639px) {
   .block {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
   }
 }
@@ -72,9 +111,22 @@ a:hover {
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .block {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
   }
 
@@ -127,12 +179,12 @@ a:hover {
   background-color: #f6f7f7;
   border-bottom: 6px solid #fe5000;
   -webkit-box-shadow: inset 0px 25px 20px -20px #dadbdb;
-  -moz-box-shadow: inset 0px 25px 20px -20px #dadbdb;
   box-shadow: inset 0px 25px 20px -20px #dadbdb;
 }
 
 .l-feedback {
   background: center center url("../img/src/feedback-bg.jpg") no-repeat;
+  -webkit-background-size: cover;
   background-size: cover;
   overflow: auto;
 }
@@ -369,7 +421,12 @@ a:hover {
   }
 }
 .employee-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-bottom: 120px;
 }
@@ -415,13 +472,23 @@ a:hover {
 }
 
 .socials__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   float: left;
   width: 32px;
   height: 32px;
   margin-right: 12px;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   border: 1px solid #00a7d9;
 }
@@ -450,13 +517,24 @@ a:hover {
 }
 
 .honors-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 
 .honors-article {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -591,9 +669,22 @@ a:hover {
   }
 
   .employee-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     margin-bottom: 0;
   }
@@ -605,8 +696,18 @@ a:hover {
   .employee-info {
     width: 95%;
     margin: 10px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
   }
 
@@ -624,6 +725,9 @@ a:hover {
   }
 
   .honors-section {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
   }
 
@@ -666,9 +770,22 @@ a:hover {
   }
 
   .employee-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     margin-bottom: 0;
   }
@@ -680,8 +797,18 @@ a:hover {
   .employee-info {
     width: 95%;
     margin: 10px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
   }
 
@@ -699,6 +826,10 @@ a:hover {
   }
 
   .honors-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
   }
 
@@ -744,9 +875,22 @@ a:hover {
   }
 
   .employee-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     margin-bottom: 0;
   }
@@ -758,8 +902,18 @@ a:hover {
   .employee-info {
     width: 95%;
     margin: 10px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
   }
 
@@ -777,6 +931,10 @@ a:hover {
   }
 
   .honors-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
   }
 
@@ -822,9 +980,22 @@ a:hover {
   }
 
   .employee-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     margin-bottom: 0;
   }
@@ -838,8 +1009,18 @@ a:hover {
   .employee-info {
     width: 95%;
     margin: 10px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
   }
 
@@ -857,6 +1038,10 @@ a:hover {
   }
 
   .honors-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
   }
 
@@ -904,8 +1089,17 @@ a:hover {
 }
 
 .feedback-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   margin-bottom: 60px;
 }
@@ -965,6 +1159,7 @@ a:hover {
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
+  -webkit-border-radius: 30px;
   border-radius: 30px;
   border: none;
   font-size: 16px;
@@ -1029,7 +1224,12 @@ a:hover {
   }
 
   .feedback-block {
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     margin-bottom: 0;
   }
@@ -1054,7 +1254,12 @@ a:hover {
   }
 
   .feedback-block {
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     margin-bottom: 0;
   }
@@ -1088,6 +1293,10 @@ a:hover {
   }
 
   .feedback-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
     margin-bottom: 0;
   }
@@ -1117,6 +1326,10 @@ a:hover {
   }
 
   .feedback-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
     margin-bottom: 0;
   }
@@ -1140,6 +1353,7 @@ a:hover {
   display: inline-block;
   width: 58px;
   height: 58px;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #fe5000;
   font-family: 'Sacramento', cursive;
@@ -1190,7 +1404,13 @@ a:hover {
   font-weight: bold;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
@@ -1252,6 +1472,7 @@ a:hover {
 .search-block__input {
   width: 238px;
   height: 36px;
+  -webkit-border-radius: 20px;
   border-radius: 20px;
   border: 1px solid #d4d4d4;
   color: #cacaca;
@@ -1300,11 +1521,9 @@ a:hover {
   margin: 12px 0 5px 10px;
   float: left;
   -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
@@ -1316,15 +1535,14 @@ a:hover {
   height: 9px;
   width: 100%;
   background: #fff;
+  -webkit-border-radius: 9px;
   border-radius: 9px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
@@ -1332,31 +1550,27 @@ a:hover {
 .burger-icon__strip:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
 }
 
 .burger-icon__strip:nth-child(2) {
   top: 18px;
   -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
 }
 
 .burger-icon__strip:nth-child(3) {
   top: 36px;
   -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
 }
 
 #burger-icon.open .burger-icon__strip:nth-child(1) {
   -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   top: -3px;
   left: 8px;
@@ -1369,8 +1583,7 @@ a:hover {
 
 #burger-icon.open .burger-icon__strip:nth-child(3) {
   -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   top: 39px;
   left: 8px;
@@ -1431,6 +1644,9 @@ a:hover {
     width: 100%;
     height: 0;
     overflow: hidden;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     background-color: #00a7d9;
   }
@@ -1459,13 +1675,21 @@ a:hover {
     width: 100%;
     height: 70px;
     background-color: #00a7d9;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     border-bottom: 2px solid #fff;
   }
 
   #burger-icon {
     display: block;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
+    -ms-flex-item-align: start;
+    -webkit-align-self: flex-start;
     align-self: flex-start;
   }
 }
@@ -1494,6 +1718,9 @@ a:hover {
     width: 100%;
     height: 0;
     overflow: hidden;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     background-color: #00a7d9;
   }
@@ -1522,13 +1749,21 @@ a:hover {
     width: 100%;
     height: 70px;
     background-color: #00a7d9;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     border-bottom: 2px solid #fff;
   }
 
   #burger-icon {
     display: block;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
+    -ms-flex-item-align: start;
+    -webkit-align-self: flex-start;
     align-self: flex-start;
   }
 }
@@ -1557,6 +1792,9 @@ a:hover {
     width: 100%;
     height: 0;
     overflow: hidden;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     background-color: #00a7d9;
   }
@@ -1585,13 +1823,21 @@ a:hover {
     width: 100%;
     height: 70px;
     background-color: #00a7d9;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     border-bottom: 2px solid #fff;
   }
 
   #burger-icon {
     display: block;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
+    -ms-flex-item-align: start;
+    -webkit-align-self: flex-start;
     align-self: flex-start;
   }
 }
@@ -1624,6 +1870,9 @@ a:hover {
     width: 100%;
     height: 0;
     overflow: hidden;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     background-color: #00a7d9;
   }
@@ -1652,20 +1901,37 @@ a:hover {
     width: 100%;
     height: 70px;
     background-color: #00a7d9;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     border-bottom: 2px solid #fff;
   }
 
   #burger-icon {
     display: block;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
+    -ms-flex-item-align: start;
+    -webkit-align-self: flex-start;
     align-self: flex-start;
   }
 }
 
 .footer-menu-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
   align-items: flex-start;
   padding-top: 84px;
   margin-bottom: 85px;
@@ -1697,9 +1963,11 @@ a:hover {
 }
 
 .footer-menu {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
   column-count: 2;
   -webkit-column-gap: 32px;
-  -moz-column-gap: 32px;
+  -moz-column-gap: 29px;
   column-gap: 29px;
 }
 
@@ -1824,7 +2092,13 @@ a:hover {
   }
 
   .footer-company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
   }
 }
@@ -1837,13 +2111,25 @@ a:hover {
 
   .footer-menu-section {
     padding-top: 20px;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-bottom: 20px;
   }
 
   .footer-company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     padding-bottom: 60px;
   }
@@ -1871,13 +2157,25 @@ a:hover {
 
   .footer-menu-section {
     padding-top: 20px;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-bottom: 20px;
   }
 
   .footer-company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     padding-bottom: 60px;
   }
@@ -1905,13 +2203,27 @@ a:hover {
 
   .footer-menu-section {
     padding-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
     margin-bottom: 20px;
   }
 
   .footer-company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     padding-bottom: 60px;
   }
@@ -1939,13 +2251,27 @@ a:hover {
 
   .footer-menu-section {
     padding-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
     margin-bottom: 20px;
   }
 
   .footer-company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     padding-bottom: 60px;
   }
@@ -1974,6 +2300,7 @@ a:hover {
   display: inline-block;
   width: 58px;
   height: 58px;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #fe5000;
   font-family: 'Sacramento', cursive;
@@ -2022,7 +2349,13 @@ a:hover {
   font-weight: bold;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
@@ -2084,6 +2417,7 @@ a:hover {
 .search-block__input {
   width: 238px;
   height: 36px;
+  -webkit-border-radius: 20px;
   border-radius: 20px;
   border: 1px solid #d4d4d4;
   color: #cacaca;
@@ -2132,11 +2466,9 @@ a:hover {
   margin: 12px 0 5px 10px;
   float: left;
   -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
@@ -2148,15 +2480,14 @@ a:hover {
   height: 9px;
   width: 100%;
   background: #fff;
+  -webkit-border-radius: 9px;
   border-radius: 9px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
@@ -2164,31 +2495,27 @@ a:hover {
 .burger-icon__strip:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
 }
 
 .burger-icon__strip:nth-child(2) {
   top: 18px;
   -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
 }
 
 .burger-icon__strip:nth-child(3) {
   top: 36px;
   -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
 }
 
 #burger-icon.open .burger-icon__strip:nth-child(1) {
   -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   top: -3px;
   left: 8px;
@@ -2201,8 +2528,7 @@ a:hover {
 
 #burger-icon.open .burger-icon__strip:nth-child(3) {
   -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   top: 39px;
   left: 8px;
@@ -2263,6 +2589,9 @@ a:hover {
     width: 100%;
     height: 0;
     overflow: hidden;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     background-color: #00a7d9;
   }
@@ -2291,13 +2620,21 @@ a:hover {
     width: 100%;
     height: 70px;
     background-color: #00a7d9;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     border-bottom: 2px solid #fff;
   }
 
   #burger-icon {
     display: block;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
+    -ms-flex-item-align: start;
+    -webkit-align-self: flex-start;
     align-self: flex-start;
   }
 }
@@ -2326,6 +2663,9 @@ a:hover {
     width: 100%;
     height: 0;
     overflow: hidden;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     background-color: #00a7d9;
   }
@@ -2354,13 +2694,21 @@ a:hover {
     width: 100%;
     height: 70px;
     background-color: #00a7d9;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     border-bottom: 2px solid #fff;
   }
 
   #burger-icon {
     display: block;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
+    -ms-flex-item-align: start;
+    -webkit-align-self: flex-start;
     align-self: flex-start;
   }
 }
@@ -2389,6 +2737,9 @@ a:hover {
     width: 100%;
     height: 0;
     overflow: hidden;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     background-color: #00a7d9;
   }
@@ -2417,13 +2768,21 @@ a:hover {
     width: 100%;
     height: 70px;
     background-color: #00a7d9;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     border-bottom: 2px solid #fff;
   }
 
   #burger-icon {
     display: block;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
+    -ms-flex-item-align: start;
+    -webkit-align-self: flex-start;
     align-self: flex-start;
   }
 }
@@ -2456,6 +2815,9 @@ a:hover {
     width: 100%;
     height: 0;
     overflow: hidden;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     background-color: #00a7d9;
   }
@@ -2484,13 +2846,21 @@ a:hover {
     width: 100%;
     height: 70px;
     background-color: #00a7d9;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
     border-bottom: 2px solid #fff;
   }
 
   #burger-icon {
     display: block;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
+    -ms-flex-item-align: start;
+    -webkit-align-self: flex-start;
     align-self: flex-start;
   }
 }
