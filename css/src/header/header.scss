@@ -104,6 +104,14 @@
   font-family: 'Lato', sans-serif;
   position: relative;
 
+  &__form {
+    width: 238px;
+    height: 36px;
+    border-radius: 20px;
+    border: 1px solid #d4d4d4;
+    color: #cacaca;
+  }
+
   &:after {
     content: '';
     position: absolute;
@@ -114,16 +122,17 @@
     background-position: -93px -63px;
     width: 18px;
     height: 18px;
+    appearance: 
   }
 
   &__input {
-    width: 238px;
-    height: 36px;
-    border-radius: 20px;
-    border: 1px solid #d4d4d4;
+    width: 185px;
+    height: 34px;
+    border: none;
     color: #cacaca;
-    text-indent: 19px;
+    text-indent: 5px;
     line-height: 36px;
+    margin-left: 15px;
 
     &::-webkit-input-placeholder {
       color: #cacaca;
