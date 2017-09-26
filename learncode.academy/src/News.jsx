@@ -19,6 +19,7 @@ export default class News extends React.Component{
             <div>
                 <h2>News Page</h2>
                 {News}
+
             </div>
         )
     }

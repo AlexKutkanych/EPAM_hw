@@ -14,6 +14,9 @@ import Players from './Players';
 import News from './News';
 import SignInForm from './SignInForm';
 import NotFound from './NotFound';
+import WesternConferences from './WesternConferences';
+import EasternConferences from './EasternConferences';
+
 
 
 
@@ -30,7 +33,7 @@ export default class Header extends Component{
     }
 
     showModal(){
-        const showModal = this.state.isShown == true ? false : true
+        const showModal = this.state.isShown == true ? false : true;
         this.setState({
           isShown: showModal
         })
@@ -52,29 +55,32 @@ export default class Header extends Component{
 
          const navLinks = navBar.map((page, index) => {
              return (
-                 <a href={"/" + page} key={index} className="menu-item">{page}</a>)});
+                 <Link to={"/" + page} key={index} className="menu-item" >{page}</Link>)});
+
 
         return (
             <div>
                 <nav className="menu">
-                    <a href="/"><img className="menu__logo" src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png?w=100&h=100&transparent=true" alt="logo"/></a>
+                    <Link to="/"><img className="menu__logo" src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png?w=100&h=100&transparent=true" alt="logo"/></Link>
                     {navLinks}
+
                     <a href="#" onClick={this.showModal}>Sign In</a>
                     {this.state.isShown ? <SignInForm /> : false}
-                </nav>
-            <Switch>
-                <Route activeClassName="test" exact path='/' component={MainPage}/>
-                <Route activeClassName="test" exact path='/Teams' component={Teams}/>
-                <Route activeClassName="test" path='/Scores' component={Scores}/>
-                <Route activeClassName="test" path='/Players' component={Players}/>
-                <Route activeClassName="test" path='/News' component={News}/>
-                <Route component={NotFound}/>
-            </Switch>
 
+                </nav>
+                <Switch>
+                    <Route activeClassName="test" exact path='/' component={MainPage}/>
+                    <Route activeClassName="test" exact path='/Teams' component={Teams}/>
+                    <Route activeClassName="test" exact path='/Scores' component={Scores}/>
+                    <Route activeClassName="test" exact path='/Players' component={Players}/>
+                    <Route activeClassName="test" exact path='/News' component={News}/>
+                    <Route activeClassName="test" exact path='/Teams/WC' component={WesternConferences}/>
+                    <Route activeClassName="test" exact path='/Teams/EC' component={EasternConferences}/>
+                    <Route component={NotFound}/>
+                </Switch>
             </div>
 
         )
-
     }
 
 

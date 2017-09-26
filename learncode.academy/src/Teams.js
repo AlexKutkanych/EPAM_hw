@@ -1,24 +1,30 @@
-import React from 'react';
-import TeamProfile from './TeamProfile';
+import React, { Component } from 'react';
+import WesternConferences from './WesternConferences';
+import EasternConferences from './EasternConferences';
 
-export default class Teams extends React.Component{
 
-    render() {
 
-        const Teams = [
-            {name: "Team1", desc: "Team1 Team1 Team1 Team1 Team1 Team1"},
-            {name: "Team2", desc: "Team1 Team1 Team1 Team1 Team1 Team1"}
-        ].map((team, i) => <TeamProfile key={i} name={team.name} desc={team.desc} />);
 
-        return(
+export default class Teams extends Component{
 
+
+
+    render(){
+
+        // const Conference = [
+        //     {name: "WesternConference", img: "https://upload.wikimedia.org/wikipedia/en/0/02/Western_Conference_%28NBA%29_logo.gif"},
+        //     {name: "EasternConference", img: "https://upload.wikimedia.org/wikipedia/en/e/ed/Eastern_Conference_%28NBA%29_logo.gif"}
+        // ].map((team, i));
+
+        return (
             <div>
-                <h2>Teams</h2>
-                {Teams}
 
 
             </div>
 
         )
     }
+
+
+
 }

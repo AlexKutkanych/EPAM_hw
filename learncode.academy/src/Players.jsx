@@ -7,8 +7,8 @@ export default class Players extends React.Component{
     render() {
 
         const Players = [
-            {name: "LeBron", position: "SF", picture: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"},
-            {name: "Wade", position: "SG", picture: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1987.png&w=350&h=254"}
+            {id: 0, number: 6, name: "LeBron", position: "SF", picture: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"},
+            {id: 1, number: 3, name: "Wade", position: "SG", picture: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1987.png&w=350&h=254"}
 
         ].map((title, i) => <PlayerProfile key={i} title={title.name} position={title.position} picture={title.picture}/>);
 
