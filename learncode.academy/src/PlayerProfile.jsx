@@ -3,10 +3,7 @@ import React from 'react';
 export default class PlayerProfile extends React.Component{
 
     render() {
-        const {title} = this.props;
-        const {position} = this.props;
-        const {picture} = this.props;
-
+        const {title, position, picture} = this.props;
 
         return(
            <article className="Player-container">

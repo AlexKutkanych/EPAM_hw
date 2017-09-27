@@ -14,8 +14,6 @@ import Players from './Players';
 import News from './News';
 import SignInForm from './SignInForm';
 import NotFound from './NotFound';
-import WesternConferences from './WesternConferences';
-import EasternConferences from './EasternConferences';
 
 
 
@@ -74,8 +72,6 @@ export default class Header extends Component{
                     <Route activeClassName="test" exact path='/Scores' component={Scores}/>
                     <Route activeClassName="test" exact path='/Players' component={Players}/>
                     <Route activeClassName="test" exact path='/News' component={News}/>
-                    <Route activeClassName="test" exact path='/Teams/WC' component={WesternConferences}/>
-                    <Route activeClassName="test" exact path='/Teams/EC' component={EasternConferences}/>
                     <Route component={NotFound}/>
                 </Switch>
             </div>
