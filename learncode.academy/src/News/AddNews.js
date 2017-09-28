@@ -1,4 +1,5 @@
 import React from 'react';
+import uuid from 'uuid';
 
 
 export default class AddNews extends React.Component{
@@ -25,6 +26,7 @@ export default class AddNews extends React.Component{
         } else {
             this.setState({
                 newNews: {
+                    id: uuid.v4(),
                     title: this.refs.title.value,
                     date: this.refs.date.value
                 }}, function(){

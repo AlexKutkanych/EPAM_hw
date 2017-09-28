@@ -10,3 +10,15 @@
     border: 1px solid lightgrey;
     width: 23%;
 }
+
+.delete-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.posts-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

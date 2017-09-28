@@ -5,9 +5,13 @@ import './index.css';
 
 export default class NewsBlock extends React.Component{
 
+    deleteNews(id){
+        this.props.onDelete(id);
+    }
+
     render(){
         let allNews;
-        allNews = this.props.news.map((newsItem, i) => <NewsTempl key={i} newsItem={newsItem}/>);
+        allNews = this.props.news.map((newsItem, i) => <NewsTempl onDelete={this.deleteNews.bind(this)} key={i} newsItem={newsItem}/>);
 
 
         return(
