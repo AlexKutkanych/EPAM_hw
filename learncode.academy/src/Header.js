@@ -7,11 +7,11 @@ import {
 
 import './App.css';
 import './index.css';
-import Teams from './Teams';
-import MainPage from './MainPage';
+import Teams from './Teams/Teams';
+import MainPage from './MainPage/MainPage';
 import Scores from './Scores';
-import Players from './Players';
-import News from './News';
+import Players from './Players/Players';
+import News from './News/News';
 import SignInForm from './SignInForm';
 import NotFound from './NotFound';
 

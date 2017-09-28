@@ -65,7 +65,26 @@
   padding: 50px;
 }
 
-.team {
-  /*display: none;*/
+.Player-container__show-likes {
+  display: none;
+  font-size: 40px;
+  padding: 10px;
+  background-color: lightgreen;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+}
+
+.Player-container__show-likes::before {
+  content: '';
+  display: inline-block;
+  background-image: url(Players/like.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.Player-container:hover .Player-container__show-likes {
+  display: block;
 }
 
