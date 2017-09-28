@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, IndexRoute} from 'react-router';
+import {} from 'react-router';
 import { BrowserRouter } from "react-router-dom";
-import Header from './Header';
+import Header from './Header/Header';
 
 
 import registerServiceWorker from './registerServiceWorker';

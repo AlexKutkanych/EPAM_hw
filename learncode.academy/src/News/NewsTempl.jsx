@@ -4,16 +4,17 @@ export default class NewsTempl extends React.Component{
 
     render(){
 
-        const {date} = this.props;
-        const {title} = this.props;
-        const {newsText} = this.props;
+        const {title, date, newsText} = this.props.newsItem;
+
+
 
         return(
-            <article>
-                <span>{date}</span>
-                <h2>{title}</h2>
+            <article className="news-article">
+                <span>{title}</span>
+                <h2>{date}</h2>
                 <p>{newsText}</p>
             </article>
+
         )
     }
 }

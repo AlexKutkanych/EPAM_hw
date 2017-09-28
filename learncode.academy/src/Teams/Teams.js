@@ -21,7 +21,6 @@ export default class Teams extends Component{
 
         const showWesternTeams = this.state.showWCTeams === true ? false : true;
         const showEasternTeams = this.state.showECTeams === true ? false : true;
-        const dataAttr = "data-conference";
 
         if(e.target.dataset.conference === "WesternConference") {
             this.setState({
