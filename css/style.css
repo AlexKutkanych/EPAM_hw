@@ -1,6 +1,15 @@
 * {
 	margin: 0;
 	padding: 0;
-	background-color: #000;
 	color: #fff;
+}
+
+body {
+	background: url('../img/thanksgiving-weather.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.weather-block {
+	margin: 30px auto;
 }
