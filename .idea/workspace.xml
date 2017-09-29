@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8506751e-1468-4e3d-85c8-71bdfb87f042" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learncode.academy/src/MainPage/Country.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learncode.academy/src/MainPage/api.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learncode.academy/src/Players/configureStore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learncode.academy/src/Players/firebase.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learncode.academy/package.json" afterPath="$PROJECT_DIR$/learncode.academy/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learncode.academy/public/index.html" afterPath="$PROJECT_DIR$/learncode.academy/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learncode.academy/src/MainPage/MainPage.js" afterPath="$PROJECT_DIR$/learncode.academy/src/MainPage/MainPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learncode.academy/src/News/News.jsx" afterPath="$PROJECT_DIR$/learncode.academy/src/News/News.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learncode.academy/src/News/NewsBlock.jsx" afterPath="$PROJECT_DIR$/learncode.academy/src/News/NewsBlock.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learncode.academy/src/Players/PlayerProfile.jsx" afterPath="$PROJECT_DIR$/learncode.academy/src/Players/PlayerProfile.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learncode.academy/src/Players/Players.jsx" afterPath="$PROJECT_DIR$/learncode.academy/src/Players/Players.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learncode.academy/src/Teams/TeamProfile.jsx" afterPath="$PROJECT_DIR$/learncode.academy/src/Teams/TeamProfile.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="$PROJECT_DIR$/npm-debug.log" />
-    </list>
+    <list default="true" id="8506751e-1468-4e3d-85c8-71bdfb87f042" name="Default" comment="" />
     <ignored path="workshop_2017.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -41,8 +26,8 @@
       <file leaf-file-name="MainPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learncode.academy/src/MainPage/MainPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -393,12 +378,12 @@
       <workItem from="1506061681715" duration="4568000" />
       <workItem from="1506583654949" duration="23355000" />
       <workItem from="1506670654564" duration="12880000" />
-      <workItem from="1506696772381" duration="1886000" />
+      <workItem from="1506696772381" duration="1973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184911000" />
+    <option name="totallyTimeSpent" value="184998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -546,8 +531,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learncode.academy/src/MainPage/MainPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
