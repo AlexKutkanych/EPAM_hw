@@ -1,21 +1,29 @@
 <html>
 	<head>
 		<script src="js/script.js" defer></script>
+		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 		<title>Weather App</title>
 	</head>
 	<body>
 		<div id="result">
 			<div class="weather-block">
-				<h1>Weather App</h1>
-				<h2 class="w-location" id="w-location"></h2>
-				<h2 class="w-temp" id="w-temp"></h2>
-				<h2 class="w-humidity" id="w-humidity"></h2>
-				<img src="" alt="" id="w-icon">	
-				<h2 class="w-desc" id="w-desc"></h2>
-				<h2 class="w-wind" id="w-wind"></h2>
+				<h1 class="weather-title">Weather App</h1>
+				<div class="weather-info">
+					<div class="weather-description">
+						<img src="" alt="" id="w-icon" class="w-icon">
+						<span class="w-desc" id="w-desc"></span>
+					</div>
+						
+					<span class="w-temp" id="w-temp"></span>
+					<span class="w-location" id="w-location"></span>
+					<span class="w-humidity" id="w-humidity"></span>
+					<span class="w-wind" id="w-wind"></span>
+				</div>
 			</div>
-			
 		</div>
+		<footer class="footer">
+			<span class="footer-author">Made by <a href="https://github.com/AlexKutkanych/">alex_ukr</a></span>
+		</footer>
 	</body>
 </html>

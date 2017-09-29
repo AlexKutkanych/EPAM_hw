@@ -17,6 +17,8 @@ navigator.geolocation.getCurrentPosition(function(position){
 	var wTemperature = document.querySelector("#w-temp");
 	var wHumidity = document.querySelector("#w-humidity");
 	var wWind = document.querySelector("#w-wind");
+	var body = document.querySelector("body");
+
 	fetch('https://fcc-weather-api.glitch.me/api/current?lon=' + longitude + '&lat=' + latitude)
 		.then(function(res){
 			res.json().then(function(data){
@@ -25,10 +27,19 @@ navigator.geolocation.getCurrentPosition(function(position){
 				wIcon.setAttribute("src", data.weather[0].icon);
 				wDescription.innerHTML = data.weather[0].main;
 				wTemperature.innerHTML = Math.round(data.main.temp) +" &#8451;";
-				wHumidity.innerHTML = "Humidity: " + Math.round(data.main.humidity) + "%";
-				wWind.innerHTML = "Wind: " + data.wind.speed + "km/h";
+				wHumidity.innerHTML = "<span class='brand-style'>Humidity:</span> " + Math.round(data.main.humidity) + "%";
+				wWind.innerHTML = "<span class='brand-style'>Wind:</span> " + data.wind.speed + "km/h";
+
+				if(data.weather[0].main === "Clouds") {
+					body.style.backgroundImage = 'url("img/clouds.jpeg")';
+				} else if(data.weather[0].main === "snowy mountain") {
+					body.style.backgroundImage = 'url("img/snowy-mountain.jpeg")';
+				} else if(data.weather[0].main === "hot desert") {
+					body.style.backgroundImage = 'url("img/hot-desert.jpeg")';
+				}
 			})
 		})
+
 })
 		
 		
