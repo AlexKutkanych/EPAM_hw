@@ -13,7 +13,6 @@ export default class NewsBlock extends React.Component{
         let allNews;
         allNews = this.props.news.map((newsItem, i) => <NewsTempl onDelete={this.deleteNews.bind(this)} key={i} newsItem={newsItem}/>);
 
-
         return(
             <div className="news-block">
                 {allNews}

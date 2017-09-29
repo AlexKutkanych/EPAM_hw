@@ -4,7 +4,7 @@ import uuid from 'uuid';
 import NewsBlock from './NewsBlock';
 import AddNews from './AddNews';
 import Posts from './Posts';
-import PostItem from './PostItem';
+// import PostItem from './PostItem';
 
 
 export default class News extends React.Component{
@@ -51,7 +51,6 @@ export default class News extends React.Component{
             method: 'GET'
         }).then((data) => {
             this.setState({posts: data}, function(){
-                console.log(this.state);
             })
         })
     }
@@ -73,7 +72,6 @@ export default class News extends React.Component{
         this.setState({
             news: allNews
         })
-        console.log(this.state.news);
     }
 
     handleDeleteNews(id){
@@ -97,8 +95,6 @@ export default class News extends React.Component{
                 <hr/>
                 <h2>Posts</h2>
                 <Posts posts={this.state.posts}/>
-
-
             </div>
         )
 

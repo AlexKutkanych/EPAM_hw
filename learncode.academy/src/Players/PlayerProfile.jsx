@@ -7,6 +7,8 @@ export default class PlayerProfile extends React.Component{
             likes: 0
         }
 
+
+
         this.addLikes = this.addLikes.bind(this);
     }
 
@@ -15,12 +17,11 @@ export default class PlayerProfile extends React.Component{
         this.setState({
             likes: this.state.likes + 1
         })
-        // this.state.likes += 1;
         console.log(this.state.likes);
     }
 
     render() {
-        const {title, position, picture } = this.props;
+        const {title, position, picture} = this.props;
 
         return(
            <article className="Player-container" onClick={this.addLikes}>

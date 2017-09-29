@@ -4,10 +4,7 @@ export default class TeamProfile extends React.Component{
 
     render(){
 
-        const {name} = this.props;
-        const {img} = this.props;
-        const {alt} = this.props;
-        const {desc} = this.props;
+        const {name, img, alt, desc} = this.props;
 
 
         return(
