@@ -7,7 +7,7 @@
 
 body {
 	background-image: url('../img/1.jpg');
-	background-repeat: no-repeat;
+	background-repeat-x: no-repeat;
 	background-position: center center;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -77,6 +77,66 @@ a {
 	text-indent: 10px;
 	border: 2px solid white;
 }
+
+.search-btn {
+	display: block;
+	margin: 5px auto;
+	padding: 5px 10px;
+	border: none;
+	background-color: #fff;
+	color: #17a5e8;
+	border-radius: 20px;
+}
+
+.results {
+	width: 1000px;
+	position: absolute;
+	top: 380px;
+	left: 277px;
+	background-color: rgba(122, 121, 121, .5);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+
+.results-article {
+	width: 90%;
+	padding: 10px;
+	border: 1px solid grey;
+	margin: 10px auto; 
+	background-color: #17a5e8;
+}
+
+.article-title {
+	font-size: 20px;
+}
+
+.article-title:hover {
+	cursor: pointer;
+	color: yellow;
+}
+
+.article-desc {
+	position: relative;
+	margin-left: 30px;
+}
+.article-desc::before {
+	content: '';
+	position: absolute;
+	left: -25px;
+	width: 20px;
+	height: 20px;
+	background-image: url('../img/quotations.svg');
+
+}
+
+
+
 .footer {
 	width: 100%;
 	height: 40px;
