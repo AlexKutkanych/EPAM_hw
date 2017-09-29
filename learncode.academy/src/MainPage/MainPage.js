@@ -1,6 +1,7 @@
 import React from 'react';
 import Country from './Country';
 var api = require('./api');
+var axios = require('axios');
 
 export default class MainPage extends React.Component{
 
@@ -10,7 +11,8 @@ export default class MainPage extends React.Component{
         this.state = {
             isShown: false,
             name: "Will",
-            country: []
+            country: [],
+            test: []
         }
 
         this.changeName = this.changeName.bind(this);
@@ -32,33 +34,43 @@ export default class MainPage extends React.Component{
 
 
     componentDidMount(){
-        api.fetchPopularRepos()
-                .then((test) => {
-                    console.log(test);
+        // api.fetchPopularRepos()
+        //         .then((test) => {
+        //             console.log(test);
+        //         })
+
+        axios.get('https://restcountries.eu/rest/v2/all')
+            .then((response) => {
+                this.setState({
+                    test: response.data
                 })
+                console.log(response.data);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
     }
 
-    componentWillMount() {
-        fetch('https://restcountries.eu/rest/v2/all')
-            .then((res) => {
-                res.json().then((data) => {
-                    this.setState({
-                        country: data
-                    })
-                })
-
-            })
-            .catch((err) => {
-                console.log(err)
-            })
-
-    }
+    // componentWillMount() {
+    //     fetch('https://restcountries.eu/rest/v2/all')
+    //         .then((res) => {
+    //             res.json().then((data) => {
+    //                 this.setState({
+    //                     country: data
+    //                 })
+    //             })
+    //
+    //         })
+    //         .catch((err) => {
+    //             console.log(err)
+    //         })
+    // }
 
     render(){
 
         let test;
-        test = this.state.country.map((countries, i) => <Country key={i} country={countries.name}/>);
-        console.log(this.state);
+        test = this.state.test.map((countries, i) => <Country key={i} country={countries.name}/>);
+        // console.log(this.state);
 
 
 

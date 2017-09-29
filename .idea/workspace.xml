@@ -1,7 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8506751e-1468-4e3d-85c8-71bdfb87f042" name="Default" comment="" />
+    <list default="true" id="8506751e-1468-4e3d-85c8-71bdfb87f042" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/watch/test/d/d/t" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/watch/test/d/t" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/watch/test/test_monitor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/watch/test/test_monitorRootDirectory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/watch/test/test_watchTree.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/lib/websocket/driver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/lib/websocket/driver/base.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/lib/websocket/driver/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/lib/websocket/driver/draft75.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/lib/websocket/driver/draft76.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/lib/websocket/driver/headers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/lib/websocket/driver/hybi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/lib/websocket/driver/hybi/frame.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/lib/websocket/driver/hybi/message.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/lib/websocket/driver/proxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/lib/websocket/driver/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/lib/websocket/driver/stream_reader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/lib/websocket/http_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/lib/websocket/streams.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-driver/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-extensions/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-extensions/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-extensions/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-extensions/lib/parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-extensions/lib/pipeline/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-extensions/lib/pipeline/cell.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-extensions/lib/pipeline/functor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-extensions/lib/pipeline/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-extensions/lib/pipeline/pledge.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-extensions/lib/pipeline/ring_buffer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-extensions/lib/websocket_extensions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/websocket-extensions/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/whet.extend/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/whet.extend/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/whet.extend/Cakefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/whet.extend/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/whet.extend/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/whet.extend/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/whet.extend/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/whet.extend/lib/whet.extend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/whet.extend/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/whet.extend/src/whet.extend.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/whet.extend/test/extend_test.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/whet.extend/test/mocha.opts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/whet.extend/test/test_helper.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/which-module/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/which-module/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/which-module/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/which-module/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/which-module/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/which/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/which/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/which/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/which/bin/which" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/which/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/which/which.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wide-align/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wide-align/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wide-align/align.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wide-align/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/window-size/LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/window-size/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/window-size/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/window-size/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wordwrap/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wordwrap/README.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wordwrap/example/center.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wordwrap/example/meat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wordwrap/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wordwrap/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wordwrap/test/break.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wordwrap/test/idleness.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wordwrap/test/wrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wrap-ansi/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wrap-ansi/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wrap-ansi/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wrap-ansi/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wrappy/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wrappy/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wrappy/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wrappy/wrappy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xtend/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xtend/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xtend/LICENCE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xtend/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xtend/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xtend/immutable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xtend/mutable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xtend/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xtend/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/y18n/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/y18n/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/y18n/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/y18n/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yallist/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yallist/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yallist/iterator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yallist/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yallist/yallist.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs-parser/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs-parser/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs-parser/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs-parser/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs-parser/lib/tokenize-arg-string.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs-parser/node_modules/camelcase/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs-parser/node_modules/camelcase/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs-parser/node_modules/camelcase/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs-parser/node_modules/camelcase/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs-parser/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/completion.sh.hbs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/lib/apply-extends.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/lib/argsert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/lib/assign.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/lib/command.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/lib/completion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/lib/levenshtein.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/lib/obj-filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/lib/usage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/lib/validation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/lib/yerror.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/be.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/de.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/en.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/es.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/fr.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/hi.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/hu.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/id.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/it.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/ja.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/ko.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/nb.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/nl.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/pirate.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/pl.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/pt.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/pt_BR.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/ru.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/th.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/tr.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/zh_CN.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/locales/zh_TW.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/node_modules/camelcase/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/node_modules/camelcase/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/node_modules/camelcase/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/node_modules/camelcase/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yargs/yargs.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learncode.academy/src/MainPage/MainPage.js" afterPath="$PROJECT_DIR$/learncode.academy/src/MainPage/MainPage.js" />
+    </list>
     <ignored path="workshop_2017.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,8 +184,8 @@
       <file leaf-file-name="MainPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learncode.academy/src/MainPage/MainPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -35,21 +193,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsBlock.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learncode.academy/src/News/NewsBlock.jsx">
+      <file leaf-file-name="api.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learncode.academy/src/MainPage/api.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsTempl.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learncode.academy/src/News/NewsTempl.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -125,7 +273,6 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/learncode.academy/node_modules" />
-    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -378,12 +525,12 @@
       <workItem from="1506061681715" duration="4568000" />
       <workItem from="1506583654949" duration="23355000" />
       <workItem from="1506670654564" duration="12880000" />
-      <workItem from="1506696772381" duration="1973000" />
+      <workItem from="1506696772381" duration="2581000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184998000" />
+    <option name="totallyTimeSpent" value="185606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -497,14 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learncode.academy/src/MainPage/api.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learncode.academy/src/News/NewsTempl.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -529,10 +668,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/learncode.academy/src/MainPage/api.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/learncode.academy/src/MainPage/MainPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
