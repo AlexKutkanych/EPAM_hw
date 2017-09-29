@@ -6,7 +6,7 @@
 }
 
 body {
-	background-image: url('../img/1.jpg');
+	background-color: ;
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -53,10 +53,33 @@ a {
 	margin-right: 40px;
 }
 
+.temp-block {
+	color: #000;
+	font-size: 60px;
+}
+
 .w-temp {
 	display: block;
 	float: left;
-	font-size: 60px;	
+	
+}
+
+.temp-celc {
+	color: grey;	
+}
+
+.temp-celc:hover,
+.temp-fahr:hover {
+	cursor: pointer;
+	color: #fff;	
+}
+
+.temp-fahr {
+	color: grey;	
+}
+
+.temp-active {
+	color: #fff;
 }
 
 .w-icon {
