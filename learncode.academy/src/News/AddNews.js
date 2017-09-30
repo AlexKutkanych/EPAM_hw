@@ -43,8 +43,7 @@ export default class AddNews extends React.Component{
 
         let categoryOption = this.props.categories.map(category => {
             return <option key={category} value={category}>{category}</option>
-        });
-
+          });
         return(
             <div>
                <h3>Add News</h3>
@@ -61,8 +60,7 @@ export default class AddNews extends React.Component{
                     </div>
                     <input type="submit"/>
                 </form>
-
             </div>
         )
     }
-}
+  }

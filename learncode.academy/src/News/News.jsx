@@ -4,6 +4,7 @@ import uuid from 'uuid';
 import NewsBlock from './NewsBlock';
 import AddNews from './AddNews';
 import Posts from './Posts';
+import axios from 'axios';
 // import PostItem from './PostItem';
 
 
@@ -16,8 +17,6 @@ export default class News extends React.Component{
         }
 
     }
-
-
     getNews(){
         this.setState({
             news: [
@@ -46,13 +45,20 @@ export default class News extends React.Component{
     }
 
     getPosts(){
-        $.ajax({
-            url: 'https://jsonplaceholder.typicode.com'+'/posts',
-            method: 'GET'
-        }).then((data) => {
-            this.setState({posts: data}, function(){
-            })
-        })
+      axios.get('https://jsonplaceholder.typicode.com/posts')
+        .then(response =>
+            this.setState({
+              posts: response.data
+            }))
+        .catch(response => console.log(response))
+
+        // $.ajax({
+        //     url: ,
+        //     method: 'GET'
+        // }).then((data) => {
+        //     this.setState({posts: data}, function(){
+        //     })
+        // })
     }
 
 
@@ -83,19 +89,21 @@ export default class News extends React.Component{
         })
     }
 
-
-
-
-
     render(){
         return(
-            <div>
-                <AddNews addNews={this.handleAddNews.bind(this)}/>
-                <NewsBlock news={this.state.news} onDelete={this.handleDeleteNews.bind(this)}/>
-                <hr/>
-                <h2>Posts</h2>
-                <Posts posts={this.state.posts}/>
-            </div>
+          <div>
+              <div className="fb-like"
+                   data-share="true"
+                   data-width="450"
+                   data-show-faces="true">
+              </div>
+              <div className="fb-post" data-href="https://www.facebook.com/20531316728/posts/10154009990506729/" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/20531316728/posts/10154009990506729/" className="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/facebook/">Facebook</a> on&nbsp;<a href="https://www.facebook.com/20531316728/posts/10154009990506729/">Thursday, 27 August 2015</a></blockquote></div>
+              <AddNews addNews={this.handleAddNews.bind(this)}/>
+              <NewsBlock news={this.state.news} onDelete={this.handleDeleteNews.bind(this)}/>
+              <hr/>
+              <h2>Posts</h2>
+              <Posts posts={this.state.posts}/>
+          </div>
         )
 
     }
