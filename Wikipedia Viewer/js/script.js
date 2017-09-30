@@ -9,7 +9,7 @@ function showSearchBlock(){
 searchBlockBtn.addEventListener("click", showSearchBlock);
 
 $(function(){
-		
+
 	$(".search-btn").click(function(e){
 
 		var searchQuery = $("#search-input").val();
@@ -29,7 +29,7 @@ $(function(){
 		 					console.log($(this).parent());
 		 				}
 		 			}
-		  				
+
 		 		},
 		 		error: function(errorMsg){
 		 			console.log("Error occured " + errorMsg);
@@ -41,4 +41,3 @@ $(function(){
 
 	})
 })
-	
