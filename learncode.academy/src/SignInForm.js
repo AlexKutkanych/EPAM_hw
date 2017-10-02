@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default class SignInForm extends React.Component{
+export default class SignInForm extends Component{
 
     constructor(props){
         super(props);
 
         this.state = {
             name: "",
-            pass: ""
+            pass: "",
+            nameEmpty: true,
+            passEmpty: true,
         }
-
     }
 
     handleChange = (e) => {
@@ -20,8 +21,6 @@ export default class SignInForm extends React.Component{
         });
 
         e.preventDefault();
-
-        console.log(this.state);
     }
 
     render() {
@@ -35,8 +34,10 @@ export default class SignInForm extends React.Component{
                 <label htmlFor="pass-input">Password</label>
                 <input type="password"
                        id="pass-input"
-                       name="pass" required/><br/>
-                <input type="submit" value="Submit"/>
+                       name="pass"
+                        required/>
+                        <br/>
+                <input type="submit" value="Submit" />
             </form>
         )
     }

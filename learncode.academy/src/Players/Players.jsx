@@ -1,15 +1,9 @@
 import React from 'react';
 import PlayerProfile from './PlayerProfile';
 import '../App.css';
-import {init as firebaseInit} from 'firebase';
 
 
 export default class Players extends React.Component{
-    constructor(props) {
-        super(props)
-
-    }
-
 
     render() {
 
@@ -34,6 +28,6 @@ export default class Players extends React.Component{
                 </div>
             </div>
 
-                )
+        )
     }
 }
