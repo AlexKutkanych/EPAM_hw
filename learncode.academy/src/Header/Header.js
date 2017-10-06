@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
     Route,
     Switch,
+    NavLink,
     Link
 } from 'react-router-dom';
 
@@ -48,7 +49,6 @@ export default class Header extends Component{
         })
     }
 
-
     handleChange(e){
         const title = e.target.value;
        this.props.changeTitle(title);
@@ -56,17 +56,24 @@ export default class Header extends Component{
 
     render(){
 
+        let arr1 = [1, 2, 3];
+        let arr2 = ['asd', 'dfg'];
+
+        let test = [...arr1, ...arr2];
+        console.log(test);
+
+
         const navBar = ["Scores", "Teams", "Players", "News", "TestPage"];
 
          const navLinks = navBar.map((page, index) => {
              return (
-                 <Link to={"/" + page} key={index} className="menu-item" >{page}</Link>)});
+                 <NavLink to={"/" + page} key={index} activeStyle={{ color: 'red' }} className="menu-item" >{page}</NavLink>)});
 
 
         return (
             <div>
                 <nav className="menu">
-                    <Link to="/"><img className="menu__logo" src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png?w=100&h=100&transparent=true" alt="logo"/></Link>
+                    <Link to="/" ><img className="menu__logo" src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png?w=100&h=100&transparent=true" alt="logo"/></Link>
                     {navLinks}
 
                     <button className="waves-effect red darken-2 btn" href="#" onClick={this.showSignIn}>Sign In</button>
@@ -76,12 +83,12 @@ export default class Header extends Component{
 
                 </nav>
                 <Switch>
-                    <Route activeClassName="test" exact path='/' component={MainPage}/>
-                    <Route activeClassName="test" exact path='/Teams' component={Teams}/>
-                    <Route activeClassName="test" exact path='/Scores' component={Scores}/>
-                    <Route activeClassName="test" exact path='/Players' component={Players}/>
-                    <Route activeClassName="test" exact path='/News' component={News}/>
-                    <Route activeClassName="test" exact path='/TestPage' component={TestPage}/>
+                    <Route exact path='/' component={MainPage}/>
+                    <Route exact path='/Teams' component={Teams}/>
+                    <Route exact path='/Scores' component={Scores}/>
+                    <Route exact path='/Players' component={Players}/>
+                    <Route exact path='/News' component={News}/>
+                    <Route exact path='/TestPage' component={TestPage}/>
                     <Route component={NotFound}/>
                 </Switch>
             </div>
