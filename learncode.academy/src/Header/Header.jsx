@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
     Route,
     Switch,
+    NavLink,
     Link
 } from 'react-router-dom';
 
@@ -12,7 +13,9 @@ import MainPage from '../MainPage/MainPage';
 import Scores from '../Scores/Scores';
 import Players from '../Players/Players';
 import News from '../News/News';
+import TestPage from '../TestPage/TestPage';
 import SignInForm from '../SignInForm';
+import SignUpForm from '../SignUpForm';
 import NotFound from '../NotFound';
 
 
@@ -23,20 +26,25 @@ export default class Header extends Component{
         super(props);
 
         this.state = {
-            isShown: false,
+            isShownSignUp: false,
+            isShownSignIn: false,
             name: "Will",
         }
-
-        this.showModal = this.showModal.bind(this);
     }
 
-    showModal(){
-        const showModal = this.state.isShown === true ? false : true;
+    showSignIn = () => {
+        const showModal = this.state.isShownSignIn === true ? false : true;
         this.setState({
-          isShown: showModal
+            isShownSignIn: showModal
         })
     }
 
+    showSignUp = () => {
+        const showModal = this.state.isShownSignUp === true ? false : true;
+        this.setState({
+            isShownSignUp: showModal
+        })
+    }
 
     handleChange(e){
         const title = e.target.value;
@@ -44,25 +52,28 @@ export default class Header extends Component{
     }
 
     render(){
-
-      const navBar = ["Scores", "Teams", "Players", "News"];
+      const navBar = ["Scores", "Teams", "Players", "News", "TestPage"];
       const navLinks = navBar.map((page, i) => (<Link to={"/" + page} key={i} className="menu-item">{page}</Link>));
-
 
         return (
             <div>
                 <nav className="menu">
-                    <Link to="/"><img className="menu__logo" src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png?w=100&h=100&transparent=true" alt="logo"/></Link>
+                    <Link to="/" ><img className="menu__logo" src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png?w=100&h=100&transparent=true" alt="logo"/></Link>
                     {navLinks}
                     <button href="#" onClick={this.showModal}>Sign In</button>
                     {this.state.isShown ? <SignInForm /> : false}
+                    <button className="waves-effect red darken-2 btn" href="#" onClick={this.showSignIn}>Sign In</button>
+                    {this.state.isShownSignIn ? <SignInForm /> : false}
+                    <button className="waves-effect red darken-2 btn" href="#" onClick={this.showSignUp}>Sign Up</button>
+                    {this.state.isShownSignUp ? <SignUpForm /> : false}
                 </nav>
                 <Switch>
-                    <Route activeClassName="test" exact path='/' component={MainPage}/>
-                    <Route activeClassName="test" exact path='/Teams' component={Teams}/>
-                    <Route activeClassName="test" exact path='/Scores' component={Scores}/>
-                    <Route activeClassName="test" exact path='/Players' component={Players}/>
-                    <Route activeClassName="test" exact path='/News' component={News}/>
+                    <Route exact path='/' component={MainPage}/>
+                    <Route exact path='/Teams' component={Teams}/>
+                    <Route exact path='/Scores' component={Scores}/>
+                    <Route exact path='/Players' component={Players}/>
+                    <Route exact path='/News' component={News}/>
+                    <Route exact path='/TestPage' component={TestPage}/>
                     <Route component={NotFound}/>
                 </Switch>
               </div>

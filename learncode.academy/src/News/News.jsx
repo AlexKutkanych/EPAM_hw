@@ -1,5 +1,4 @@
 import React from 'react';
-import $ from 'jquery';
 import uuid from 'uuid';
 import NewsBlock from './NewsBlock';
 import AddNews from './AddNews';

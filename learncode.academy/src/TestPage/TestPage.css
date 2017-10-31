@@ -1,0 +1,12 @@
+.temp-check {
+    width: 30%;
+    float: left;
+    margin: 20px;
+    padding: 10px;
+    background-color: palevioletred;
+    color: white;
+}
+
+.temp-check_style {
+    background-color: mediumspringgreen;
+}
