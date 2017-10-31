@@ -9,7 +9,7 @@ import '../App.css';
 import '../index.css';
 import Teams from '../Teams/Teams';
 import MainPage from '../MainPage/MainPage';
-import Scores from '../Scores';
+import Scores from '../Scores/Scores';
 import Players from '../Players/Players';
 import News from '../News/News';
 import SignInForm from '../SignInForm';
@@ -45,11 +45,8 @@ export default class Header extends Component{
 
     render(){
 
-        const navBar = ["Scores", "Teams", "Players", "News"];
-
-         const navLinks = navBar.map((page, index) => {
-             return (
-                 <Link to={"/" + page} key={index} className="menu-item" >{page}</Link>)});
+      const navBar = ["Scores", "Teams", "Players", "News"];
+      const navLinks = navBar.map((page, i) => (<Link to={"/" + page} key={i} className="menu-item">{page}</Link>));
 
 
         return (
@@ -57,10 +54,8 @@ export default class Header extends Component{
                 <nav className="menu">
                     <Link to="/"><img className="menu__logo" src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png?w=100&h=100&transparent=true" alt="logo"/></Link>
                     {navLinks}
-
                     <button href="#" onClick={this.showModal}>Sign In</button>
                     {this.state.isShown ? <SignInForm /> : false}
-
                 </nav>
                 <Switch>
                     <Route activeClassName="test" exact path='/' component={MainPage}/>
@@ -70,8 +65,7 @@ export default class Header extends Component{
                     <Route activeClassName="test" exact path='/News' component={News}/>
                     <Route component={NotFound}/>
                 </Switch>
-            </div>
-
+              </div>
         )
     }
 }
