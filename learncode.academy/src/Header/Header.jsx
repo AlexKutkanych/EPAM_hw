@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
     Route,
     Switch,
-    NavLink,
     Link
 } from 'react-router-dom';
 
@@ -20,8 +19,7 @@ import NotFound from '../NotFound';
 
 
 
-
-export default class Header extends Component{
+class Header extends Component{
     constructor(props){
         super(props);
 
@@ -54,7 +52,6 @@ export default class Header extends Component{
     render(){
       const navBar = ["Scores", "Teams", "Players", "News", "TestPage"];
       const navLinks = navBar.map((page, i) => (<Link to={"/" + page} key={i} className="menu-item">{page}</Link>));
-
         return (
             <div>
                 <nav className="menu">
@@ -80,3 +77,5 @@ export default class Header extends Component{
         )
     }
 }
+
+export default Header;

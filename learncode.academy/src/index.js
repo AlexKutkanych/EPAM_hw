@@ -6,7 +6,12 @@ import Header from './Header/Header.jsx';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-function league(state = [], action){
+
+const initialState = [
+	'Dwyane Wade',
+	'LeBron James'
+]
+function league(state = initialState, action){
 	if(action.type === 'ADD_PLAYER'){
 		return [
 			...state,
@@ -16,15 +21,17 @@ function league(state = [], action){
 	return state;
 }
 
-const store = createStore(league);
+const store = createStore(league, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+
+
 
 
 
 ReactDOM.render(
-    <BrowserRouter>
-        <Provider>
+    <Provider store={store}>
+        <BrowserRouter>
           <Header />
-        </Provider>
-    </BrowserRouter>,
+   		 </BrowserRouter>
+    </Provider>,
         document.getElementById('root')
 );
