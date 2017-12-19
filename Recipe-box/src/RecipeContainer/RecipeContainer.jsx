@@ -13,16 +13,16 @@ class RecipeContainer extends Component {
   constructor(props){
     super(props);
     this.state = {
-      open: false
+      openNewRecipeModal: false
     }
   }
 
   handleOpen = () => {
-    this.setState({open: true});
+    this.setState({openNewRecipeModal: true});
   };
 
   handleClose = () => {
-    this.setState({open: false});
+    this.setState({openNewRecipeModal: false});
   };
 
   render() {
@@ -36,8 +36,7 @@ class RecipeContainer extends Component {
                 labelText={'Add Recipe'}
                 icon={<ContentAddCircleOutline />}
                 click={this.handleOpen}/>
-
-              <ModalBox open={this.state.open} close={this.handleClose} />
+        <ModalBox open={this.state.openNewRecipeModal} close={this.handleClose} />
       </div>
     );
   }

@@ -9,16 +9,6 @@ import FlatButton from 'material-ui/FlatButton';
  * You can also close this dialog by clicking outside the dialog, or with the 'Esc' key.
  */
 class ModalBox extends Component {
-  state = {
-    open: false,
-  };
-
-  handleOpen = () => {
-    this.setState({open: true});
-  };
-
-
-
   render() {
     const actions = [
       <FlatButton
@@ -34,14 +24,16 @@ class ModalBox extends Component {
       />,
     ];
 
+    const { open, close } = this.props;
+
     return (
       <div>
         <Dialog
           title="Dialog With Actions"
           actions={actions}
           modal={false}
-          open={this.props.open}
-          onRequestClose={this.props.close}
+          open={open}
+          onRequestClose={close}
         >
           The actions in this window were passed in as an array of React objects.
         </Dialog>
