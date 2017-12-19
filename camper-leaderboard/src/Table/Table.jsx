@@ -1,29 +1,20 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import TableBody from '../TableBody/TableBody.jsx';
 import './table.css';
 
 class Table extends Component {
-
-  componentDidMount(){
-    axios.get('https://fcctop100.herokuapp.com/api/fccusers/top/recent')
-    .then(res => {
-      console.log(res.data);
-    });
-  }
-
   render() {
     return (
       <div className="table__block">
-        <table className="table">
-          <thead>
-            <tr>
-              <td>&#35;</td>
-              <td>Camper Name</td>
-              <td>Points in last 30 days</td>
-              <td>Points all time</td>
-            </tr>
-          </thead>
-        </table>
+        <div className="table">
+          <div className="table__heading">
+              <div className="table__cell table__cell_heading table__cell_small">&#35;</div>
+              <div className="table__cell table__cell_heading">Camper Name</div>
+              <div className="table__cell table__cell_heading table__cell_sortable">Points in last 30 days</div>
+              <div className="table__cell table__cell_heading table__cell_sortable">Points all time</div>
+            </div>
+          <TableBody />
+        </div>
       </div>
     );
   }
