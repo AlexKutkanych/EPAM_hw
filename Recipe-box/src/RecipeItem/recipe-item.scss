@@ -1,0 +1,28 @@
+.recipe-item {
+
+  &__block {
+    width: 95%;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: #66BB6A;
+    color: #fff;
+    border-radius: 20px;
+
+    &_open {
+      height: 200px;
+    }
+  }
+
+  &__name {
+    display: block;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 20px;
+
+    &:hover {
+      color: #FFF176;
+        text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 @import "./Header/header.css";
+@import "./RecipeItem/recipe-item.css";
 
 body {
   margin: 0;

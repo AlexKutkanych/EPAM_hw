@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
-import FontIcon from 'material-ui/FontIcon';
 
 const styles = {
   button: {
@@ -28,6 +26,7 @@ const Button = (props) => (
       labelColor={props.labelColor || '#fff'}
       icon={props.icon}
       style={styles.button}
+      onClick={props.click}
     />
   </div>
 );
