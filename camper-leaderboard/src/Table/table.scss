@@ -54,7 +54,10 @@
     }
 }
 
-th, td {
-  text-align: left;
-  padding: 8px;
+.users__sorted {
+  color: lightgrey;
+
+  &::after {
+    transform: rotateX(180deg);
+  }
 }
