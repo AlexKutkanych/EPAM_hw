@@ -8,12 +8,14 @@
   color: #fff;
   border-radius: 20px; }
   .recipe-item__block_open {
-    height: 100px; }
+    overflow: visible;
+    height: auto; }
   .recipe-item__block:hover {
     cursor: pointer; }
 
 .recipe-item__name {
   display: block;
+  margin-bottom: 27px;
   padding: 0 10px;
   font-weight: bold;
   font-size: 20px; }
@@ -21,3 +23,24 @@
     color: #FFF176;
     text-decoration: underline;
     cursor: pointer; }
+
+.recipe-item__ingredients {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #fff; }
+
+.ingredients__title {
+  padding-top: 10px;
+  color: #90A4AE;
+  text-align: center;
+  text-transform: uppercase; }
+
+.ingredients__buttons-wrapper {
+  display: flex; }
+
+.ingredients-list__item {
+  margin: 10px 20px 10px 0;
+  padding: 5px;
+  background-color: #DCEDC8;
+  color: black;
+  list-style: none; }

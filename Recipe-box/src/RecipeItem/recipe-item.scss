@@ -11,7 +11,8 @@
     border-radius: 20px;
 
     &_open {
-      height: 100px;
+      overflow: visible;
+      height: auto;
     }
 
     &:hover {
@@ -21,6 +22,7 @@
 
   &__name {
     display: block;
+    margin-bottom: 27px;
     padding: 0 10px;
     font-weight: bold;
     font-size: 20px;
@@ -29,6 +31,37 @@
       color: #FFF176;
       text-decoration: underline;
       cursor: pointer;
+    }
+  }
+
+  &__ingredients {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+  }
+}
+
+.ingredients {
+
+  &__title {
+    padding-top: 10px;
+    color: #90A4AE;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+  }
+
+  &-list {
+
+    &__item {
+      margin: 10px 20px 10px 0;
+      padding: 5px;
+      background-color: #DCEDC8;
+      color: black;
+      list-style: none;
     }
   }
 }
