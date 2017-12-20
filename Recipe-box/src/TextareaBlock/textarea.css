@@ -1,0 +1,11 @@
+.textarea {
+  display: block;
+  width: 95%;
+  margin: 10px auto;
+  resize: none;
+  padding: 10px; }
+  .textarea__label {
+    display: block;
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase; }

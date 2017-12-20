@@ -13,9 +13,17 @@ class RecipeContainer extends Component {
   constructor(props){
     super(props);
     this.state = {
-      openNewRecipeModal: false
+      openNewRecipeModal: false,
+      newRecipe: {}
     }
   }
+
+  // handleInput = (e) => {
+  //     this.setState({
+  //       ...this.state,
+  //       [e.target.name]: e.target.value,
+  //     })
+  // }
 
   handleOpen = () => {
     this.setState({openNewRecipeModal: true});
@@ -25,18 +33,30 @@ class RecipeContainer extends Component {
     this.setState({openNewRecipeModal: false});
   };
 
+   addNewRecipe = (e) => {
+     const target = e.target;
+     this.setState(prevState => ({
+       newRecipe: {
+         ...prevState.newRecipe,
+         [target.name]: target.value
+       }
+     }))
+   }
+
   render() {
 
     return (
       <div className="recipe-wrapper">
         <div className="recipe-container">
-            <RecipeList />
+            <RecipeList newRecipe={this.state.newRecipe}/>
         </div>
         <Button bgColor={'#40C4FF'}
                 labelText={'Add Recipe'}
                 icon={<ContentAddCircleOutline />}
                 click={this.handleOpen}/>
-        <ModalBox open={this.state.openNewRecipeModal} close={this.handleClose} />
+        <ModalBox open={this.state.openNewRecipeModal}
+                  close={this.handleClose}
+                  addRecipe={this.addNewRecipe} />
       </div>
     );
   }
