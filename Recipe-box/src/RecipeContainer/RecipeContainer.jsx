@@ -74,10 +74,25 @@ class RecipeContainer extends Component {
     return this.state.recipes;
    }
 
-     setRecipesToLocalStorage = () => {
-       const jsonRecipes = JSON.stringify(this.state.recipes);
-       localStorage.setItem("myRecipes", jsonRecipes);
-     }
+   setRecipesToLocalStorage = () => {
+     const jsonRecipes = JSON.stringify(this.state.recipes);
+     localStorage.setItem("myRecipes", jsonRecipes);
+   }
+
+//delete parent element of elem that contains selector
+//instead of using  'e.target.parentNode.parentNode.parentNode...';
+
+getClosest = (elem, selector) => {
+    for ( ; elem && elem !== document; elem = elem.parentNode ) {
+        if ( elem.matches( selector ) ) return elem;
+    }
+    return null;
+};
+
+   deleteRecipe = (e) => {
+     var recipeBlock = this.getClosest(e.target, `#${e.target.dataset.name}`);
+     recipeBlock.remove();
+   }
 
   render() {
 
@@ -93,9 +108,10 @@ class RecipeContainer extends Component {
                   icon={<ContentSave />}
                   click={this.setRecipesToLocalStorage}/>
         </div>
-
         <div className="recipe-container">
-            <RecipeList recipes={this.state.recipes} newRecipe={this.state.newRecipe}/>
+            <RecipeList recipes={this.state.recipes}
+                        newRecipe={this.state.newRecipe}
+                        deleteRecipe={this.deleteRecipe}/>
             {this.state.recipiesEmpty && <NoRecipies />}
         </div>
         <ModalBox open={this.state.openNewRecipeModal}

@@ -18,17 +18,20 @@ class RecipeList extends Component {
 
   render() {
 
-    const { recipes } = this.props;
+    const { recipes, deleteRecipe } = this.props;
 
 
     return (
       <div>
         {recipes.map((item, i) => {
-            return (<RecipeItem key={i}
-              recipe={item.recipe}
-              toggleRecipeState={this.state[item.recipe]}
-              ingredients={item.ingredients}
-              click={this.toggleFullRecipe} />)
+            return (
+              <RecipeItem key={i}
+                          recipe={item.recipe}
+                          toggleRecipeState={this.state[item.recipe]}
+                          ingredients={item.ingredients}
+                          click={this.toggleFullRecipe}
+                          deleteRecipe={deleteRecipe}
+               />)
           })
         }
       </div>

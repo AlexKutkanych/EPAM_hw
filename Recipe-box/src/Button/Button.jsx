@@ -7,7 +7,7 @@ const styles = {
   }
 };
 
-const Button = ({ labelText, bgColor, labelColor, icon, click }) => (
+const Button = ({ labelText, bgColor, labelColor, icon, click, name }) => (
   <div>
     <RaisedButton
       label={labelText}
@@ -17,6 +17,7 @@ const Button = ({ labelText, bgColor, labelColor, icon, click }) => (
       icon={icon}
       style={styles.button}
       onClick={click}
+      dataname={name}
     />
   </div>
 );
