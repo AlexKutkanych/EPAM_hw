@@ -3,12 +3,17 @@ import React, { Component } from 'react';
 import RecipeItem from '../RecipeItem/RecipeItem.jsx';
 
 class RecipeList extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+    }
+  }
 
-  showFullRecipe = (e) => {
+  toggleFullRecipe = (e) => {
+    const name = e.target.dataset.name;
      this.setState({
-       [e.target.dataset.name]: true
+       [name]: !this.state[name]
       })
-      console.log(e.target.dataset.name);
    }
 
   render() {
@@ -20,9 +25,11 @@ class RecipeList extends Component {
       <div>
         {recipes.map((item, i) => {
             return (<RecipeItem key={i}
-              name={item.name}
+              name={item.recipe}
               recipe={item.recipe}
-              ingredients={item.ingredients} />)
+              toggleRecipeState={this.state[item.recipe]}
+              ingredients={item.ingredients}
+              click={this.toggleFullRecipe} />)
           })
         }
       </div>

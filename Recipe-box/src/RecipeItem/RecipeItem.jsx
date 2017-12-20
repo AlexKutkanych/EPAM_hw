@@ -7,11 +7,12 @@ class RecipeItem extends Component {
   render() {
 
 
-    const { name, recipe, ingredients, show, click} = this.props;
+    const { name, recipe, ingredients, toggleRecipeState, click} = this.props;
     return (
-        <div className={"recipe-item__block " + (show ? "recipe-item__block_open" : null)} onClick={click}>
+        <div className={"recipe-item__block " + (toggleRecipeState ? "recipe-item__block_open" : null)}
+          data-name={name} onClick={click} title="Click to see full recipe"
+          >
           <p className="recipe-item__name" data-name={name}>{name}</p>
-          <p className="recipe-item__name">{recipe}</p>
           <p className="recipe-item__name">{ingredients}</p>
         </div>
     );

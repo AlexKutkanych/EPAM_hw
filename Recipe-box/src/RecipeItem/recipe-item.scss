@@ -2,6 +2,8 @@
 
   &__block {
     width: 95%;
+    height: 60px;
+    overflow: hidden;
     margin: 5px auto;
     padding: 5px;
     background-color: #66BB6A;
@@ -9,7 +11,11 @@
     border-radius: 20px;
 
     &_open {
-      height: 200px;
+      height: 100px;
+    }
+
+    &:hover {
+      cursor: pointer;
     }
   }
 
@@ -21,7 +27,7 @@
 
     &:hover {
       color: #FFF176;
-        text-decoration: underline;
+      text-decoration: underline;
       cursor: pointer;
     }
   }

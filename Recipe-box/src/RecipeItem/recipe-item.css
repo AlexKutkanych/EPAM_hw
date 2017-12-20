@@ -1,12 +1,16 @@
 .recipe-item__block {
   width: 95%;
+  height: 60px;
+  overflow: hidden;
   margin: 5px auto;
   padding: 5px;
   background-color: #66BB6A;
   color: #fff;
   border-radius: 20px; }
   .recipe-item__block_open {
-    height: 200px; }
+    height: 100px; }
+  .recipe-item__block:hover {
+    cursor: pointer; }
 
 .recipe-item__name {
   display: block;
