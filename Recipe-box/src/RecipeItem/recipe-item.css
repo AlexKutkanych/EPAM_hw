@@ -38,9 +38,11 @@
 .ingredients__buttons-wrapper {
   display: flex; }
 
-.ingredients-list__item {
-  margin: 10px 20px 10px 0;
-  padding: 5px;
-  background-color: #DCEDC8;
-  color: black;
-  list-style: none; }
+.ingredients-list {
+  padding-left: 20px; }
+  .ingredients-list__item {
+    margin: 10px 20px 10px 0;
+    padding: 5px;
+    background-color: #DCEDC8;
+    color: black;
+    list-style: none; }

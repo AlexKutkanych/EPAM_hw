@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 
-import Button from '../Button/Button';
-
 import RecipeList from '../RecipeList/RecipeList.jsx';
 import ModalBox from '../ModalBox/ModalBox.jsx';
 import NoRecipies from './NoRecipies/NoRecipies.jsx';
+
+import Button from '../Button/Button';
 import ContentAddCircleOutline from 'material-ui/svg-icons/content/add-circle-outline';
 import ContentSave from 'material-ui/svg-icons/content/save';
-// import ActionDelete from 'material-ui/svg-icons/action/delete';
-// import EditorModeEdit from 'material-ui/svg-icons/editor/mode-edit';
+
 import './recipe-container.css';
 
 class RecipeContainer extends Component {
@@ -84,14 +83,17 @@ class RecipeContainer extends Component {
 
     return (
       <div className="recipe-wrapper">
-        <Button bgColor={'#40C4FF'}
-                labelText={'Add Recipe'}
-                icon={<ContentAddCircleOutline />}
-                click={this.handleOpen}/>
-        <Button bgColor={'#4CAF50'}
-                labelText={'Save to your account'}
-                icon={<ContentSave />}
-                click={this.setRecipesToLocalStorage}/>
+        <div className="recipe-buttons__wrapper">
+          <Button bgColor={'#40C4FF'}
+                  labelText={'Add Recipe'}
+                  icon={<ContentAddCircleOutline />}
+                  click={this.handleOpen}/>
+          <Button bgColor={'#4CAF50'}
+                  labelText={'Save to your account'}
+                  icon={<ContentSave />}
+                  click={this.setRecipesToLocalStorage}/>
+        </div>
+
         <div className="recipe-container">
             <RecipeList recipes={this.state.recipes} newRecipe={this.state.newRecipe}/>
             {this.state.recipiesEmpty && <NoRecipies />}

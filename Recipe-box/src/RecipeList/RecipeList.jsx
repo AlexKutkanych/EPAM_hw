@@ -25,7 +25,6 @@ class RecipeList extends Component {
       <div>
         {recipes.map((item, i) => {
             return (<RecipeItem key={i}
-              name={item.recipe}
               recipe={item.recipe}
               toggleRecipeState={this.state[item.recipe]}
               ingredients={item.ingredients}
