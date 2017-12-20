@@ -14,9 +14,39 @@ class RecipeContainer extends Component {
     super(props);
     this.state = {
       openNewRecipeModal: false,
+      recipes: [],
       newRecipe: {}
     }
   }
+
+  componentDidMount(){
+    this.getRecipesFromLocalStorage();
+  }
+
+  setRecipesToLocalStorage = () => {
+    const Recipes = [
+      {name: "Borshch", recipe: "Borshch", ingredients: "blalblabla"},
+      {name: "asd", recipe: "asd", ingredients: "blalblabla"},
+      {name: "dgfhfgh", recipe: "dgfhfgh", ingredients: "blalblabla"},
+      {name: "ertertert", recipe: "ertertert", ingredients: "blalblabla"}
+    ];
+
+    const jsonRecipes = JSON.stringify(Recipes);
+
+    localStorage.setItem("myRecipes", jsonRecipes);
+    console.log(jsonRecipes);
+  }
+
+  getRecipesFromLocalStorage = () => {
+    const myRecipes = localStorage.getItem("myRecipes");
+    const recipes = JSON.parse(myRecipes);
+    this.setState({
+      ...this.state,
+      recipes: recipes
+    })
+  }
+
+
 
   // handleInput = (e) => {
   //     this.setState({
@@ -43,13 +73,15 @@ class RecipeContainer extends Component {
      }))
    }
 
+
   render() {
 
     return (
       <div className="recipe-wrapper">
         <div className="recipe-container">
-            <RecipeList newRecipe={this.state.newRecipe}/>
+            <RecipeList recipes={this.state.recipes} newRecipe={this.state.newRecipe}/>
         </div>
+        <button onClick={this.setRecipesToLocalStorage}>Click</button>
         <Button bgColor={'#40C4FF'}
                 labelText={'Add Recipe'}
                 icon={<ContentAddCircleOutline />}

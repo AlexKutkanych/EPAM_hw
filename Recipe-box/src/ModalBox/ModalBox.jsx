@@ -13,19 +13,29 @@ class ModalBox extends Component {
   constructor(props){
     super(props);
     this.state = {
-      recipeFieldsEmpty: true
+      recipeFieldEmpty: true,
+      ingredientsFieldEmpty: true
     }
   }
 
   checkIfNewReceipeFieldsEmpty = (e) => {
-    const target = e.target;
-    const r_a = 0.3;
-    if(target.value == ''){
-      target.style.borderColor = "red";
-    } else {
-      target.style.borderColor = "rgba(169, 169, 169, " + r_a + ")";
-    }
-  }
+   const target = e.target;
+   const inputName = e.target.name;
+   const r_a = 0.3;
+   if (!e.target.value.trim()) {
+     target.style.borderColor = "red";
+     this.setState({
+       ...this.state,
+       [`${inputName}FieldEmpty`]: true,
+     });
+   } else {
+     target.style.borderColor = "rgba(169, 169, 169, " + r_a + ")";
+     this.setState({
+       ...this.state,
+       [`${inputName}FieldEmpty`]: false,
+     });
+   }
+ };
 
   render() {
     const actions = [
@@ -37,7 +47,7 @@ class ModalBox extends Component {
       <FlatButton
         label="Submit"
         primary={true}
-        disabled={this.state.recipeFieldsEmpty}
+        disabled={this.state.recipeFieldEmpty || this.state.ingredientsFieldEmpty}
         keyboardFocused={true}
         onClick={this.props.close}
       />,
