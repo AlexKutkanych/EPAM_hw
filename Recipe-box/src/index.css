@@ -1,6 +1,7 @@
 @import "./Header/header.css";
 @import "./RecipeItem/recipe-item.css";
 @import "./TextareaBlock/textarea.css";
+@import "./RecipeContainer/NoRecipies/no-recipies.css";
 
 body {
   margin: 0;

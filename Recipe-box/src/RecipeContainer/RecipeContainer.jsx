@@ -25,20 +25,6 @@ class RecipeContainer extends Component {
     this.getRecipesFromLocalStorage();
   }
 
-  // setRecipesToLocalStorage = () => {
-  //   const Recipes = [
-  //     {name: "Borshch", recipe: "Borshch", ingredients: "blalblabla"},
-  //     {name: "asd", recipe: "asd", ingredients: "blalblabla"},
-  //     {name: "dgfhfgh", recipe: "dgfhfgh", ingredients: "blalblabla"},
-  //     {name: "ertertert", recipe: "ertertert", ingredients: "blalblabla"}
-  //   ];
-  //
-  //   const jsonRecipes = JSON.stringify(Recipes);
-  //
-  //   localStorage.setItem("myRecipes", jsonRecipes);
-  //   console.log(jsonRecipes);
-  // }
-
   getRecipesFromLocalStorage = () => {
     const myRecipes = localStorage.getItem("myRecipes");
     if(myRecipes){
@@ -55,7 +41,6 @@ class RecipeContainer extends Component {
       });
     }
   }
-
 
   handleOpen = () => {
     this.setState({openNewRecipeModal: true});
@@ -83,26 +68,36 @@ class RecipeContainer extends Component {
        ],
        recipiesEmpty: false
      }));
+
      this.handleClose();
-     return this.state;
+
+    return this.state.recipes;
    }
 
-
+     setRecipesToLocalStorage = () => {
+       console.log(this.state);
+       const jsonRecipes = JSON.stringify(this.state.recipes);
+       localStorage.setItem("myRecipes", jsonRecipes);
+     }
 
   render() {
 
     return (
       <div className="recipe-wrapper">
-        <div className="recipe-container">
-            <RecipeList recipes={this.state.recipes} newRecipe={this.state.newRecipe}/>
-            {this.state.recipiesEmpty && <NoRecipies />}
-        </div>
-        <button onClick={this.test}>Click</button>
         <Button bgColor={'#40C4FF'}
                 labelText={'Add Recipe'}
                 icon={<ContentAddCircleOutline />}
                 click={this.handleOpen}/>
+        <Button bgColor={'#4CAF50'}
+                labelText={'Save to your account'}
+                icon={<ContentAddCircleOutline />}
+                click={this.setRecipesToLocalStorage}/>
+        <div className="recipe-container">
+            <RecipeList recipes={this.state.recipes} newRecipe={this.state.newRecipe}/>
+            {this.state.recipiesEmpty && <NoRecipies />}
+        </div>
         <ModalBox open={this.state.openNewRecipeModal}
+                  close={this.handleClose}
                   submitAdding={() => this.addNewToAllRecipes(this.state.newRecipe)}
                   addRecipe={this.addNewRecipe} />
       </div>

@@ -3,10 +3,6 @@ import React, { Component } from 'react';
 import RecipeItem from '../RecipeItem/RecipeItem.jsx';
 
 class RecipeList extends Component {
-  //
-  // componentWillReceiveProps(nextProps){
-  //   this.renderAllRecipes(nextProps.recipes);
-  // }
 
   showFullRecipe = (e) => {
      this.setState({
@@ -17,7 +13,7 @@ class RecipeList extends Component {
 
   render() {
 
-    const { recipes, newRecipe } = this.props;
+    const { recipes } = this.props;
 
 
     return (

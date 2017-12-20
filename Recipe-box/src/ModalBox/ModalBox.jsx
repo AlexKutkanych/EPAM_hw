@@ -53,7 +53,7 @@ class ModalBox extends Component {
       />,
     ];
 
-    const { open, close, submitAdding, addRecipe } = this.props;
+    const { open, close, addRecipe } = this.props;
 
     return (
       <div>
