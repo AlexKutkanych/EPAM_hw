@@ -49,11 +49,11 @@ class ModalBox extends Component {
         primary={true}
         disabled={this.state.recipeFieldEmpty || this.state.ingredientsFieldEmpty}
         keyboardFocused={true}
-        onClick={this.props.close}
+        onClick={this.props.submitAdding}
       />,
     ];
 
-    const { open, close, addRecipe } = this.props;
+    const { open, close, submitAdding, addRecipe } = this.props;
 
     return (
       <div>

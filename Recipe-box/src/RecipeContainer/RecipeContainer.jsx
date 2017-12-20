@@ -47,14 +47,6 @@ class RecipeContainer extends Component {
   }
 
 
-
-  // handleInput = (e) => {
-  //     this.setState({
-  //       ...this.state,
-  //       [e.target.name]: e.target.value,
-  //     })
-  // }
-
   handleOpen = () => {
     this.setState({openNewRecipeModal: true});
   };
@@ -73,6 +65,16 @@ class RecipeContainer extends Component {
      }))
    }
 
+   addToAllRecipes = (newRec) => {
+     this.setState(prevState => ({
+       recipes: [
+          ...prevState.recipes,
+          newRec
+       ]
+     }));
+     this.handleClose();
+   }
+
 
   render() {
 
@@ -87,7 +89,7 @@ class RecipeContainer extends Component {
                 icon={<ContentAddCircleOutline />}
                 click={this.handleOpen}/>
         <ModalBox open={this.state.openNewRecipeModal}
-                  close={this.handleClose}
+                  submitAdding={() => this.addToAllRecipes(this.state.newRecipe)}
                   addRecipe={this.addNewRecipe} />
       </div>
     );
