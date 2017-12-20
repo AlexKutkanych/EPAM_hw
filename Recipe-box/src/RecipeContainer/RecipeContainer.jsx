@@ -65,7 +65,7 @@ class RecipeContainer extends Component {
      }))
    }
 
-   addToAllRecipes = (newRec) => {
+   addNewToAllRecipes = (newRec) => {
      this.setState(prevState => ({
        recipes: [
           ...prevState.recipes,
@@ -73,7 +73,9 @@ class RecipeContainer extends Component {
        ]
      }));
      this.handleClose();
+     return this.state;
    }
+
 
 
   render() {
@@ -83,13 +85,13 @@ class RecipeContainer extends Component {
         <div className="recipe-container">
             <RecipeList recipes={this.state.recipes} newRecipe={this.state.newRecipe}/>
         </div>
-        <button onClick={this.setRecipesToLocalStorage}>Click</button>
+        <button onClick={this.test}>Click</button>
         <Button bgColor={'#40C4FF'}
                 labelText={'Add Recipe'}
                 icon={<ContentAddCircleOutline />}
                 click={this.handleOpen}/>
         <ModalBox open={this.state.openNewRecipeModal}
-                  submitAdding={() => this.addToAllRecipes(this.state.newRecipe)}
+                  submitAdding={() => this.addNewToAllRecipes(this.state.newRecipe)}
                   addRecipe={this.addNewRecipe} />
       </div>
     );
