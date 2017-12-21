@@ -90,7 +90,7 @@ getClosest = (elem, selector) => {
 };
 
    deleteRecipe = (e) => {
-     var recipeBlock = this.getClosest(e.target, `#${e.target.dataset.name}`);
+     var recipeBlock = this.getClosest(e.currentTarget, `#${e.currentTarget.getAttribute('dataname')}`);
      recipeBlock.remove();
    }
 

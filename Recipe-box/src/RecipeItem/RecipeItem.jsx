@@ -8,6 +8,10 @@ import './recipe-item.css';
 
 class RecipeItem extends Component {
 
+  test = (e) => {
+    console.log(e.target);
+  }
+
   render() {
 
     const { recipe, ingredients, toggleRecipeState, click, deleteRecipe } = this.props;
@@ -27,13 +31,11 @@ class RecipeItem extends Component {
                 {ingredients.split(",").map((item, i) => <li className="ingredients-list__item" key={i}>{item}</li>)}
               </ul>
               <div className="ingredients__buttons-wrapper">
-                <div className="target"
-                     data-name={recipe}
-                     onClick={deleteRecipe}></div>
                 <Button bgColor={'#FF5722'}
                         labelText={'Delete'}
                         icon={<ActionDelete />}
-                        name={recipe}/>
+                        name={recipe}
+                        click={deleteRecipe}/>
                 <Button bgColor={'#5E35B1'}
                         labelText={'Edit'}
                         icon={<EditorModeEdit />}

@@ -47,12 +47,3 @@
     background-color: #DCEDC8;
     color: black;
     list-style: none; }
-
-.target {
-  width: 109px;
-  height: 36px;
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  z-index: 1;
-  background-color: transparent; }
