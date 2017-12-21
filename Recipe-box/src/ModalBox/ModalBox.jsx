@@ -13,29 +13,10 @@ class ModalBox extends Component {
   constructor(props){
     super(props);
     this.state = {
-      recipeFieldEmpty: true,
-      ingredientsFieldEmpty: true
     }
   }
 
-  checkIfNewReceipeFieldsEmpty = (e) => {
-   const target = e.target;
-   const inputName = e.target.name;
-   const r_a = 0.3;
-   if (!e.target.value.trim()) {
-     target.style.borderColor = "red";
-     this.setState({
-       ...this.state,
-       [`${inputName}FieldEmpty`]: true,
-     });
-   } else {
-     target.style.borderColor = "rgba(169, 169, 169, " + r_a + ")";
-     this.setState({
-       ...this.state,
-       [`${inputName}FieldEmpty`]: false,
-     });
-   }
- };
+
 
   render() {
     const actions = [
@@ -47,13 +28,13 @@ class ModalBox extends Component {
       <FlatButton
         label="Submit"
         primary={true}
-        disabled={this.state.recipeFieldEmpty || this.state.ingredientsFieldEmpty}
+        disabled={this.props.recipeFieldEmpty || this.props.ingredientsFieldEmpty}
         keyboardFocused={true}
         onClick={this.props.submitAdding}
       />,
     ];
 
-    const { title, recipe, ingredients, open, close, submitAdding, addRecipe } = this.props;
+    const { title, recipe, ingredients, open, close, submitAdding, addRecipe, checkInput, recipeFieldEmpty, ingredientsFieldEmpty  } = this.props;
 
     return (
       <div>
@@ -71,7 +52,7 @@ class ModalBox extends Component {
                         maxLength={100}
                         rows={1}
                         onChange={addRecipe}
-                        onBlur={this.checkIfNewReceipeFieldsEmpty}
+                        onBlur={checkInput}
                         />
           <TextareaBlock name="ingredients"
                         id="ingredients"
@@ -79,7 +60,7 @@ class ModalBox extends Component {
                         maxLength={1000}
                         rows={4}
                         onChange={addRecipe}
-                        onBlur={this.checkIfNewReceipeFieldsEmpty}
+                        onBlur={checkInput}
                         />
           </Dialog>
         </form>

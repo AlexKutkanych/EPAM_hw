@@ -18,7 +18,9 @@ class RecipeContainer extends Component {
       openEditRecipeModal: false,
       recipiesEmpty: true,
       recipes: [],
-      newRecipe: {}
+      newRecipe: {},
+      recipeFieldEmpty: true,
+      ingredientsFieldEmpty: true
     }
   }
 
@@ -61,13 +63,34 @@ class RecipeContainer extends Component {
      }))
    }
 
+   checkIfNewReceipeFieldsEmpty = (e) => {
+    const target = e.target;
+    const inputName = e.target.name;
+    const r_a = 0.3;
+    if (!e.target.value.trim()) {
+      target.style.borderColor = "red";
+      this.setState({
+        ...this.state,
+        [`${inputName}FieldEmpty`]: true,
+      });
+    } else {
+      target.style.borderColor = "rgba(169, 169, 169, " + r_a + ")";
+      this.setState({
+        ...this.state,
+        [`${inputName}FieldEmpty`]: false,
+      });
+    }
+  };
+
    addNewToAllRecipes = (newRec) => {
      this.setState(prevState => ({
        recipes: [
           ...prevState.recipes,
           newRec
        ],
-       recipiesEmpty: false
+       recipiesEmpty: false,
+       recipeFieldEmpty: true,
+       ingredientsFieldEmpty: true
      }));
 
      this.handleClose();
@@ -145,6 +168,9 @@ getClosest = (elem, selector) => {
         </div>
         <ModalBox open={this.state.openNewRecipeModal}
                   close={this.handleClose}
+                  checkInput={this.checkIfNewReceipeFieldsEmpty}
+                  recipeFieldEmpty={this.state.recipeFieldEmpty}
+                  ingredientsFieldEmpty={this.state.ingredientsFieldEmpty}
                   submitAdding={() => this.addNewToAllRecipes(this.state.newRecipe)}
                   addRecipe={this.addNewRecipe}
                   title="Add Recipe" />
