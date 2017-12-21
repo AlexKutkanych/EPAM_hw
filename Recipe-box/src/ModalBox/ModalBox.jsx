@@ -53,13 +53,13 @@ class ModalBox extends Component {
       />,
     ];
 
-    const { open, close, addRecipe } = this.props;
+    const { title, recipe, ingredients, open, close, submitAdding, addRecipe } = this.props;
 
     return (
       <div>
         <form>
           <Dialog
-            title="Add Recipe"
+            title={title}
             actions={actions}
             modal={false}
             open={open}
@@ -67,6 +67,7 @@ class ModalBox extends Component {
           >
           <TextareaBlock name="recipe"
                         id="recipe"
+                        value={recipe}
                         maxLength={100}
                         rows={1}
                         onChange={addRecipe}
@@ -74,6 +75,7 @@ class ModalBox extends Component {
                         />
           <TextareaBlock name="ingredients"
                         id="ingredients"
+                        value={ingredients}
                         maxLength={1000}
                         rows={4}
                         onChange={addRecipe}

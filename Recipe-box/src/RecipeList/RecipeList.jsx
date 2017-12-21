@@ -18,7 +18,7 @@ class RecipeList extends Component {
 
   render() {
 
-    const { recipes, deleteRecipe } = this.props;
+    const { recipes, deleteRecipe, editRecipe } = this.props;
 
 
     return (
@@ -31,6 +31,7 @@ class RecipeList extends Component {
                           ingredients={item.ingredients}
                           click={this.toggleFullRecipe}
                           deleteRecipe={deleteRecipe}
+                          editRecipe={editRecipe}
                />)
           })
         }

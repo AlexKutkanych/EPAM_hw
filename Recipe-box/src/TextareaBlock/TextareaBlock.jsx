@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class TextareaBlock extends Component {
 
   render() {
-    const { name, id, maxLength, rows, onChange, onBlur} = this.props;
+    const { name, id, value, maxLength, rows, onChange, onBlur} = this.props;
     return (
         <div>
           <label className="textarea__label" htmlFor={id}>{name}</label>
@@ -15,6 +15,7 @@ class TextareaBlock extends Component {
                     rows={rows}
                     onChange={onChange}
                     onBlur={onBlur}
+                    defaultValue={value}
                     required />
         </div>
     );

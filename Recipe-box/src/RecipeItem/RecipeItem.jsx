@@ -14,7 +14,7 @@ class RecipeItem extends Component {
 
   render() {
 
-    const { recipe, ingredients, toggleRecipeState, click, deleteRecipe } = this.props;
+    const { recipe, ingredients, toggleRecipeState, click, deleteRecipe, editRecipe } = this.props;
 
     return (
         <div className={"recipe-item__block " + (toggleRecipeState ? "recipe-item__block_open" : null)}
@@ -39,7 +39,8 @@ class RecipeItem extends Component {
                 <Button bgColor={'#5E35B1'}
                         labelText={'Edit'}
                         icon={<EditorModeEdit />}
-                        name={recipe}/>
+                        name={recipe}
+                        click={editRecipe}/>
               </div>
           </div>
         </div>

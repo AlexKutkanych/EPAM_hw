@@ -15,6 +15,7 @@ class RecipeContainer extends Component {
     super(props);
     this.state = {
       openNewRecipeModal: false,
+      openEditRecipeModal: false,
       recipiesEmpty: true,
       recipes: [],
       newRecipe: {}
@@ -90,9 +91,36 @@ getClosest = (elem, selector) => {
 };
 
    deleteRecipe = (e) => {
-     var recipeBlock = this.getClosest(e.currentTarget, `#${e.currentTarget.getAttribute('dataname')}`);
+     const recipeName = e.currentTarget.getAttribute('dataname');
+     const recipeBlock = this.getClosest(e.currentTarget, `#${recipeName}`);
+
+     //remove from setState
+
+     let recipies = this.state.recipes;
+
+     recipies.forEach(item => {
+       if(item.recipe === recipeName){
+         const index = recipies.indexOf(item);
+         console.log(item, index);
+       }
+     })
      recipeBlock.remove();
    }
+
+   editRecipe = () => {
+     this.handleOpenEditRecipe();
+     // console.log('test');
+   }
+
+   handleOpenEditRecipe = () => {
+     this.setState({openEditRecipeModal: true});
+   };
+
+   handleCloseEditRecipe = () => {
+     this.setState({openEditRecipeModal: false});
+   };
+
+
 
   render() {
 
@@ -111,13 +139,21 @@ getClosest = (elem, selector) => {
         <div className="recipe-container">
             <RecipeList recipes={this.state.recipes}
                         newRecipe={this.state.newRecipe}
-                        deleteRecipe={this.deleteRecipe}/>
+                        deleteRecipe={this.deleteRecipe}
+                        editRecipe={this.editRecipe}/>
             {this.state.recipiesEmpty && <NoRecipies />}
         </div>
         <ModalBox open={this.state.openNewRecipeModal}
                   close={this.handleClose}
                   submitAdding={() => this.addNewToAllRecipes(this.state.newRecipe)}
-                  addRecipe={this.addNewRecipe} />
+                  addRecipe={this.addNewRecipe}
+                  title="Add Recipe" />
+        <ModalBox open={this.state.openEditRecipeModal}
+                  close={this.handleCloseEditRecipe}
+                  title="Edit Recipe"
+                  recipe="test"
+                  ingredients="test"
+               />
       </div>
     );
   }
