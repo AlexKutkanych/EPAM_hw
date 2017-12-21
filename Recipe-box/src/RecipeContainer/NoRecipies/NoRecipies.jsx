@@ -6,7 +6,7 @@ class NoRecipies extends Component {
     return (
       <div className="no-recipies-msg">
         <h2>Add your first recipe</h2>
-        <h4>Click button below</h4>
+        <h4>Click button above</h4>
       </div>
     );
   }

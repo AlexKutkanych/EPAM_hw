@@ -117,17 +117,19 @@ getClosest = (elem, selector) => {
      const recipeName = e.currentTarget.getAttribute('dataname');
      const recipeBlock = this.getClosest(e.currentTarget, `#${recipeName}`);
 
-     //remove from setState
+     let recipes = this.state.recipes;
 
-     let recipies = this.state.recipes;
-
-     recipies.forEach(item => {
+     recipes.forEach(item => {
        if(item.recipe === recipeName){
-         const index = recipies.indexOf(item);
-         console.log(item, index);
+         const index = recipes.indexOf(item);
+         this.setState(prevState => ({
+           recipes: [
+             ...prevState.recipes.filter((rec, i) => i !== index)
+           ]
+         }))
        }
      })
-     recipeBlock.remove();
+     // recipeBlock.remove();
    }
 
    editRecipe = () => {
