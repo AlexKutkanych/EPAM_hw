@@ -101,10 +101,8 @@ class RecipeContainer extends Component {
 
    setRecipesToLocalStorage = () => {
      const recipes = this.state.recipes;
-     // console.log(typeof recipes);
      const jsonRecipes = JSON.stringify(recipes);
      localStorage.setItem("myRecipes", jsonRecipes);
-     console.log(recipes);
      if(recipes.length === 0){
        this.setState({
          ...this.state,
@@ -147,17 +145,8 @@ getClosest = (elem, selector) => {
    }
 
    editRecipe = () => {
-     this.handleOpenEditRecipe();
-     // console.log('test');
+     
    }
-
-   handleOpenEditRecipe = () => {
-     this.setState({openEditRecipeModal: true});
-   };
-
-   handleCloseEditRecipe = () => {
-     this.setState({openEditRecipeModal: false});
-   };
 
 
 
@@ -191,12 +180,6 @@ getClosest = (elem, selector) => {
                   submitAdding={() => this.addNewToAllRecipes(this.state.newRecipe)}
                   addRecipe={this.addNewRecipe}
                   title="Add Recipe" />
-        <ModalBox open={this.state.openEditRecipeModal}
-                  close={this.handleCloseEditRecipe}
-                  title="Edit Recipe"
-                  recipe="test"
-                  ingredients="test"
-               />
       </div>
     );
   }

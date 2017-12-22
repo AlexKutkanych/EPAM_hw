@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import ModalBox from '../ModalBox/ModalBox.jsx';
 import Button from '../Button/Button';
 import ActionDelete from 'material-ui/svg-icons/action/delete';
 import EditorModeEdit from 'material-ui/svg-icons/editor/mode-edit';
@@ -7,10 +7,21 @@ import EditorModeEdit from 'material-ui/svg-icons/editor/mode-edit';
 import './recipe-item.css';
 
 class RecipeItem extends Component {
-
-  test = (e) => {
-    console.log(e.target);
+  constructor(props){
+    super(props);
+    this.state = {
+      openEditRecipeModal: false,
+    }
   }
+
+  handleOpenEditRecipe = () => {
+    this.setState({openEditRecipeModal: true});
+  };
+
+  handleCloseEditRecipe = () => {
+    this.setState({openEditRecipeModal: false});
+  };
+
 
   render() {
 
@@ -40,9 +51,15 @@ class RecipeItem extends Component {
                         labelText={'Edit'}
                         icon={<EditorModeEdit />}
                         name={recipe}
-                        click={editRecipe}/>
+                        click={this.handleOpenEditRecipe}/>
               </div>
           </div>
+          <ModalBox open={this.state.openEditRecipeModal}
+                    close={this.handleCloseEditRecipe}
+                    title="Edit Recipe"
+                    recipe={recipe}
+                    ingredients={ingredients}
+                 />
         </div>
     );
   }
