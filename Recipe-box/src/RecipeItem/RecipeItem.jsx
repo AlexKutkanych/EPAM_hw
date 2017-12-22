@@ -28,6 +28,7 @@ class RecipeItem extends Component {
     const { recipe, ingredients, toggleRecipeState, click, deleteRecipe, editRecipe, submitEditing, checkEmptyInput } = this.props;
 
     return (
+      <React.Fragment>
         <div className={"recipe-item__block " + (toggleRecipeState ? "recipe-item__block_open" : null)}
              id={recipe}
              data-name={recipe}
@@ -64,6 +65,7 @@ class RecipeItem extends Component {
                     submit={this.handleCloseEditRecipe}
                  />
         </div>
+      </React.Fragment>
     );
   }
 }

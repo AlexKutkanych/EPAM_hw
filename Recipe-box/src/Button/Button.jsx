@@ -8,7 +8,7 @@ const styles = {
 };
 
 const Button = ({ labelText, className, bgColor, labelColor, icon, click, name }) => (
-  <div>
+  <React.Fragment>
     <RaisedButton
       label={labelText}
       labelPosition="before"
@@ -20,7 +20,7 @@ const Button = ({ labelText, className, bgColor, labelColor, icon, click, name }
       onClick={click}
       dataname={name}
     />
-  </div>
+  </React.Fragment>
 );
 
 export default Button;

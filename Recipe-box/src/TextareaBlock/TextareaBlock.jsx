@@ -5,7 +5,7 @@ class TextareaBlock extends Component {
   render() {
     const { name, id, value, datarecipename, maxLength, rows, onChange, onBlur} = this.props;
     return (
-        <div>
+        <React.Fragment>
           <label className="textarea__label" htmlFor={id}>{name}</label>
           <textarea id={id}
                     className="textarea"
@@ -18,7 +18,7 @@ class TextareaBlock extends Component {
                     onBlur={onBlur}
                     defaultValue={value}
                     required />
-        </div>
+        </React.Fragment>
     );
   }
 }

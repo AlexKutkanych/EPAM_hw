@@ -22,7 +22,7 @@ class RecipeList extends Component {
 
 
     return (
-      <div>
+      <React.Fragment>
         {recipes.map((item, i) => {
             return (
               <RecipeItem key={i}
@@ -36,7 +36,7 @@ class RecipeList extends Component {
                />)
           })
         }
-      </div>
+      </React.Fragment>
     );
   }
 }

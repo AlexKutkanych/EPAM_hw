@@ -169,35 +169,37 @@ getClosest = (elem, selector) => {
   render() {
 
     return (
-      <div className="recipe-wrapper">
-        <div className="recipe-buttons__wrapper">
-          <Button bgColor={'#40C4FF'}
-                  labelText={'Add Recipe'}
-                  icon={<ContentAddCircleOutline />}
-                  click={this.handleOpen}/>
-          <Button bgColor={'#4CAF50'}
-                  className='save-button'
-                  labelText={'Save to your account'}
-                  icon={<ContentSave />}
-                  click={this.setRecipesToLocalStorage}/>
+      <React.Fragment>
+        <div className="recipe-wrapper">
+          <div className="recipe-buttons__wrapper">
+            <Button bgColor={'#40C4FF'}
+                    labelText={'Add Recipe'}
+                    icon={<ContentAddCircleOutline />}
+                    click={this.handleOpen}/>
+            <Button bgColor={'#4CAF50'}
+                    className='save-button'
+                    labelText={'Save to your account'}
+                    icon={<ContentSave />}
+                    click={this.setRecipesToLocalStorage}/>
+          </div>
+          <div className="recipe-container">
+              <RecipeList recipes={this.state.recipes}
+                          newRecipe={this.state.newRecipe}
+                          deleteRecipe={this.deleteRecipe}
+                          editRecipe={this.editRecipe}
+                          checkEmptyInput={this.checkIfNewReceipeFieldsEmpty}/>
+              {this.state.recipiesEmpty && <NoRecipies />}
+          </div>
+          <ModalBox open={this.state.openNewRecipeModal}
+                    close={this.handleClose}
+                    onBlur={this.checkIfNewReceipeFieldsEmpty}
+                    recipeFieldEmpty={this.state.recipeFieldEmpty}
+                    ingredientsFieldEmpty={this.state.ingredientsFieldEmpty}
+                    submit={() => this.addNewToAllRecipes(this.state.newRecipe)}
+                    onChange={this.addNewRecipe}
+                    title="Add Recipe" />
         </div>
-        <div className="recipe-container">
-            <RecipeList recipes={this.state.recipes}
-                        newRecipe={this.state.newRecipe}
-                        deleteRecipe={this.deleteRecipe}
-                        editRecipe={this.editRecipe}
-                        checkEmptyInput={this.checkIfNewReceipeFieldsEmpty}/>
-            {this.state.recipiesEmpty && <NoRecipies />}
-        </div>
-        <ModalBox open={this.state.openNewRecipeModal}
-                  close={this.handleClose}
-                  onBlur={this.checkIfNewReceipeFieldsEmpty}
-                  recipeFieldEmpty={this.state.recipeFieldEmpty}
-                  ingredientsFieldEmpty={this.state.ingredientsFieldEmpty}
-                  submit={() => this.addNewToAllRecipes(this.state.newRecipe)}
-                  onChange={this.addNewRecipe}
-                  title="Add Recipe" />
-      </div>
+      </React.Fragment>
     );
   }
 }

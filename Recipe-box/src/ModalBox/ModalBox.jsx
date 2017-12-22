@@ -36,7 +36,7 @@ class ModalBox extends Component {
             datarecipename, onBlur, onChange } = this.props;
 
     return (
-      <div>
+      <React.Fragment>
         <form>
           <Dialog
             title={title}
@@ -65,7 +65,7 @@ class ModalBox extends Component {
                         />
           </Dialog>
         </form>
-      </div>
+      </React.Fragment>
     );
   }
 }
