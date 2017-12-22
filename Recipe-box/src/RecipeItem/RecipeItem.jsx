@@ -25,7 +25,7 @@ class RecipeItem extends Component {
 
   render() {
 
-    const { recipe, ingredients, toggleRecipeState, click, deleteRecipe, editRecipe, submitEditing } = this.props;
+    const { recipe, ingredients, toggleRecipeState, click, deleteRecipe, editRecipe, submitEditing, checkEmptyInput } = this.props;
 
     return (
         <div className={"recipe-item__block " + (toggleRecipeState ? "recipe-item__block_open" : null)}
@@ -60,6 +60,7 @@ class RecipeItem extends Component {
                     recipe={recipe}
                     ingredients={ingredients}
                     onChange={editRecipe}
+                    onBlur={checkEmptyInput}
                     submit={this.handleCloseEditRecipe}
                  />
         </div>

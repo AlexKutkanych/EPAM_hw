@@ -18,7 +18,7 @@ class RecipeList extends Component {
 
   render() {
 
-    const { recipes, deleteRecipe, editRecipe } = this.props;
+    const { recipes, deleteRecipe, editRecipe, checkEmptyInput } = this.props;
 
 
     return (
@@ -32,6 +32,7 @@ class RecipeList extends Component {
                           click={this.toggleFullRecipe}
                           deleteRecipe={deleteRecipe}
                           editRecipe={editRecipe}
+                          checkEmptyInput={checkEmptyInput}
                />)
           })
         }

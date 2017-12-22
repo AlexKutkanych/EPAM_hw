@@ -73,6 +73,7 @@ class RecipeContainer extends Component {
       this.setState({
         ...this.state,
         [`${inputName}FieldEmpty`]: true,
+        ingredientsFieldEmpty: true
       });
     } else {
       target.style.borderColor = "rgba(169, 169, 169, " + r_a + ")";
@@ -91,7 +92,6 @@ class RecipeContainer extends Component {
        ],
        recipiesEmpty: false,
        recipeFieldEmpty: true,
-       ingredientsFieldEmpty: true
      }));
 
      this.handleClose();
@@ -185,7 +185,8 @@ getClosest = (elem, selector) => {
             <RecipeList recipes={this.state.recipes}
                         newRecipe={this.state.newRecipe}
                         deleteRecipe={this.deleteRecipe}
-                        editRecipe={this.editRecipe}/>
+                        editRecipe={this.editRecipe}
+                        checkEmptyInput={this.checkIfNewReceipeFieldsEmpty}/>
             {this.state.recipiesEmpty && <NoRecipies />}
         </div>
         <ModalBox open={this.state.openNewRecipeModal}
