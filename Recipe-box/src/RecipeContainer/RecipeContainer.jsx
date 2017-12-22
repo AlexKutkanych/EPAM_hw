@@ -145,8 +145,25 @@ getClosest = (elem, selector) => {
    }
 
    editRecipe = (e) => {
+      const recipeName = e.currentTarget.getAttribute('datarecipename');
       const target = e.target;
-      console.log(target);
+
+      const recipes = this.state.recipes;
+
+      recipes.forEach(item => {
+        if(item.recipe === recipeName){
+          const index = recipes.indexOf(item);
+          if(target.name === 'recipe'){
+            recipes[index].recipe = target.value;
+          } else if(target.name === 'ingredients'){
+            recipes[index].ingredients = target.value;
+          }
+
+          this.setState({
+            recipes: recipes
+          })
+        }
+      })
    }
 
   render() {
@@ -176,7 +193,7 @@ getClosest = (elem, selector) => {
                   onBlur={this.checkIfNewReceipeFieldsEmpty}
                   recipeFieldEmpty={this.state.recipeFieldEmpty}
                   ingredientsFieldEmpty={this.state.ingredientsFieldEmpty}
-                  submitAdding={() => this.addNewToAllRecipes(this.state.newRecipe)}
+                  submit={() => this.addNewToAllRecipes(this.state.newRecipe)}
                   onChange={this.addNewRecipe}
                   title="Add Recipe" />
       </div>
