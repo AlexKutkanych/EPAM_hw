@@ -7,11 +7,12 @@ const styles = {
   }
 };
 
-const Button = ({ labelText, bgColor, labelColor, icon, click, name }) => (
+const Button = ({ labelText, className, bgColor, labelColor, icon, click, name }) => (
   <div>
     <RaisedButton
       label={labelText}
       labelPosition="before"
+      className={className}
       backgroundColor={bgColor}
       labelColor={labelColor || '#fff'}
       icon={icon}

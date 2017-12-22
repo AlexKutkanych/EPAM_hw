@@ -16,8 +16,6 @@ class ModalBox extends Component {
     }
   }
 
-
-
   render() {
     const actions = [
       <FlatButton

@@ -30,7 +30,8 @@ class RecipeContainer extends Component {
 
   getRecipesFromLocalStorage = () => {
     const myRecipes = localStorage.getItem("myRecipes");
-    if(myRecipes){
+    console.log(typeof myRecipes);
+    if(myRecipes && myRecipes !== '[]'){
       const recipes = JSON.parse(myRecipes);
       this.setState({
         ...this.state,
@@ -99,8 +100,22 @@ class RecipeContainer extends Component {
    }
 
    setRecipesToLocalStorage = () => {
-     const jsonRecipes = JSON.stringify(this.state.recipes);
+     const recipes = this.state.recipes;
+     // console.log(typeof recipes);
+     const jsonRecipes = JSON.stringify(recipes);
      localStorage.setItem("myRecipes", jsonRecipes);
+     console.log(recipes);
+     if(recipes.length === 0){
+       this.setState({
+         ...this.state,
+         recipiesEmpty: true
+       });
+     } else {
+       this.setState({
+         ...this.state,
+         recipiesEmpty: false
+       });
+     }
    }
 
 //delete parent element of elem that contains selector
@@ -129,7 +144,6 @@ getClosest = (elem, selector) => {
          }))
        }
      })
-     // recipeBlock.remove();
    }
 
    editRecipe = () => {
@@ -157,6 +171,7 @@ getClosest = (elem, selector) => {
                   icon={<ContentAddCircleOutline />}
                   click={this.handleOpen}/>
           <Button bgColor={'#4CAF50'}
+                  className='save-button'
                   labelText={'Save to your account'}
                   icon={<ContentSave />}
                   click={this.setRecipesToLocalStorage}/>
