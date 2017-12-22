@@ -3,12 +3,6 @@ import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 import TextareaBlock from '../TextareaBlock/TextareaBlock.jsx';
 
-/**
- * Dialog with action buttons. The actions are passed in as an array of React objects,
- * in this example [FlatButtons](/#/components/flat-button).
- *
- * You can also close this dialog by clicking outside the dialog, or with the 'Esc' key.
- */
 class ModalBox extends Component {
   constructor(props){
     super(props);
@@ -32,8 +26,8 @@ class ModalBox extends Component {
       />,
     ];
 
-    const { title, recipe, ingredients, open, close, submit, addRecipe, checkInput, recipeFieldEmpty, ingredientsFieldEmpty,
-            datarecipename, onBlur, onChange } = this.props;
+    const { title, recipe, ingredients, open, close, submit, recipeFieldEmpty, ingredientsFieldEmpty,
+            onBlur, onChange } = this.props;
 
     return (
       <React.Fragment>

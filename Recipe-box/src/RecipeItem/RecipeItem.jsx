@@ -25,7 +25,7 @@ class RecipeItem extends Component {
 
   render() {
 
-    const { recipe, ingredients, toggleRecipeState, click, deleteRecipe, editRecipe, submitEditing, checkEmptyInput } = this.props;
+    const { recipe, ingredients, toggleRecipeState, click, deleteRecipe, editRecipe, checkEmptyInput } = this.props;
 
     return (
       <React.Fragment>

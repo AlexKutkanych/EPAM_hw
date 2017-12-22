@@ -116,21 +116,9 @@ class RecipeContainer extends Component {
      }
    }
 
-//delete parent element of elem that contains selector
-//instead of using  'e.target.parentNode.parentNode.parentNode...';
-
-getClosest = (elem, selector) => {
-    for ( ; elem && elem !== document; elem = elem.parentNode ) {
-        if ( elem.matches( selector ) ) return elem;
-    }
-    return null;
-};
-
    deleteRecipe = (e) => {
      const recipeName = e.currentTarget.getAttribute('dataname');
-     const recipeBlock = this.getClosest(e.currentTarget, `#${recipeName}`);
-
-     let recipes = this.state.recipes;
+     const recipes = this.state.recipes;
 
      recipes.forEach(item => {
        if(item.recipe === recipeName){
