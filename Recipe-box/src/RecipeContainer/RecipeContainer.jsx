@@ -144,11 +144,10 @@ getClosest = (elem, selector) => {
      })
    }
 
-   editRecipe = () => {
-     
+   editRecipe = (e) => {
+      const target = e.target;
+      console.log(target);
    }
-
-
 
   render() {
 
@@ -174,11 +173,11 @@ getClosest = (elem, selector) => {
         </div>
         <ModalBox open={this.state.openNewRecipeModal}
                   close={this.handleClose}
-                  checkInput={this.checkIfNewReceipeFieldsEmpty}
+                  onBlur={this.checkIfNewReceipeFieldsEmpty}
                   recipeFieldEmpty={this.state.recipeFieldEmpty}
                   ingredientsFieldEmpty={this.state.ingredientsFieldEmpty}
                   submitAdding={() => this.addNewToAllRecipes(this.state.newRecipe)}
-                  addRecipe={this.addNewRecipe}
+                  onChange={this.addNewRecipe}
                   title="Add Recipe" />
       </div>
     );

@@ -59,6 +59,7 @@ class RecipeItem extends Component {
                     title="Edit Recipe"
                     recipe={recipe}
                     ingredients={ingredients}
+                    onChange={editRecipe}
                  />
         </div>
     );
