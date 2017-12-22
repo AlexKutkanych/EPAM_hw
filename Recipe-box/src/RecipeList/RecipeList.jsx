@@ -18,7 +18,7 @@ class RecipeList extends Component {
 
   render() {
 
-    const { recipes, deleteRecipe, editRecipe, checkEmptyInput } = this.props;
+    const { recipes, deleteRecipe, editRecipe, checkEmptyInput, recipeFieldEmpty, ingredientsFieldEmpty } = this.props;
 
 
     return (
@@ -33,6 +33,8 @@ class RecipeList extends Component {
                           deleteRecipe={deleteRecipe}
                           editRecipe={editRecipe}
                           checkEmptyInput={checkEmptyInput}
+                          recipeFieldEmpty={recipeFieldEmpty}
+                          ingredientsFieldEmpty={ingredientsFieldEmpty}
                />)
           })
         }

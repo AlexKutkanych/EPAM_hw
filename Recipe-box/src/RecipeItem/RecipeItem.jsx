@@ -25,7 +25,8 @@ class RecipeItem extends Component {
 
   render() {
 
-    const { recipe, ingredients, toggleRecipeState, click, deleteRecipe, editRecipe, checkEmptyInput } = this.props;
+    const { recipe, ingredients, toggleRecipeState, click, deleteRecipe, editRecipe, checkEmptyInput,
+    recipeFieldEmpty, ingredientsFieldEmpty } = this.props;
 
     return (
       <React.Fragment>
@@ -63,6 +64,8 @@ class RecipeItem extends Component {
                     onChange={editRecipe}
                     onBlur={checkEmptyInput}
                     submit={this.handleCloseEditRecipe}
+                    recipeFieldEmpty={recipeFieldEmpty}
+                    ingredientsFieldEmpty={ingredientsFieldEmpty}
                  />
         </div>
       </React.Fragment>

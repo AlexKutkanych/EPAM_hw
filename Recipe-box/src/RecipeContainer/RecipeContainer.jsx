@@ -30,7 +30,6 @@ class RecipeContainer extends Component {
 
   getRecipesFromLocalStorage = () => {
     const myRecipes = localStorage.getItem("myRecipes");
-    console.log(typeof myRecipes);
     if(myRecipes && myRecipes !== '[]'){
       const recipes = JSON.parse(myRecipes);
       this.setState({
@@ -64,25 +63,24 @@ class RecipeContainer extends Component {
      }))
    }
 
-   checkIfNewReceipeFieldsEmpty = (e) => {
-    const target = e.target;
-    const inputName = e.target.name;
-    const r_a = 0.3;
-    if (!e.target.value.trim()) {
-      target.style.borderColor = "red";
-      this.setState({
-        ...this.state,
-        [`${inputName}FieldEmpty`]: true,
-        ingredientsFieldEmpty: true
-      });
-    } else {
-      target.style.borderColor = "rgba(169, 169, 169, " + r_a + ")";
-      this.setState({
-        ...this.state,
-        [`${inputName}FieldEmpty`]: false,
-      });
-    }
-  };
+  checkIfNewReceipeFieldsEmpty = (e) => {
+   const target = e.target;
+   const inputName = e.target.name;
+   const r_a = 0.3;
+   if (!e.target.value.trim()) {
+     target.style.borderColor = "red";
+     this.setState({
+       ...this.state,
+       [`${inputName}FieldEmpty`]: true,
+     });
+   } else {
+     target.style.borderColor = "rgba(169, 169, 169, " + r_a + ")";
+     this.setState({
+       ...this.state,
+       [`${inputName}FieldEmpty`]: false,
+     });
+   }
+ };
 
    addNewToAllRecipes = (newRec) => {
      this.setState(prevState => ({
@@ -175,7 +173,10 @@ class RecipeContainer extends Component {
                           newRecipe={this.state.newRecipe}
                           deleteRecipe={this.deleteRecipe}
                           editRecipe={this.editRecipe}
-                          checkEmptyInput={this.checkIfNewReceipeFieldsEmpty}/>
+                          checkEmptyInput={this.checkIfNewReceipeFieldsEmpty}
+                          recipeFieldEmpty={this.state.recipeFieldEmpty}
+                          ingredientsFieldEmpty={this.state.ingredientsFieldEmpty}
+                          />
               {this.state.recipiesEmpty && <NoRecipies />}
           </div>
           <ModalBox open={this.state.openNewRecipeModal}
