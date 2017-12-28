@@ -99,19 +99,30 @@ class RecipeContainer extends Component {
 
    setRecipesToLocalStorage = () => {
      const recipes = this.state.recipes;
-     const jsonRecipes = JSON.stringify(recipes);
-     localStorage.setItem("myRecipes", jsonRecipes);
-     if(recipes.length === 0){
-       this.setState({
-         ...this.state,
-         recipiesEmpty: true
-       });
-     } else {
-       this.setState({
-         ...this.state,
-         recipiesEmpty: false
-       });
-     }
+     var counter = 0;
+     recipes.map(item => {
+       if(!item.recipe || !item.ingredients){
+         counter++;
+       }
+     });
+
+    if(counter !== 0){
+          alert('Please add recipe name and/or ingredients');
+    } else {
+      const jsonRecipes = JSON.stringify(recipes);
+      localStorage.setItem("myRecipes", jsonRecipes);
+      if(recipes.length === 0){
+        this.setState({
+          ...this.state,
+          recipiesEmpty: true
+        });
+      } else {
+        this.setState({
+          ...this.state,
+          recipiesEmpty: false
+        });
+      }
+    }
    }
 
    deleteRecipe = (e) => {
